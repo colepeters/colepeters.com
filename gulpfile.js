@@ -17,7 +17,7 @@ gulp.task('templates', function () {
       bustCache: true
     }))
     .pipe(rename({
-      extname: 'html'
+      extname: '.html'
     }))
     .pipe(gulp.dest('public'))
 })
@@ -25,7 +25,7 @@ gulp.task('templates', function () {
 gulp.task('styles', function () {
   var processors = [
     cssnext({
-      compress: true
+      compress: false
     })
   ]
 
@@ -48,7 +48,7 @@ gulp.task('serve', ['clean', 'templates', 'styles', 'watch'], function () {
       livereload: true,
       directoryListing: false,
       open: false,
-      host: 'localhost',
+      host: '0.0.0.0',
       port: 9090
     }))
 })

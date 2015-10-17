@@ -1,0 +1,22 @@
+@import '../../node_modules/gemma/src/gemma.css';
+
+@font-face {
+  font-family: Electra;
+  font-weight: 400;
+  src: url('//colepeters.com/fonts/2D4491_2_0.woff2') format('woff2'), url('//colepeters.com/fonts/2D4491_2_0.woff') format('woff');
+}
+
+body {
+  font-family: Electra, Georgia, serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
