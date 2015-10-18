@@ -597,8 +597,8 @@ ol { padding-left: 1.25em; }
 a {
   text-decoration: none;
   color: #116ca8;
-  background-image: -webkit-linear-gradient(transparent 50%, #116ca8 50%);
-  background-image: linear-gradient(transparent 50%, #116ca8 50%);
+  background-image: -webkit-linear-gradient(transparent 50%, currentColor 50%);
+  background-image: linear-gradient(transparent 50%, currentColor 50%);
   background-repeat: repeat-x;
   background-size: 2px 2px;
   background-position: 0 90%;
@@ -615,8 +615,6 @@ a:visited {
 a:hover,
 a:focus {
   color: #2887c7;
-  background-image: -webkit-linear-gradient(transparent 50%, #2887c7 50%);
-  background-image: linear-gradient(transparent 50%, #2887c7 50%);
 }
 
 a:active {
@@ -1620,8 +1618,20 @@ address {
 .s-bg-white { background-color: #ffffff !important; }
 .s-bg-black { background-color: #000000 !important; }
 .s-bg-nearBlack { background-color: #141515 !important; }
-/* NOTE: If you change heading styles here, ensure they are also
- * changed in the respective element definitions. */
+/*
+ * GEMMA/TYPOGRAPHIC SURFACES
+ *
+ * For changing typographic properties.
+ *
+ */
+
+/* 
+ * HEADINGS
+ *
+ * NOTE: If you change heading styles here, ensure they are also
+ * changed in the respective element definitions.
+ *
+ */
 .s-h1 { font-size: 2em; letter-spacing: -0.06em; }
 .s-h2 { font-size: 1.5em; letter-spacing: -0.04em; }
 .s-h3 { font-size: 1.25em; letter-spacing: -0.02em; }
@@ -1638,29 +1648,27 @@ address {
   .s-h5,
   .s-h6 { font-size: 1em; }
 }
+
+/*
+ * FONT-WEIGHT
+ */
+.s-100 { font-weight: 100; }
+.s-200 { font-weight: 200; }
+.s-300 { font-weight: 300; }
+.s-400 { font-weight: 400; }
+.s-500 { font-weight: 500; }
+.s-600 { font-weight: 600; }
+.s-700 { font-weight: 700; }
+.s-800 { font-weight: 800; }
+.s-900 { font-weight: 900; }
 .s-bs1 { box-shadow: 0 1px 3px -2px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
 .s-bs2 { box-shadow: 0 3px 6px -4px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); }
 .s-bs3 { box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.22); }
 .s-bs4 { box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.1); }
 .s-bs5 { box-shadow: 0 19px 38px rgba(0,0,0,0.3), 0 15px 12px rgba(0,0,0,0.08); }
 
-@font-face {
-  font-family: Electra;
-  font-weight: 400;
-  src: url('//colepeters.com/fonts/2D4491_2_0.woff2') format('woff2'), url('//colepeters.com/fonts/2D4491_2_0.woff') format('woff');
-}
-
 body {
-  font-family: Electra, Georgia, serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 400;
-}
