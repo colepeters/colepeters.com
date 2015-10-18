@@ -609,7 +609,7 @@ a {
 }
 
 a:visited {
-  color: #024a7a;
+  color: currentColor;
 }
 
 a:hover,
@@ -1672,3 +1672,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+a {
+  color: #141515;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
