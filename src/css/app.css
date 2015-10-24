@@ -6,6 +6,5 @@ body {
 }
 
 a {
-  color: var(--color-nearBlack);
-  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+  text-shadow: -0.03em 0 0 #fff, 0.03em 0 0 #fff, -0.06em 0 0 #fff, 0.06em 0 0 #fff, -0.09em 0 0 #fff, 0.09em 0 0 #fff, 0 -0.03em 0 #fff, 0 -0.06em 0 #fff, 0 -0.09em 0 #fff;
 }

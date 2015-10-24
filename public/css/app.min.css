@@ -596,7 +596,7 @@ ol { padding-left: 1.25em; }
  * http://codepen.io/jxnblk/pen/jCmwK */
 a {
   text-decoration: none;
-  color: #116ca8;
+  color: currentColor;
   background-image: -webkit-linear-gradient(transparent 50%, currentColor 50%);
   background-image: linear-gradient(transparent 50%, currentColor 50%);
   background-repeat: repeat-x;
@@ -1673,6 +1673,5 @@ body {
 }
 
 a {
-  color: #141515;
-  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+  text-shadow: -0.03em 0 0 #fff, 0.03em 0 0 #fff, -0.06em 0 0 #fff, 0.06em 0 0 #fff, -0.09em 0 0 #fff, 0.09em 0 0 #fff, 0 -0.03em 0 #fff, 0 -0.06em 0 #fff, 0 -0.09em 0 #fff;
 }
