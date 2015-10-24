@@ -1127,6 +1127,34 @@ address {
   cursor: pointer;
 }
 /*
+ * GEMMA/DISPLAY UTILITIES
+ *
+ * For setting display properties
+ *
+ */
+
+.u-block { display: block; }
+.u-inlineBlock { display: inline-block; }
+.u-inline { display: inline; }
+
+@media screen and (min-width: 32em) {
+  ._md-u-block { display: block; }
+  ._md-u-inlineBlock { display: inline-block; }
+  ._md-u-inline { display: inline; }
+}
+
+@media screen and (min-width: 48em) {
+  ._lg-u-block { display: block; }
+  ._lg-u-inlineBlock { display: inline-block; }
+  ._lg-u-inline { display: inline; }
+}
+
+@media screen and (min-width: 64em) {
+  ._xl-u-block { display: block; }
+  ._xl-u-inlineBlock { display: inline-block; }
+  ._xl-u-inline { display: inline; }
+}
+/*
  * GEMMA/SPACING UTILITIES
  *
  * Utilities for setting padding and margin.
@@ -1172,7 +1200,7 @@ address {
 .u-pb4 { padding-bottom: 64px; padding-bottom: 4rem; }
 .u-pb5 { padding-bottom: 128px; padding-bottom: 8rem; }
 
-.u-pl1 { padding-left: 0; }
+.u-pl0 { padding-left: 0; }
 .u-pl1 { padding-left: 8px; padding-left: 0.5rem; }
 .u-pl2 { padding-left: 16px; padding-left: 1rem; }
 .u-pl3 { padding-left: 32px; padding-left: 2rem; }
@@ -1442,6 +1470,16 @@ address {
   ._xl-u-ml5 { margin-left: 8rem; }
 }
 /*
+ * GEMMA/TYPOGRAPHY UTILITIES
+ *
+ * Utility classes for resetting or modifying typographic properties
+ *
+ */
+
+.u-listReset {
+  list-style: none;
+}
+/*
  * GEMMA/SURFACES
  *
  * Similar to utilities, but focused on surface- (or ‘skin’)-level
@@ -1661,6 +1699,16 @@ address {
 .s-700 { font-weight: 700; }
 .s-800 { font-weight: 800; }
 .s-900 { font-weight: 900; }
+
+/*
+ * SMALL-CAPS
+ */
+
+.s-smallCaps {
+  font-size: 0.666em;
+  text-transform: uppercase;
+  letter-spacing: 0.125em;
+}
 .s-bs1 { box-shadow: 0 1px 3px -2px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
 .s-bs2 { box-shadow: 0 3px 6px -4px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); }
 .s-bs3 { box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.22); }
