@@ -37,12 +37,17 @@ gulp.task('styles', function () {
     .pipe(gulp.dest('public/css'))
 })
 
+gulp.task('images', function () {
+  return gulp.src('src/images/*')
+    .pipe(gulp.dest('public/images'))
+})
+
 gulp.task('watch', ['templates', 'styles'], function () {
   gulp.watch('src/css/**/*', ['styles'])
   gulp.watch('src/templates/**/*', ['templates'])
 })
 
-gulp.task('serve', ['clean', 'templates', 'styles', 'watch'], function () {
+gulp.task('serve', ['clean', 'templates', 'styles', 'images', 'watch'], function () {
   return gulp.src('public')
     .pipe(webserver({
       livereload: true,
@@ -53,4 +58,4 @@ gulp.task('serve', ['clean', 'templates', 'styles', 'watch'], function () {
     }))
 })
 
-gulp.task('build', ['clean', 'templates', 'styles'])
+gulp.task('build', ['clean', 'templates', 'styles', 'images'])
