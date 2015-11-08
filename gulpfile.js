@@ -5,6 +5,7 @@ var hb = require('gulp-hb')
 var postcss = require('gulp-postcss')
 var rename = require('gulp-rename')
 var webserver = require('gulp-webserver')
+var uncss = require('gulp-uncss')
 
 gulp.task('clean', function () {
   del.sync(['public/**'])
@@ -31,6 +32,9 @@ gulp.task('styles', function () {
 
   return gulp.src('src/css/app.css')
     .pipe(postcss(processors))
+    .pipe(uncss({
+      html: ['public/*.html']
+    }))
     .pipe(rename({
       suffix: '.min'
     }))

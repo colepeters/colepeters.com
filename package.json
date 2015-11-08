@@ -1,6 +1,6 @@
 {
   "name": "colepeters.com",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "My personal website. New versioning initiated late 2015.",
   "main": "index.js",
   "scripts": {
@@ -16,6 +16,7 @@
     "gulp-hb": "^2.6.5",
     "gulp-postcss": "5.1.10",
     "gulp-rename": "^1.2.2",
+    "gulp-uncss": "^1.0.4",
     "gulp-webserver": "^0.9.1"
   }
 }
