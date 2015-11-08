@@ -11,7 +11,7 @@
   "devDependencies": {
     "cssnext": "~1.8.4",
     "del": "^2.0.2",
-    "gemma": "^0.1.0",
+    "gemma": "0.2.0",
     "gulp": "^3.9.0",
     "gulp-hb": "^2.6.5",
     "gulp-postcss": "5.1.10",
