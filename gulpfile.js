@@ -26,7 +26,7 @@ gulp.task('templates', function () {
 gulp.task('styles', function () {
   var processors = [
     cssnext({
-      compress: false
+      compress: true
     })
   ]
 
