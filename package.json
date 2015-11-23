@@ -1,6 +1,6 @@
 {
   "name": "colepeters.com",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "My personal website. New versioning initiated late 2015.",
   "main": "index.js",
   "scripts": {
