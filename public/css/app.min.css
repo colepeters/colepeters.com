@@ -356,3 +356,13 @@ a {
 small a {
   background-position: 0 95%;
 }
+
+::selection {
+  background: #b9f1de;
+  text-shadow: none;
+}
+
+::-moz-selection {
+  background: #b9f1de;
+  text-shadow: none;
+}
