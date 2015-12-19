@@ -22,3 +22,11 @@ small a {
   background: var(--color-aqua-100);
   text-shadow: none;
 }
+
+.c-button {
+  display: inline-block;
+  appearance: none;
+  border: none;
+  border-radius: 3px;
+  text-shadow: none;
+}
