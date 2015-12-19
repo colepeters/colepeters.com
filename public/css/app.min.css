@@ -15,6 +15,12 @@
  */
 
 /*
+ * GEMMA/ANIMATION
+ *
+ * Settings for animation properties
+ *
+ */
+/*
  * GEMMA/MEDIA QUERIES
  *
  * Custom media queries for quick reference.
@@ -1787,7 +1793,7 @@ address {
 }
 .s-bs1 { box-shadow: 0 1px 3px -2px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
 .s-bs2 { box-shadow: 0 3px 6px -4px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); }
-.s-bs3 { box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.22); }
+.s-bs3 { box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 4px 6px rgba(0,0,0,0.22); }
 .s-bs4 { box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.1); }
 .s-bs5 { box-shadow: 0 19px 38px rgba(0,0,0,0.3), 0 15px 12px rgba(0,0,0,0.08); }
 
@@ -1820,11 +1826,16 @@ small a {
 }
 
 .c-button {
-  display: inline-block;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
   border: none;
   border-radius: 3px;
   text-shadow: none;
+  background-color: #2bd99f;
+  box-shadow: 0 3px 6px -4px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.c-button:hover{
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 4px 6px rgba(0,0,0,0.22);
 }

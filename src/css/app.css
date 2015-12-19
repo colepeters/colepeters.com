@@ -24,9 +24,14 @@ small a {
 }
 
 .c-button {
-  display: inline-block;
   appearance: none;
   border: none;
   border-radius: 3px;
   text-shadow: none;
+  background-color: var(--color-aqua-500);
+  box-shadow: var(--boxShadow-2);
+}
+
+.c-button:hover{
+  box-shadow: var(--boxShadow-3);
 }
