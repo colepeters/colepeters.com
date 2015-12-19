@@ -23,7 +23,22 @@ gulp.task('templates', function () {
     .pipe(gulp.dest('public'))
 })
 
-gulp.task('styles', function () {
+gulp.task('styles:dev', function () {
+  var processors = [
+    cssnext({
+      compress: false
+    })
+  ]
+
+  return gulp.src('src/css/app.css')
+    .pipe(postcss(processors))
+    .pipe(rename({
+      suffix: '.min'
+    }))
+    .pipe(gulp.dest('public/css'))
+})
+
+gulp.task('styles:prod', function () {
   var processors = [
     cssnext({
       compress: true
@@ -46,12 +61,12 @@ gulp.task('images', function () {
     .pipe(gulp.dest('public/images'))
 })
 
-gulp.task('watch', ['templates', 'styles'], function () {
-  gulp.watch('src/css/**/*', ['styles'])
+gulp.task('watch', ['templates', 'styles:dev'], function () {
+  gulp.watch('src/css/**/*', ['styles:dev'])
   gulp.watch('src/templates/**/*', ['templates'])
 })
 
-gulp.task('serve', ['clean', 'templates', 'styles', 'images', 'watch'], function () {
+gulp.task('serve', ['clean', 'templates', 'styles:dev', 'images', 'watch'], function () {
   return gulp.src('public')
     .pipe(webserver({
       livereload: true,
@@ -62,4 +77,4 @@ gulp.task('serve', ['clean', 'templates', 'styles', 'images', 'watch'], function
     }))
 })
 
-gulp.task('build', ['clean', 'templates', 'styles', 'images'])
+gulp.task('build', ['clean', 'templates', 'styles:prod', 'images'])
