@@ -56,3 +56,8 @@ small a {
   max-width: 1280px;
   max-height: 720px;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
