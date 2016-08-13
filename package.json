@@ -1,22 +1,23 @@
 {
   "name": "colepeters.com",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "description": "My personal website. New versioning initiated late 2015.",
-  "main": "index.js",
   "scripts": {
+    "style": "./node_modules/.bin/gulp style",
+    "templates": "./node_modules/.bin/gulp templates",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Cole Peters",
   "license": "MIT",
   "devDependencies": {
-    "cssnext": "~1.8.4",
-    "del": "^2.0.2",
-    "gemma": "0.3.1",
-    "gulp": "^3.9.0",
-    "gulp-hb": "^2.6.5",
-    "gulp-postcss": "5.1.10",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.12",
+    "gulp-hb": "^5.1.0",
+    "gulp-postcss": "^6.1.1",
     "gulp-rename": "^1.2.2",
-    "gulp-uncss": "^1.0.4",
-    "gulp-webserver": "^0.9.1"
+    "postcss-import": "^8.1.2",
+    "require-dir": "^0.3.0",
+    "run-sequence": "^1.2.2",
+    "tachyons": "4.0.5"
   }
 }
