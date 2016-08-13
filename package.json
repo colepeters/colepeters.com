@@ -3,6 +3,7 @@
   "version": "2.0.0",
   "description": "My personal website. New versioning initiated late 2015.",
   "scripts": {
+    "dev": "./node_modules/.bin/gulp dev",
     "style": "./node_modules/.bin/gulp style",
     "templates": "./node_modules/.bin/gulp templates",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,6 +16,7 @@
     "gulp-hb": "^5.1.0",
     "gulp-postcss": "^6.1.1",
     "gulp-rename": "^1.2.2",
+    "gulp-webserver": "^0.9.1",
     "postcss-import": "^8.1.2",
     "require-dir": "^0.3.0",
     "run-sequence": "^1.2.2",
