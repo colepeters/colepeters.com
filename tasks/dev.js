@@ -6,7 +6,7 @@ gulp.task('watch', ['templates', 'style'], () => {
   gulp.watch('src/templates/**/*.handlebars', ['templates']);
 });
 
-gulp.task('dev', ['watch'], () => {
+gulp.task('dev', ['copy', 'watch'], () => {
   return gulp
     .src('public')
     .pipe(webserver({

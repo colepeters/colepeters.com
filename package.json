@@ -3,6 +3,7 @@
   "version": "2.0.0",
   "description": "My personal website. New versioning initiated late 2015.",
   "scripts": {
+    "copy": "./node_modules/.bin/gulp copy",
     "dev": "./node_modules/.bin/gulp dev",
     "style": "./node_modules/.bin/gulp style",
     "templates": "./node_modules/.bin/gulp templates",
