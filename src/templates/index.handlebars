@@ -2,20 +2,42 @@
   {{#*inline 'content'}}
 
   <hgroup class='mv5 mv6-l'>
-    <h1 class='fw3 mv0 near-black'>Cole Peters</h1>
+    <h1 class='fw3 mv0'>Cole Peters</h1>
     <h2 class='fw3 gray'>&mdash; photographer</h2>
   </hgroup>
 
-  <img
-    class='mw-100'
-    srcset='images/colepeters-nun-640w.jpg 640w,
-            images/colepeters-nun-1080w.jpg 1080w,
-            images/colepeters-nun-1920w.jpg 1920w'
-    sizes='(min-width: 64em) 100vw,
-           (min-width: 48em) 100vw,
-           100vw'
-    src='images/colepeters/nun-1080w.jpg'
-    alt='Nun, Verona; photograph by Cole Peters' />
+  <figure class='ma0'>
+    <img
+      class='mw-100'
+      srcset='images/colepeters-nun-640w.jpg 640w,
+              images/colepeters-nun-1080w.jpg 1080w,
+              images/colepeters-nun-1920w.jpg 1920w'
+      sizes='(min-width: 64em) 100vw,
+            (min-width: 48em) 100vw,
+            100vw'
+      src='images/colepeters/nun-1080w.jpg'
+      alt='Nun, Verona; photograph by Cole Peters' />
+    <figcaption class='f6 gray'>Nun, Verona, Italy. &copy; 2016</figcaption>
+  </figure>
+
+  <section class='lh-copy mt5 mt6-l' style='max-width: 56ch;'>
+    <h1 class='fw5'>Hello</h1>
+    <p>
+      I am a photographer. I was born in Canada, and am currently based in London, England.
+    </p>
+    <p>
+      I have been a lover of photography for nearly as long as I can remember. Since late 2014, I have been photographing the streets and landscapes of my adopted home in the UK, in addition to other locations across Europe and Canada.
+    </p>
+    <p>
+      I <a href='code.html' title='Learn more about my work in front-end development' class='dark-green dim'>design and develop user interfaces</a> for a living, and also create <a href='https://colepeters.bandcamp.com' title='Listen to and purchase my music' class='dark-green dim'>the occassional album of music</a>.
+    </p>
+    <p>
+      This website primarily acts as a point of reference for my photography.
+    </p>
+  </section>
+
+  {{> selectedWork}}
+  {{> indexOfWork}}
 
   {{/inline}}
 {{/document}}

@@ -1,5 +1,11 @@
 @import '../../node_modules/tachyons/css/tachyons.css';
 
+@media screen and (min-width: 48em) {
+  html {
+    font-size: 112.5%;
+  }
+}
+
 .smooth {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
