@@ -28,3 +28,13 @@
   width: 100%;
   height: 100%;
 }
+
+/* Override Tachyons' transition prop for .link*/
+.link,
+.link:link
+.link:active,
+.link:hover,
+.link:focus,
+.link:visited {
+  transition: all 0.2s ease;
+}
