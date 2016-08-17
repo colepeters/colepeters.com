@@ -5,6 +5,7 @@
   "scripts": {
     "copy": "./node_modules/.bin/gulp copy",
     "dev": "./node_modules/.bin/gulp dev",
+    "make": "./node_modules/.bin/gulp make",
     "style": "./node_modules/.bin/gulp style",
     "templates": "./node_modules/.bin/gulp templates",
     "test": "echo \"Error: no test specified\" && exit 1"
