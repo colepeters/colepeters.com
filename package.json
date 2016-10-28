@@ -1,27 +1,39 @@
 {
   "name": "colepeters.com",
-  "version": "2.0.0",
-  "description": "My personal website. New versioning initiated late 2015.",
+  "version": "3.0.0",
+  "description": "My personal website.",
   "scripts": {
-    "copy": "./node_modules/.bin/gulp copy",
-    "dev": "./node_modules/.bin/gulp dev",
-    "make": "./node_modules/.bin/gulp make",
-    "style": "./node_modules/.bin/gulp style",
-    "templates": "./node_modules/.bin/gulp templates",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "next build",
+    "dev": "next",
+    "start": "next start",
+    "test": "xo"
   },
   "author": "Cole Peters",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/colepeters/colepeters.com"
+  },
+  "dependencies": {
+    "next": "^1.0.1"
+  },
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-clean-css": "^2.0.12",
-    "gulp-hb": "^5.1.0",
-    "gulp-postcss": "^6.1.1",
-    "gulp-rename": "^1.2.2",
-    "gulp-webserver": "^0.9.1",
-    "postcss-import": "^8.1.2",
-    "require-dir": "^0.3.0",
-    "run-sequence": "^1.2.2",
-    "tachyons": "4.0.5"
+    "xo": "^0.17.0"
+  },
+  "xo": {
+    "space": true,
+    "esnext": true,
+    "semicolon": false,
+    "settings": {
+      "import/resolver": "webpack"
+    },
+    "plugins":[
+      "react",
+      "import"
+    ],
+    "envs": [
+      "node",
+      "browser"
+    ]
   }
 }
