@@ -10,14 +10,10 @@ export default () => (
   <Document title='Cole Peters'>
     <Container>
       <Row>
-        <Col width='oneWhole'>
+        <Col width='oneWhole' md='twoThirds'>
           <Header />
-        </Col>
-        <Col width='oneWhole' md='oneQuarter'>
-          <p><strong>Hello.</strong></p>
-        </Col>
-        <Col width='oneWhole' md='threeQuarters'>
           <p>
+            Hi there.<br />
             I’m Cole. I make photographs, write code (and other text), and record music.
             I was born in Canada, and currently reside in London, England.
           </p>

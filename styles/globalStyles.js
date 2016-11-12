@@ -1,4 +1,4 @@
-import { medium } from './mediaQueries'
+import { medium, large } from './mediaQueries'
 import { typeScale, lineHeightScale } from './scales'
 
 const globalStyles = `
@@ -8,6 +8,19 @@ const globalStyles = `
 
   html {
     font-size: 100%;
+  }
+
+  ${medium} {
+    html {
+      font-size: 112.5%;
+      font-weight: 300;
+    }
+  }
+
+  ${large} {
+    html {
+      font-size: 125%;
+    }
   }
 
   body {
@@ -21,8 +34,8 @@ const globalStyles = `
   }
 
   h1 {
-    font-size: ${typeScale[1]};
-    font-weight: 600;
+    font-size: ${typeScale[2]};
+    font-weight: 300;
     line-height: ${lineHeightScale[1]};
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -44,10 +57,6 @@ const globalStyles = `
 
   p + p {
     margin-top: 1.5em;
-  }
-
-  strong {
-    font-weight: 500;
   }
 
   dd { margin-left: 1.3rem; }
