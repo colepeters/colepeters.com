@@ -1,20 +1,28 @@
 import React from 'react'
-import Head from 'next/head'
-import { style, merge} from 'next/css'
 
-import { sansSerif } from '../styles/font'
-
-const fw300 = style({ fontWeight: '300' })
-const ttu = style({ textTransform: 'uppercase' })
-const tracked = style({ letterSpacing: '0.05em' })
+import Document from '../components/Document'
+import Header from '../components/Header'
+import Container from '../components/grid/Container'
+import Row from '../components/grid/Row'
+import Col from '../components/grid/Col'
 
 export default () => (
-  <div>
-    <Head>
-      <title>Cole Peters</title>
-      <meta name='viewport' content='width=device-width, initial-scale=1.0' />
-      <meta charSet='utf-8' />
-    </Head>
-    <h1 className={ merge(sansSerif, fw300, ttu, tracked) }>Hello world!</h1>
-  </div>
+  <Document title='Cole Peters'>
+    <Container>
+      <Row>
+        <Col width='oneWhole'>
+          <Header />
+        </Col>
+        <Col width='oneWhole' md='oneQuarter'>
+          <p><strong>Hello.</strong></p>
+        </Col>
+        <Col width='oneWhole' md='threeQuarters'>
+          <p>
+            I’m Cole. I make photographs, write code (and other text), and record music.
+            I was born in Canada, and currently reside in London, England.
+          </p>
+        </Col>
+      </Row>
+    </Container>
+  </Document>
 )

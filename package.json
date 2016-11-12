@@ -6,7 +6,7 @@
     "build": "next build",
     "dev": "next",
     "start": "next start",
-    "test": "xo"
+    "test": "standard"
   },
   "author": "Cole Peters",
   "license": "MIT",
@@ -18,46 +18,8 @@
     "next": "^1.0.2"
   },
   "devDependencies": {
-    "eslint-config-xo-react": "^0.10.0",
-    "eslint-import-resolver-webpack": "^0.6.0",
-    "eslint-plugin-react": "^6.4.1",
-    "xo": "^0.17.0"
+    "standard": "^8.5.0"
   },
-  "peerDependencies": {
-    "eslint": ">=3",
-    "eslint-plugin-import": ">=1.4.0",
-    "webpack": "1.x"
-  },
-  "xo": {
-    "space": true,
-    "esnext": true,
-    "semicolon": false,
-    "settings": {
-      "import/core-modules": "react",
-      "import/resolver": "webpack"
-    },
-    "plugins": [
-      "react"
-    ],
-    "envs": [
-      "node",
-      "browser"
-    ],
-    "extends": [
-      "xo-react/space"
-    ],
-    "rules": {
-      "jsx-quotes": [
-        "error",
-        "prefer-single"
-      ],
-      "object-curly-spacing": 0,
-      "react/jsx-space-before-closing": [
-        "error",
-        "always"
-      ],
-      "react/jsx-curly-spacing": 0
-    }
-  },
+  "peerDependencies": {},
   "main": "index.js"
 }
