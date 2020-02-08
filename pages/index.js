@@ -1,7 +1,11 @@
+import { Heading } from '../components'
+
 export default function Index() {
   return (
     <div>
-      <h1>Hello World</h1>
+      <Heading as='h1' fontWeight='400'>
+        Hello World
+      </Heading>
     </div>
   )
 }
