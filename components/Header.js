@@ -20,7 +20,7 @@ export default function Header() {
           Artist working with paint and sound.
         </Heading>
       </hgroup>
-      <Box as='nav' pl={3} borderLeft='4px solid rgba(0,0,0,0.25)'>
+      <Box as='nav' pl={3} borderLeft='6px solid rgba(0,0,0,0.05)'>
         <List reset>
           {pages.map(p => (
             <Text as='li' mb={2} key={p.href} fontSize='0'>
