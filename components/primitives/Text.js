@@ -1,7 +1,8 @@
 import styled from 'styled-components'
-import { space, typography } from 'styled-system'
+import { layout, space, typography } from 'styled-system'
 
 const Text = styled.p`
+  ${layout}
   ${space}
   ${typography}
   max-width: 66ch;
