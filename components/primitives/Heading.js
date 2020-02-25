@@ -1,6 +1,6 @@
 import R from 'ramda'
 import styled from 'styled-components'
-import { typography } from 'styled-system'
+import { space, typography } from 'styled-system'
 
 const getFontSize = as =>
   R.cond([
@@ -11,20 +11,25 @@ const getFontSize = as =>
 
 const getLetterSpacing = as =>
   R.cond([
-    [R.equals('h1'), () => '-0.05em'],
-    [R.equals('h2'), () => '-0.025em'],
-    [R.equals('h3'), () => '-0.0125em'],
+    [R.equals('h1'), () => '-0.075em'],
+    [R.equals('h2'), () => '-0.05em'],
+    [R.equals('h3'), () => '-0.0333em'],
   ])(as)
 
 const BaseHeading = styled.h1`
+  ${space}
   ${typography}
 `
 
-const Heading = styled(BaseHeading).attrs(({ as, theme }) => ({
-  fontSize: getFontSize(as),
-  letterSpacing: getLetterSpacing(as),
-  lineHeight: theme.lineHeights.heading,
-}))``
+const Heading = styled(BaseHeading).attrs(
+  ({ as, fontSize, letterSpacing, mb, mt, theme }) => ({
+    fontSize: fontSize || getFontSize(as),
+    letterSpacing: letterSpacing || getLetterSpacing(as),
+    lineHeight: theme.lineHeights.heading,
+    mt: mt || 3,
+    mb: mb || 3,
+  })
+)``
 
 Heading.displayName = 'Heading'
 
