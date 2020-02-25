@@ -5,11 +5,12 @@ const GlobalStyle = createGlobalStyle`
   ${normalize}
 
   html {
-    font-size: 112.5%;
+    font-size: 100%;
   }
   body {
     font-size: 1rem;
-    font-family: 'DM Sans', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, sans-serif;
+    line-height: 1.5;
     -webkit-font-smoothing: antialiased;
   }
   p {

@@ -5,7 +5,7 @@ const theme = {
     black: 'rgba(0,0,0,1)',
   },
   fontSizes: [
-    '0.75rem',
+    '0.875rem',
     '1rem',
     '1.125rem',
     '1.25rem',
