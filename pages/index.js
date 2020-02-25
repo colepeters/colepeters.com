@@ -1,9 +1,5 @@
-import { Container, Header, Heading, Text } from '../components'
+import { Header } from '../components'
 
 export default function Index() {
-  return (
-    <>
-      <Header />
-    </>
-  )
+  return <Header />
 }
