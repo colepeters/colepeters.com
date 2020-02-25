@@ -1,11 +1,5 @@
-import { Heading } from '../components'
+import Header from '../components/Header'
 
 export default function Index() {
-  return (
-    <div>
-      <Heading as='h1' fontWeight='400'>
-        Hello World
-      </Heading>
-    </div>
-  )
+  return <Header />
 }
