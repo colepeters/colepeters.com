@@ -1,8 +1,23 @@
-import Link from 'next/Link'
-import { Box, Container, Heading, List, Text } from '../components'
+import styled from 'styled-components'
+import { useRouter } from 'next/router'
+
+import { Box, Container, Heading, List, NavLink, Text } from '../components'
 
 const pages = [
-  { name: 'Sound', href: '/sound' },
+  {
+    name: 'Sound',
+    href: '/sound',
+    subpages: [
+      {
+        name: 'Unfolding',
+        href: '/unfolding',
+      },
+      {
+        name: 'Discography',
+        href: '/discography',
+      },
+    ],
+  },
   { name: 'Painting', href: '/painting' },
   { name: 'Photographs', href: '/photographs' },
   { name: 'Info', href: '/info' },
@@ -21,12 +36,20 @@ export default function Header() {
         </Heading>
       </hgroup>
       <Box as='nav' pl={3} borderLeft='6px solid rgba(0,0,0,0.05)'>
-        <List reset>
+        <List reset pl={0} m={0}>
           {pages.map(p => (
             <Text as='li' mb={2} key={p.href} fontSize='0'>
-              <Link href={p.href}>
-                <a>{p.name}</a>
-              </Link>
+              <NavLink href={p.href}>{p.name}</NavLink>
+              {p.subpages && (
+                <List reset pl={2} mt={2}>
+                  {p.subpages.map(sp => (
+                    <Text as='li' mb={2} key={sp.href} fontSize={0}>
+                      <span>└ </span>
+                      <NavLink href={sp.href}>{sp.name}</NavLink>
+                    </Text>
+                  ))}
+                </List>
+              )}
             </Text>
           ))}
         </List>
