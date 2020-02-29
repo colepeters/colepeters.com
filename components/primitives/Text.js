@@ -1,7 +1,8 @@
 import styled from 'styled-components'
-import { layout, space, typography } from 'styled-system'
+import { color, layout, space, typography } from 'styled-system'
 
 const Text = styled.p`
+  ${color}
   ${layout}
   ${space}
   ${typography}

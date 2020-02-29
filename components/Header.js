@@ -25,10 +25,16 @@ const pages = [
 ]
 
 export default function Header() {
+  const { pathname } = useRouter()
+  const showSubpages = page =>
+    page.subpages &&
+    (page.href === pathname ||
+      page.subpages.map(({ href }) => href).includes(pathname))
+
   return (
     <Container as='header' my={[4, null, 5]}>
       <hgroup>
-        <Heading as='h1' fontWeight='500' fontSize='0' letterSpacing='auto'>
+        <Heading as='h1' fontWeight='600' fontSize='0' letterSpacing='auto'>
           Cole Peters
         </Heading>
         <Heading as='h2' fontWeight='400' fontSize='0' letterSpacing='auto'>
@@ -40,11 +46,13 @@ export default function Header() {
           {pages.map(p => (
             <Text as='li' mb={2} key={p.href} fontSize='0'>
               <NavLink href={p.href}>{p.name}</NavLink>
-              {p.subpages && (
+              {showSubpages(p) && (
                 <List reset pl={2} mt={2}>
                   {p.subpages.map(sp => (
                     <Text as='li' mb={2} key={sp.href} fontSize={0}>
-                      <span>└ </span>
+                      <Text as='span' color='rgba(0,0,0,0.25)'>
+                        └─{' '}
+                      </Text>
                       <NavLink href={sp.href}>{sp.name}</NavLink>
                     </Text>
                   ))}

@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { useRouter } from 'next/router'
 
 const CustomLink = styled.a`
-  font-weight: ${props => (props.pathname === props.href ? '700' : '400')};
+  font-weight: ${props => (props.pathname === props.href ? '600' : '400')};
 `
 CustomLink.displayName = 'CustomLink'
 
