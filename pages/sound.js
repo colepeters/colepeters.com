@@ -6,7 +6,7 @@ export default function Index() {
       <Header />
       <Container as='section'>
         <Heading as='h2' fontWeight='500'>
-          SOUND
+          Sound
         </Heading>
         <Text>
           Something about sound goes here. Some descriptive text et cetera. Wow.
