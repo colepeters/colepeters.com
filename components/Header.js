@@ -20,8 +20,7 @@ const pages = [
   },
   { name: 'Painting', href: '/painting' },
   { name: 'Photographs', href: '/photographs' },
-  { name: 'Info', href: '/info' },
-  { name: 'Contact', href: '/contact' },
+  { name: 'Information', href: '/information' },
 ]
 
 export default function Header() {
