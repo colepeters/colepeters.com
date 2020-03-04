@@ -30,9 +30,9 @@ export default function Sound() {
           Gomeisa, the dark ambient project Secret Girls, and my collaboration
           with Andreas Brandal as Museums of Sleep. I was also the co-founder
           and art director of{' '}
-          <Link href='https://www.discogs.com/label/181172-Prairie-Fire'>
-            <a>Prairie Fire Tapes</a>
-          </Link>
+          <a href='https://www.discogs.com/label/181172-Prairie-Fire'>
+            Prairie Fire Tapes
+          </a>
           .
         </Text>
       </Container>
