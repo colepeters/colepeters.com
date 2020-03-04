@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { Container, Header, Heading, Text } from '../components'
 
-export default function Index() {
+export default function Information() {
   return (
     <>
       <Header />
@@ -10,15 +10,14 @@ export default function Index() {
           Information
         </Heading>
         <Text>
-          My work is an attempt to feed back upon the natural, scientific and
-          cultural world around me. For the past several years, I have been
-          specifically drawn to investigations of quantum and classical physics,
-          the effects of entropy and decay in the physical world, and a general
-          exploration of reductive aesthetics.
+          My work is an attempt to feed back upon the world around me. My recent
+          output has centred on investigations of quantum and classical physics,
+          processes of entropy and decay, and a general exploration of reductive
+          aesthetics.
         </Text>
         <Text>
-          Paint and sound are my primary mediums at the moment. In the past, my
-          work has encompassed drawing, graffiti, graphic design, writing and
+          Paint and sound are my primary mediums. In the past, my work has
+          encompassed drawing, graffiti, graphic design, writing and
           photography.
         </Text>
         <Text>
@@ -31,7 +30,12 @@ export default function Index() {
           <Link href='https://burdocks.ca'>
             <a>Burdocks</a>
           </Link>
-          , before relocating to the UK eight months later.
+          , before relocating to the UK eight months later. You may also know me
+          as having lead the development of the{' '}
+          <Link href='https://firstthingsfirst2014.net/'>
+            <a>First Things First 2014</a>
+          </Link>{' '}
+          manifesto.
         </Text>
         <Text>
           I have been and am currently based in Canada, having lived and worked
