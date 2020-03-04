@@ -1,4 +1,3 @@
-import styled from 'styled-components'
 import { useRouter } from 'next/router'
 
 import { Box, Container, Heading, List, NavLink, Text } from '../components'

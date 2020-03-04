@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import { Container, Header, Heading, Text } from '../components'
 
 export default function Information() {
@@ -22,19 +21,16 @@ export default function Information() {
         </Text>
         <Text>
           From 2010&ndash;2013, I was the co-founder and art director of{' '}
-          <Link href='https://www.discogs.com/label/181172-Prairie-Fire'>
-            <a>Prairie Fire Tapes</a>
-          </Link>{' '}
+          <a href='https://www.discogs.com/label/181172-Prairie-Fire'>
+            Prairie Fire Tapes
+          </a>{' '}
           in addition to my own Stasis microlabel. In 2012, I co-founded the
-          design studio{' '}
-          <Link href='https://burdocks.ca'>
-            <a>Burdocks</a>
-          </Link>
-          , before relocating to the UK eight months later. You may also know me
-          as having lead the development of the{' '}
-          <Link href='https://firstthingsfirst2014.net/'>
-            <a>First Things First 2014</a>
-          </Link>{' '}
+          design studio <a href='https://burdocks.ca'>Burdocks</a>, before
+          relocating to the UK eight months later. You may also know me as
+          having lead the development of the{' '}
+          <a href='https://firstthingsfirst2014.net/'>
+            First Things First 2014
+          </a>{' '}
           manifesto.
         </Text>
         <Text>
