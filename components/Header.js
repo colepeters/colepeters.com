@@ -20,7 +20,20 @@ const pages = [
   },
   { name: 'Painting', href: '/painting' },
   { name: 'Photographs', href: '/photographs' },
-  { name: 'Information', href: '/information' },
+  {
+    name: 'Information',
+    href: '/information',
+    subpages: [
+      {
+        name: 'Newsletter',
+        href: '/newsletter',
+      },
+      {
+        name: 'Contact',
+        href: '/contact',
+      },
+    ],
+  },
 ]
 
 export default function Header() {
@@ -36,7 +49,13 @@ export default function Header() {
         <Heading as='h1' fontWeight='600' fontSize='0' letterSpacing='auto'>
           Cole Peters
         </Heading>
-        <Heading as='h2' fontWeight='400' fontSize='0' letterSpacing='auto'>
+        <Heading
+          as='h2'
+          fontWeight='400'
+          fontSize='0'
+          letterSpacing='auto'
+          pb={2}
+        >
           Artist working with paint and sound.
         </Heading>
       </hgroup>
