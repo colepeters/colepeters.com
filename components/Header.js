@@ -1,84 +1,87 @@
+import { AnimatePresence, motion } from 'framer-motion'
+import { useState } from 'react'
 import { useRouter } from 'next/router'
 
-import { Box, Container, Heading, List, NavLink, Text } from '../components'
+import Nav from './Nav'
+import { Box, Container, Heading, List, NavLink, Text } from './index'
 
-const pages = [
-  {
-    name: 'Sound',
-    href: '/sound',
-    subpages: [
-      {
-        name: 'Unfolding',
-        href: '/unfolding',
-      },
-      {
-        name: 'Discography',
-        href: '/discography',
-      },
-    ],
+const variants = {
+  show: {
+    x: '0rem',
+    opacity: 1,
+    transition: {
+      type: 'spring',
+      stiffness: 100,
+      damping: 20,
+      mass: 0.5,
+      delayChildren: 0.25,
+    },
   },
-  { name: 'Painting', href: '/painting' },
-  { name: 'Photographs', href: '/photographs' },
-  {
-    name: 'Information',
-    href: '/information',
-    subpages: [
-      {
-        name: 'Newsletter',
-        href: '/newsletter',
-      },
-      {
-        name: 'Contact',
-        href: '/contact',
-      },
-    ],
+  hide: {
+    x: '-1rem',
+    opacity: 0,
   },
-]
+}
+
+const MotionBox = motion.custom(Box)
+const MotionContainer = motion.custom(Container)
 
 export default function Header() {
+  const [navIsOpen, setNavOpen] = useState(false)
   const { pathname } = useRouter()
-  const showSubpages = page =>
-    page.subpages &&
-    (page.href === pathname ||
-      page.subpages.map(({ href }) => href).includes(pathname))
+  const routeIsIndex = pathname === '/'
 
   return (
-    <Container as='header' my={[4, null, 5]}>
-      <hgroup>
-        <Heading as='h1' fontWeight='600' fontSize='0' letterSpacing='auto'>
-          Cole Peters
-        </Heading>
-        <Heading
-          as='h2'
-          fontWeight='400'
-          fontSize='0'
-          letterSpacing='auto'
-          pb={2}
-        >
-          Artist working with paint and sound.
-        </Heading>
-      </hgroup>
-      <Box as='nav' pl={3} borderLeft='6px solid rgba(0,0,0,0.05)'>
-        <List reset pl={0} m={0}>
-          {pages.map(p => (
-            <Text as='li' mb={2} key={p.href} fontSize='0'>
-              <NavLink href={p.href}>{p.name}</NavLink>
-              {showSubpages(p) && (
-                <List reset pl={2} mt={2}>
-                  {p.subpages.map(sp => (
-                    <Text as='li' mb={2} key={sp.href} fontSize={0}>
-                      <Text as='span' color='rgba(0,0,0,0.25)'>
-                        └─{' '}
-                      </Text>
-                      <NavLink href={sp.href}>{sp.name}</NavLink>
-                    </Text>
-                  ))}
-                </List>
-              )}
-            </Text>
-          ))}
-        </List>
-      </Box>
-    </Container>
+    <>
+      <Container as='header' my={[4, null, 5]}>
+        <hgroup>
+          <Heading
+            as='h1'
+            fontWeight='600'
+            fontSize={3}
+            letterSpacing='auto'
+            my={3}
+          >
+            Cole Peters
+          </Heading>
+          <Heading
+            as='h2'
+            fontWeight='400'
+            fontSize={1}
+            letterSpacing='auto'
+            my={3}
+          >
+            Artist working with paint and sound.
+          </Heading>
+        </hgroup>
+        {routeIsIndex ? (
+          <Nav />
+        ) : (
+          <Box onClick={() => setNavOpen(true)}>MENU</Box>
+        )}
+      </Container>
+      <AnimatePresence>
+        {navIsOpen && (
+          <MotionBox
+            key='nav'
+            variants={variants}
+            initial='hide'
+            animate='show'
+            exit='hide'
+            position='fixed'
+            top={0}
+            right={0}
+            bottom={0}
+            left={0}
+            bg='rgba(255, 255, 255, 0.5)'
+            style={{ backdropFilter: 'blur(15px)' }}
+          >
+            <MotionContainer variants={variants}>
+              <Nav />
+            </MotionContainer>
+          </MotionBox>
+        )}
+      </AnimatePresence>
+    </>
   )
 }

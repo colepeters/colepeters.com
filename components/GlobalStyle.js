@@ -9,10 +9,11 @@ const GlobalStyle = createGlobalStyle`
   }
   body {
     font-size: 1rem;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, sans-serif;
+    font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, sans-serif;
     line-height: 1.5;
     padding-bottom: 12rem;
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
   p {
     margin: 0;
@@ -28,6 +29,10 @@ const GlobalStyle = createGlobalStyle`
   a:focus,
   a:active {
     color: black;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
   }
 `
 

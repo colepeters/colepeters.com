@@ -22,12 +22,10 @@ const BaseHeading = styled.h1`
 `
 
 const Heading = styled(BaseHeading).attrs(
-  ({ as, fontSize, letterSpacing, mb, mt, theme }) => ({
+  ({ as, fontSize, letterSpacing, theme }) => ({
     fontSize: fontSize || getFontSize(as),
     letterSpacing: letterSpacing || getLetterSpacing(as),
     lineHeight: theme.lineHeights.heading,
-    mt: mt || 3,
-    mb: mb || 3,
   })
 )``
 
