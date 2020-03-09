@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { useRouter } from 'next/router'
 
 import Nav from './Nav'
-import { Box, Container, Heading, List, NavLink, Text } from './index'
+import { Box, Button, Container, Heading, MotionBox } from './index'
 
 const variants = {
   show: {
@@ -12,8 +12,7 @@ const variants = {
     transition: {
       type: 'spring',
       stiffness: 100,
-      damping: 20,
-      mass: 0.5,
+      damping: 30,
       delayChildren: 0.25,
     },
   },
@@ -23,7 +22,6 @@ const variants = {
   },
 }
 
-const MotionBox = motion.custom(Box)
 const MotionContainer = motion.custom(Container)
 
 export default function Header() {
@@ -57,7 +55,7 @@ export default function Header() {
         {routeIsIndex ? (
           <Nav />
         ) : (
-          <Box onClick={() => setNavOpen(true)}>MENU</Box>
+          <Button onClick={() => setNavOpen(true)}>Contents</Button>
         )}
       </Container>
       <AnimatePresence>
@@ -73,8 +71,7 @@ export default function Header() {
             right={0}
             bottom={0}
             left={0}
-            bg='rgba(255, 255, 255, 0.5)'
-            style={{ backdropFilter: 'blur(15px)' }}
+            bg='white'
           >
             <MotionContainer variants={variants}>
               <Nav />
