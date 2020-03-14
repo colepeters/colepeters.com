@@ -6,9 +6,12 @@ const Button = styled.button`
   border: none;
   cursor: pointer;
   font-weight: 500;
-  letter-spacing: 0.1em;
   padding: 0;
-  text-transform: uppercase;
+  text-decoration: underline;
+
+  &:focus {
+    outline: none;
+  }
 `
 Button.displayName = 'Button'
 
