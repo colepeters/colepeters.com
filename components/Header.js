@@ -38,9 +38,9 @@ export default function Header() {
         <hgroup>
           <Heading
             as='h1'
-            fontWeight='600'
+            fontWeight='500'
             fontSize={3}
-            letterSpacing='auto'
+            letterSpacing='-0.025em'
             my={3}
           >
             Cole Peters
