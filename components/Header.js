@@ -6,9 +6,13 @@ import Nav from './Nav'
 import { Box, Button, Container, Heading, MotionBox } from './index'
 
 const variants = {
+  initial: {
+    x: '-1rem',
+    opacity: 0,
+  },
   show: {
     x: '0rem',
-    opacity: 1,
+    opacity: 0.99,
     transition: {
       type: 'spring',
       stiffness: 100,
@@ -17,7 +21,6 @@ const variants = {
     },
   },
   hide: {
-    x: '-1rem',
     opacity: 0,
   },
 }
@@ -55,7 +58,7 @@ export default function Header() {
         {routeIsIndex ? (
           <Nav />
         ) : (
-          <Button onClick={() => setNavOpen(true)}>Contents</Button>
+          <Button onClick={() => setNavOpen(true)}>Menu</Button>
         )}
       </Container>
       <AnimatePresence>
@@ -63,7 +66,7 @@ export default function Header() {
           <MotionBox
             key='nav'
             variants={variants}
-            initial='hide'
+            initial='initial'
             animate='show'
             exit='hide'
             position='fixed'
@@ -74,6 +77,9 @@ export default function Header() {
             bg='white'
           >
             <MotionContainer variants={variants}>
+              <Box mt={[4, null, 5]}>
+                <Button onClick={() => setNavOpen(false)}>Close menu</Button>
+              </Box>
               <Nav />
             </MotionContainer>
           </MotionBox>

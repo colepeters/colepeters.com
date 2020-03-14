@@ -2,8 +2,13 @@ import Link from 'next/Link'
 import styled from 'styled-components'
 import { useRouter } from 'next/router'
 
+const isActivePage = props => props.pathname === props.href
+
 const CustomLink = styled.a`
-  font-weight: ${props => (props.pathname === props.href ? '600' : '400')};
+  font-weight: ${props => (isActivePage(props) ? '600' : '400')};
+  text-decoration: ${props => (isActivePage(props) ? 'none' : 'underline')};
+  cursor: ${props => (isActivePage(props) ? 'initial' : 'pointer')};
+  pointer-events: ${props => (isActivePage(props) ? 'none' : 'auto')};
 `
 CustomLink.displayName = 'CustomLink'
 
