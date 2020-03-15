@@ -1,0 +1,5 @@
+{
+  "env": {
+    "PRISMIC_TOKEN": "@prismic-token"
+  }
+}

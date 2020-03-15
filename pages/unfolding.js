@@ -1,6 +1,17 @@
+import { Client } from '../prismic-configuration'
 import { Container, Header, Heading, Text } from '../components'
 
-export default function Unfolding() {
+export async function getStaticProps() {
+  const pageImage = await Client().getByUID('page_image', 'unfolding')
+  return {
+    props: {
+      pageImage,
+    },
+  }
+}
+
+export default function Unfolding({ pageImage }) {
+  console.log(pageImage)
   return (
     <>
       <Header />
