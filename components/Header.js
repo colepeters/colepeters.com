@@ -34,7 +34,7 @@ export default function Header() {
 
   return (
     <>
-      <Container as='header' my={[4, null, 5]}>
+      <Container as='header' my={[4, 5]}>
         <hgroup>
           <Heading
             as='h1'
@@ -77,7 +77,7 @@ export default function Header() {
             bg='white'
           >
             <MotionContainer variants={variants}>
-              <Box mt={[4, null, 5]}>
+              <Box mt={[4, 5]}>
                 <Button onClick={() => setNavOpen(false)}>Close menu</Button>
               </Box>
               <Nav />
