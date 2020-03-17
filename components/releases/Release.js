@@ -15,7 +15,7 @@ export default function Release({ release, ...props }) {
 
           <Tracklist tracks={release.data.tracks} />
 
-          <Text>{RichText.asText(release.data.description)}</Text>
+          <Text mt={4}>{RichText.asText(release.data.description)}</Text>
         </Box>
       </Box>
 

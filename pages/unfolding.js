@@ -31,9 +31,6 @@ export default function Unfolding({ releases }) {
         </Text>
 
         <Box mt={[4, 5]} as='section'>
-          <Heading as='h2' mb={[3, 4]}>
-            Releases
-          </Heading>
           {releases.map(release => (
             <Release
               release={release}

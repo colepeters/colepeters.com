@@ -9,12 +9,12 @@ const headingStyles = {
     letterSpacing: '-0.075em',
   },
   h2: {
-    fontSize: [3, 4, 5],
+    fontSize: [1, 2],
     fontWeight: 500,
-    letterSpacing: '-0.05em',
+    letterSpacing: '-0.0333em',
   },
   h3: {
-    fontSize: [2, 3, 4],
+    fontSize: [1, 2],
     fontWeight: 500,
     letterSpacing: '-0.0333em',
   },
