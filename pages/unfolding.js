@@ -1,8 +1,9 @@
 import Prismic from 'prismic-javascript'
 import { RichText } from 'prismic-reactjs'
 
+import Release from '../components/releases/Release'
 import { Client } from '../prismic-configuration'
-import { Container, Box, Header, Heading, Text } from '../components'
+import { Container, Box, Header, Heading, List, Text } from '../components'
 
 export async function getStaticProps() {
   const { results: releases } = await Client().query(
@@ -34,18 +35,10 @@ export default function Unfolding({ releases }) {
             Releases
           </Heading>
           {releases.map(release => (
-            <Box
-              as='article'
-              display='flex'
+            <Release
+              release={release}
               key={RichText.asText(release.data.title)}
-            >
-              <Box width='50%'>
-                <Heading as='h3'>{RichText.asText(release.data.title)}</Heading>
-              </Box>
-              <Box width='50%'>
-                <img src={release.data.cover.url} />
-              </Box>
-            </Box>
+            />
           ))}
         </Box>
       </Container>

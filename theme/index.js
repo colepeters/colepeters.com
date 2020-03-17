@@ -3,6 +3,7 @@ const theme = {
   colors: {
     white: 'rgba(255,255,255,1)',
     black: 'rgba(0,0,0,1)',
+    muted: '#777',
     lightGrey: '#eae6e6',
   },
   fontSizes: [
