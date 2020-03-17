@@ -6,7 +6,7 @@ const Text = styled.p`
   ${layout}
   ${space}
   ${typography}
-  max-width: 66ch;
+  max-width: 60ch;
 `
 
 Text.displayName = 'Text'
