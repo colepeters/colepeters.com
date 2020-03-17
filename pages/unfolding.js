@@ -21,7 +21,7 @@ export default function Unfolding({ releases }) {
     <>
       <Header />
       <Container as='section'>
-        <Heading mb={[4, null, 5]}>Unfolding</Heading>
+        <Heading mb={[4, 5]}>Unfolding</Heading>
         <Text>
           Unfolding is a project exploring interpretations of the physical world
           through the medium of sound. The work is informed by a diverse range
@@ -29,8 +29,8 @@ export default function Unfolding({ releases }) {
           of auditory stimuli.
         </Text>
 
-        <Box mt={[4, null, 5]} as='section'>
-          <Heading as='h2' mb={[3, null, 4]}>
+        <Box mt={[4, 5]} as='section'>
+          <Heading as='h2' mb={[3, 4]}>
             Releases
           </Heading>
           {releases.map(release => (

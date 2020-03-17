@@ -3,7 +3,7 @@ import { Box, List, Text, NavLink } from './index'
 
 export default function Nav() {
   return (
-    <Box as='nav' my={[4, null, 5]}>
+    <Box as='nav' my={[4, 5]}>
       <List reset pl={0} m={0} fontSize={0}>
         {contents.map(section => (
           <Text as='li' display='flex' mb={4} key={section.name}>

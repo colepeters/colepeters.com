@@ -5,7 +5,7 @@ export default function Biography() {
     <>
       <Header />
       <Container as='section'>
-        <Heading fontWeight='300' mb={[4, null, 5]}>
+        <Heading fontWeight='300' mb={[4, 5]}>
           Biography
         </Heading>
         <Text>
