@@ -1,12 +1,12 @@
 import { Container, Header, Heading, Text } from '../components'
 
-export default function Information() {
+export default function Biography() {
   return (
     <>
       <Header />
       <Container as='section'>
-        <Heading as='h2' fontWeight='500'>
-          Information
+        <Heading fontWeight='300' mb={[4, null, 5]}>
+          Biography
         </Heading>
         <Text>
           My work is an attempt to feed back upon the world around me. My recent
