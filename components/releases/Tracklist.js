@@ -2,7 +2,7 @@ import { List, Text, Box } from '../index'
 
 export default function Tracklist({ tracks }) {
   return (
-    <List reset as='ol' pl={0} my={3}>
+    <List reset as='ol' pl={0} my={4}>
       {tracks.map(({ name, length }, i) => (
         <Text as='li' key={name}>
           <Box display='inline-flex' width={1}>

@@ -1,6 +1,7 @@
 import { RichText } from 'prismic-reactjs'
 
 import Tracklist from './Tracklist'
+import htmlSerializer from '../../utils/htmlSerializer'
 import { Box, Heading, Text } from '../index'
 
 export default function Release({ release, ...props }) {
@@ -12,10 +13,11 @@ export default function Release({ release, ...props }) {
             {RichText.asText(release.data.title)}
           </Heading>
           <Text>{release.data.release_date.split('-').join('/')}</Text>
-
           <Tracklist tracks={release.data.tracks} />
-
-          <Text mt={4}>{RichText.asText(release.data.description)}</Text>
+          <RichText
+            render={release.data.description}
+            htmlSerializer={htmlSerializer}
+          />
         </Box>
       </Box>
 
