@@ -24,13 +24,14 @@ export default function Unfolding({ releases }) {
       <Container as='section'>
         <Heading mb={[4, 5]}>Unfolding</Heading>
         <Text>
-          Unfolding is a project exploring interpretations of the physical world
-          through the medium of sound. The work is informed by a diverse range
-          of inputs, from classical and quantum physics to the sheer physicality
-          of auditory stimuli.
+          Unfolding is a project exploring interpretations and examinations of
+          the physical world through the medium of sound. As an extension of my
+          artistic practice, it seeks to draw parallels between the fields of
+          science and art, with a particular focus on physicality and the nature
+          of perception.
         </Text>
 
-        <Box mt={[4, 5]} as='section'>
+        <Box mt={[4, 5, 6]} as='section'>
           {releases.map(release => (
             <Release
               release={release}
