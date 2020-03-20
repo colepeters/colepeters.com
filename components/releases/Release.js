@@ -12,7 +12,12 @@ export default function Release({ release, ...props }) {
           <Heading as='h3' mb={3}>
             {RichText.asText(release.data.title)}
           </Heading>
-          <Text>{release.data.release_date.split('-').join('/')}</Text>
+          <Text color='muted'>
+            {release.data.release_date.split('-').join('/')}
+          </Text>
+          <Text mt={0} color='muted'>
+            {release.data.format}
+          </Text>
           <Tracklist tracks={release.data.tracks} />
           <RichText
             render={release.data.description}
