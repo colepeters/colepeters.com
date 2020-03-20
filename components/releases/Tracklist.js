@@ -24,6 +24,8 @@ export default function Tracklist({ tracks }) {
             <Text
               as='span'
               color='muted'
+              fontSize={0}
+              lineHeight='1.6rem'
               style={{
                 fontVariantNumeric: 'tabular-nums slashed-zero',
               }}
