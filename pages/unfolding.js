@@ -17,7 +17,6 @@ export async function getStaticProps() {
 }
 
 export default function Unfolding({ releases }) {
-  console.log(releases)
   return (
     <>
       <Header />
@@ -26,9 +25,9 @@ export default function Unfolding({ releases }) {
         <Text>
           Unfolding is a project exploring interpretations and examinations of
           the physical world through the medium of sound. As an extension of my
-          artistic practice, it seeks to draw parallels between the fields of
-          science and art, with a particular focus on physicality and the nature
-          of perception.
+          artistic work as a whole, it seeks to draw parallels between the
+          fields of science and art, with a particular focus on physicality and
+          the nature of perception.
         </Text>
 
         <Box mt={[4, 5, 6]} as='section'>
