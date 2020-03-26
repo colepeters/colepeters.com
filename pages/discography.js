@@ -43,10 +43,10 @@ export default function Discography() {
         <Heading mb={[4, 5]}>Discography</Heading>
         <Text mb={[4, 5]}>
           I’ve been creating music in various forms and under different monikers
-          since the early 2000s. The following is a selection of the titles that
-          are worth mentioning. Recent releases and some older titles are
-          available for streaming and purchase on{' '}
-          <a href='https://colepeters.bandcamp.com'>my Bandcamp</a>.
+          since the early 2000s. The following is a selection of the titles
+          worth mentioning. Recent releases and some older titles are available
+          for streaming and purchase on{' '}
+          <a href='https://colepeters.bandcamp.com'>my&nbsp;Bandcamp</a>.
         </Text>
         <Entries collection={unfolding} />
         <Entries collection={eponymous} />
