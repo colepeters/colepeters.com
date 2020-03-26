@@ -121,7 +121,7 @@ export const secretGirls = {
 export const museumsOfSleep = {
   name: 'Museums of Sleep',
   description:
-    'Collaborative project with Andreas Brandal. A second album is still sleeping half-finished on a hard drive somewhere…!',
+    'Collaborative harsh noise wall project with the wonderful Andreas Brandal.',
   entries: [
     {
       title: 'S/T',
