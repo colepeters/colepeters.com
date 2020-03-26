@@ -8,7 +8,12 @@ export default function Footer() {
           All work © Cole Peters. All rights reserved.
         </Text>
         <Text fontSize={0} m={0}>
-          Thanks for visiting.
+          <a
+            href='https://www.youtube.com/watch?v=dMjJpAVZydI'
+            style={{ textDecoration: 'none', color: 'currentColor' }}
+          >
+            Splinter the empty silence. We make noise not&nbsp;music.
+          </a>
         </Text>
       </Box>
     </Container>
