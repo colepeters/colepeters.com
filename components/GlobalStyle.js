@@ -24,7 +24,6 @@ const GlobalStyle = createGlobalStyle`
     font-size: 1rem;
     font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, sans-serif;
     line-height: 1.5;
-    padding-bottom: 12rem;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }

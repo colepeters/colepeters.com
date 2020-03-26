@@ -3,6 +3,7 @@ import App from 'next/app'
 import React from 'react'
 import { ThemeProvider } from 'styled-components'
 
+import Footer from '../components/Footer'
 import GlobalStyle from '../components/GlobalStyle'
 import theme from '../theme'
 
@@ -13,6 +14,7 @@ export default class MyApp extends App {
       <ThemeProvider theme={theme}>
         <GlobalStyle />
         <Component {...pageProps} />
+        <Footer />
       </ThemeProvider>
     )
   }
