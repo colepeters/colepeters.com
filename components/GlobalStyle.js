@@ -65,6 +65,8 @@ const GlobalStyle = createGlobalStyle`
 
   img {
     max-width: 100%;
+    max-height: 95vh;
+    height: auto;
   }
 `
 
