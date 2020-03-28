@@ -8,13 +8,7 @@ export default function Gallery({ gallery }) {
       <Heading mb={[4, 5]}>{gallery.title}</Heading>
       {gallery.description && <RichText render={gallery.description} />}
 
-      <Text
-        fontSize={0}
-        color='muted'
-        mt={4}
-        fontStyle='italic'
-        display={['none', null, 'block']}
-      >
+      <Text fontSize={0} color='muted' mt={4} fontStyle='italic'>
         Tap images to zoom in; tap again to zoom out.
       </Text>
 
