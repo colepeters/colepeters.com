@@ -13,7 +13,7 @@ export default function GalleryImage({ src, alt, height, width }) {
   useEffect(() => {
     if (prevZoom && !isZoomed) {
       window.scrollTo({
-        top: imgRef?.current.offsetTop + 10,
+        top: imgRef?.current.offsetTop - 12,
         left: 0,
       })
     }
