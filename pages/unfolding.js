@@ -1,5 +1,4 @@
 import Prismic from 'prismic-javascript'
-import { RichText } from 'prismic-reactjs'
 
 import Release from '../components/releases/Release'
 import { Client } from '../prismic-configuration'
@@ -32,10 +31,7 @@ export default function Unfolding({ releases }) {
 
         <Box mt={[4, 5, 6]} as='section'>
           {releases.map(release => (
-            <Release
-              release={release}
-              key={RichText.asText(release.data.title)}
-            />
+            <Release release={release} key={release.data.title} />
           ))}
         </Box>
       </Container>
