@@ -42,6 +42,10 @@ const GlobalStyle = createGlobalStyle`
     margin-top: 1rem;
   }
 
+  strong {
+    font-weight: 600;
+  }
+
   ul, ol {
     list-style-position: inside;
   }
