@@ -70,6 +70,7 @@ export default function Header() {
             animate='show'
             exit='hide'
             position='fixed'
+            overflowY='scroll'
             top={0}
             right={0}
             bottom={0}
