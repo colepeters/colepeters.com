@@ -1,8 +1,10 @@
+import setTitle from '../utils/setTitle'
 import { Container, Header, Heading, Text } from '../components'
 
 export default function Biography() {
   return (
     <>
+      {setTitle('Biography')}
       <Header />
       <Container as='section'>
         <Heading mb={[4, 5]} position='relative' left={[0, null, '-4px']}>
