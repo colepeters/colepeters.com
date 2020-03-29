@@ -62,10 +62,6 @@ const contents = [
         href: '/biography',
       },
       {
-        name: 'Newsletter',
-        href: '/newsletter',
-      },
-      {
         name: 'Contact',
         href: '/contact',
       },
