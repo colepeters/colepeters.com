@@ -5,7 +5,9 @@ export default function Biography() {
     <>
       <Header />
       <Container as='section'>
-        <Heading mb={[4, 5]}>Biography</Heading>
+        <Heading mb={[4, 5]} position='relative' left={[0, null, '-4px']}>
+          Biography
+        </Heading>
         <Text>
           My work is an attempt to feed back upon the world around me. My recent
           output has centred on investigations of quantum and classical physics,

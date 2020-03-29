@@ -40,7 +40,9 @@ export default function Discography() {
     <>
       <Header />
       <Container as='section'>
-        <Heading mb={[4, 5]}>Discography</Heading>
+        <Heading mb={[4, 5]} position='relative' left={[0, null, '-4px']}>
+          Discography
+        </Heading>
         <Text mb={[4, 5]}>
           I’ve been creating music in various forms and under different monikers
           since the early 2000s. The following is a selection of the titles

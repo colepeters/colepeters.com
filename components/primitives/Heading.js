@@ -1,6 +1,6 @@
 import R from 'ramda'
 import styled from 'styled-components'
-import { space, typography } from 'styled-system'
+import { layout, position, space, typography } from 'styled-system'
 
 const headingStyles = {
   h1: {
@@ -21,6 +21,8 @@ const headingStyles = {
 }
 
 const BaseHeading = styled.h1`
+  ${layout}
+  ${position}
   ${space}
   ${typography}
 `

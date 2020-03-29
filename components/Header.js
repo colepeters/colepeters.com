@@ -74,6 +74,7 @@ export default function Header() {
             right={0}
             bottom={0}
             left={0}
+            zIndex={2}
             bg='white'
           >
             <MotionContainer variants={variants}>
