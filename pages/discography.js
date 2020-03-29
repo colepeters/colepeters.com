@@ -1,3 +1,4 @@
+import setTitle from '../utils/setTitle'
 import {
   unfolding,
   eponymous,
@@ -38,6 +39,7 @@ const Entries = ({ collection, ...props }) => {
 export default function Discography() {
   return (
     <>
+      {setTitle('Discography')}
       <Header />
       <Container as='section'>
         <Heading mb={[4, 5]} position='relative' left={[0, null, '-4px']}>

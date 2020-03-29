@@ -1,6 +1,7 @@
 import Prismic from 'prismic-javascript'
 
 import Release from '../components/releases/Release'
+import setTitle from '../utils/setTitle'
 import { Client } from '../prismic-configuration'
 import { Container, Box, Header, Heading, Text } from '../components'
 
@@ -18,6 +19,7 @@ export async function getStaticProps() {
 export default function Unfolding({ releases }) {
   return (
     <>
+      {setTitle('Unfolding')}
       <Header />
       <Container as='section'>
         <Heading mb={[4, 5]} position='relative' left={[0, null, '-4px']}>
