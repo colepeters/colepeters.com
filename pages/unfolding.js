@@ -20,7 +20,9 @@ export default function Unfolding({ releases }) {
     <>
       <Header />
       <Container as='section'>
-        <Heading mb={[4, 5]}>Unfolding</Heading>
+        <Heading mb={[4, 5]} position='relative' left={[0, null, '-4px']}>
+          Unfolding
+        </Heading>
         <Text>
           Unfolding is a project exploring interpretations and examinations of
           the physical world through the medium of sound. As an extension of my

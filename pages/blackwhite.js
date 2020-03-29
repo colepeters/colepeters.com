@@ -3,7 +3,7 @@ import { Client } from '../prismic-configuration'
 import { Container, Box, Header, Heading, RichText, Text } from '../components'
 
 export async function getStaticProps() {
-  const { data: gallery } = await Client().getByUID('gallery', 'delta-s')
+  const { data: gallery } = await Client().getByUID('gallery', 'blackwhite')
   return {
     props: {
       gallery,
@@ -11,7 +11,7 @@ export async function getStaticProps() {
   }
 }
 
-export default function DeltaS({ gallery }) {
+export default function Blackwhite({ gallery }) {
   return (
     <>
       <Header />

@@ -11,7 +11,7 @@ export async function getStaticProps() {
   }
 }
 
-export default function Unfolding({ gallery }) {
+export default function Paintings2019({ gallery }) {
   return (
     <>
       <Header />
