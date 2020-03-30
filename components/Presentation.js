@@ -11,6 +11,7 @@ export default function Presentation({ presentation }) {
   const dec = () => setIndex(prev => prev - 1)
   const current = entries[index]
   const next = entries[index + 1]
+  const prev = entries[index - 1]
 
   return (
     <>
@@ -20,25 +21,46 @@ export default function Presentation({ presentation }) {
 
       {description && <RichText render={description} />}
 
-      <Box onClick={inc} my={[4, 5]}>
-        <Box key={current.image.url}>
-          <Box key={current.image.url} as='figure' m={0}>
-            <img src={current.image.url} />
-            <figcaption>
-              <Text fontSize={0} my={3}>
-                {current.caption}
-                <Text
-                  as='span'
-                  display='block'
-                  color='muted'
-                  pr={2}
-                  style={{ fontVariantNumeric: 'tabular-nums' }}
-                >
-                  {index + 1} / {entries.length}
-                </Text>
+      <Box my={[4, 5]}>
+        <Box key={current.image.url} as='figure' m={0}>
+          <img src={current.image.url} />
+          <figcaption>
+            <Text fontSize={0} my={3}>
+              {current.caption}
+              <Text
+                as='span'
+                display='block'
+                color='muted'
+                pr={2}
+                style={{ fontVariantNumeric: 'tabular-nums' }}
+              >
+                {index + 1} / {entries.length}
               </Text>
-            </figcaption>
-          </Box>
+            </Text>
+          </figcaption>
+        </Box>
+        <Box my={4}>
+          <Button onClick={dec} disabled={!prev} fontSize={0}>
+            Previous
+          </Button>
+          <Text as='span' px={2}>
+            /
+          </Text>
+          <Button onClick={inc} disabled={!next} fontSize={0}>
+            Next
+          </Button>
+          {!next && (
+            <>
+              <Text as='span' px={2}>
+                /
+              </Text>
+              <Button onClick={() => setIndex(0)} fontSize={0}>
+                Restart
+              </Button>
+            </>
+          )}
+        </Box>
+        {next && (
           <Head>
             <link
               rel='preload'
@@ -47,7 +69,7 @@ export default function Presentation({ presentation }) {
               key={next.image.url}
             />
           </Head>
-        </Box>
+        )}
       </Box>
     </>
   )
