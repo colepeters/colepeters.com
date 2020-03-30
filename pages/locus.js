@@ -1,4 +1,4 @@
-import Presentation from '../components/Presentation/Presentation'
+import Presentation from '../components/Presentation'
 import setTitle from '../utils/setTitle'
 import { Client } from '../prismic-configuration'
 import { Container, Box, Header, Heading, RichText, Text } from '../components'
@@ -16,7 +16,6 @@ export async function getStaticProps() {
 }
 
 export default function Locus({ presentation }) {
-  // console.log(presentation)
   return (
     <>
       {setTitle('Locus')}

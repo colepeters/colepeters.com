@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 
-import usePrevious from '../../hooks/usePrevious'
-import { Box } from '../index'
+import usePrevious from '../hooks/usePrevious'
+import { Box } from './index'
 
 export default function GalleryImage({ src, alt, height, width }) {
   const imgRef = useRef(null)

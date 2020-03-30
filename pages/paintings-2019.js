@@ -1,4 +1,4 @@
-import Gallery from '../components/gallery/Gallery'
+import Gallery from '../components/Gallery'
 import setTitle from '../utils/setTitle'
 import { Client } from '../prismic-configuration'
 import { Container, Box, Header, Heading, RichText, Text } from '../components'
