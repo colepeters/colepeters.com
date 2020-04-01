@@ -1,9 +1,10 @@
 import { AnimatePresence, motion } from 'framer-motion'
+import { IoMdMenu, IoMdClose } from 'react-icons/io'
 import { useState } from 'react'
 import { useRouter } from 'next/router'
 
 import Nav from './Nav'
-import { Box, Button, Container, Heading, MotionBox } from './index'
+import { Box, Button, Container, Heading, MotionBox, Text } from './index'
 
 const variants = {
   initial: {
@@ -58,7 +59,12 @@ export default function Header() {
         {routeIsIndex ? (
           <Nav />
         ) : (
-          <Button onClick={() => setNavOpen(true)}>Menu</Button>
+          <Button onClick={() => setNavOpen(true)}>
+            <Text as='span' textDecoration='none' verticalAlign='middle' pr={2}>
+              <IoMdMenu />
+            </Text>
+            Menu
+          </Button>
         )}
       </Container>
       <AnimatePresence>
@@ -80,7 +86,17 @@ export default function Header() {
           >
             <MotionContainer variants={variants}>
               <Box mt={[4, 5]}>
-                <Button onClick={() => setNavOpen(false)}>Close menu</Button>
+                <Button onClick={() => setNavOpen(false)}>
+                  <Text
+                    as='span'
+                    textDecoration='none'
+                    verticalAlign='middle'
+                    pr={2}
+                  >
+                    <IoMdClose />
+                  </Text>
+                  Close menu
+                </Button>
               </Box>
               <Nav />
             </MotionContainer>
