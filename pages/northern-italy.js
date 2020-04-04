@@ -6,7 +6,7 @@ import { Container, Header } from '../components'
 export async function getStaticProps() {
   const { data: presentation } = await Client().getByUID(
     'presentation',
-    'locus'
+    'northern-italy'
   )
   return {
     props: {
@@ -15,10 +15,10 @@ export async function getStaticProps() {
   }
 }
 
-export default function Locus({ presentation }) {
+export default function NorthernItaly({ presentation }) {
   return (
     <>
-      {setTitle('Locus')}
+      {setTitle('Northern Italy')}
       <Header />
       <Container as='section'>
         <Presentation presentation={presentation} />
