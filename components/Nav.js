@@ -22,7 +22,7 @@ export default function Nav() {
             <Box flex='1'>
               <List reset pl={0} m={0}>
                 {section.pages.map(pg => (
-                  <Text as='li' key={pg.name}>
+                  <Text as='li' mb={1} key={pg.name}>
                     <NavLink href={pg.href}>{pg.name}</NavLink>
                   </Text>
                 ))}

@@ -8,6 +8,7 @@ const CustomLink = styled.a`
   font-weight: ${props => (isActivePage(props) ? '600' : '400')};
   text-decoration: ${props => (isActivePage(props) ? 'none' : 'underline')};
   cursor: ${props => (isActivePage(props) ? 'initial' : 'pointer')};
+  padding: ${props => props.theme.space[2]} 0;
   pointer-events: ${props => (isActivePage(props) ? 'none' : 'auto')};
 `
 CustomLink.displayName = 'CustomLink'

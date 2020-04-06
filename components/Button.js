@@ -18,7 +18,7 @@ const Button = styled.button`
   cursor: pointer;
   display: inline-block;
   font-weight: 500;
-  padding: 0;
+  padding: ${props => props.theme.space[2]} 0;
   text-decoration: underline;
 
   &:focus {
