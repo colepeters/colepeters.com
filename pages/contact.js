@@ -147,11 +147,9 @@ export default function Contact() {
               Thank you! Your message has been sent.
             </Text>
           </Text>
-
-          {error && (
-            <Text my={4}>{error}</Text>
-          )}
         )}
+
+        {error && <Text my={4}>{error}</Text>}
       </Container>
     </>
   )
