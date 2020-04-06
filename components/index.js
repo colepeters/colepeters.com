@@ -7,6 +7,8 @@ export { default as List } from './primitives/List'
 export { default as NavLink } from './NavLink'
 
 export { default as Button } from './Button'
+export { default as Input } from './Input'
+export { default as Textarea } from './Textarea'
 
 export { Container } from './layout'
 export { default as Header } from './Header'
