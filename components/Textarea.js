@@ -8,6 +8,7 @@ const StyledTextarea = styled(TextareaAutosize)`
   background: rgba(0, 0, 0, 0.05);
   border: none;
   border-bottom: 1px solid black;
+  border-radius: none;
   display: block;
   line-height: ${props => props.theme.lineHeights.body};
   padding: ${props => props.theme.space[2]};
