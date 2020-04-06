@@ -16,7 +16,7 @@ export default function Release({ release, ...props }) {
 
   return (
     <Box as='article' display='flex' flexWrap='wrap' {...props}>
-      <Box width={['100%', null, '50%']} order={[2, null, 1]}>
+      <Box width={['100%', null, '60%']} order={[2, null, 1]}>
         <Box pr={[0, null, 5]}>
           <Heading as='h2' mb={3}>
             {title}
@@ -43,10 +43,10 @@ export default function Release({ release, ...props }) {
         </Box>
       </Box>
 
-      <Box width={['100%', null, '50%']} order={[1, null, 2]} mb={3}>
+      <Box width={['100%', null, '40%']} order={[1, null, 2]} mb={3}>
         <Box
           display='flex'
-          p={[3, null, 4]}
+          p={3}
           mb={[3, null, 0]}
           bg='lightGrey'
           maxWidth={['35ch', null, 'none']}
