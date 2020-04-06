@@ -71,6 +71,7 @@ const GlobalStyle = createGlobalStyle`
     max-width: 100%;
     max-height: 95vh;
     height: auto;
+    align-self: center;
   }
 `
 
