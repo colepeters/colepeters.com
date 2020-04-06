@@ -45,8 +45,8 @@ const contents = [
         href: '/images-pour-rien',
       },
       {
-        name: 'In Protest',
-        href: '/in-protest',
+        name: 'Protest',
+        href: '/protest',
       },
       {
         name: 'Northern Italy',
