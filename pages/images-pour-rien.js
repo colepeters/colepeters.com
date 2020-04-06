@@ -18,7 +18,7 @@ export async function getStaticProps() {
 export default function ImagesPourRien({ presentation }) {
   return (
     <>
-      {setTitle('Locus')}
+      {setTitle('Images Pour Rien')}
       <Header />
       <Container as='section'>
         <Presentation presentation={presentation} />
