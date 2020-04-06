@@ -1,5 +1,6 @@
 {
   "env": {
-    "PRISMIC_TOKEN": "@prismic-token"
+    "PRISMIC_TOKEN": "@prismic-token",
+    "SENDGRID_KEY": "@sendgrid-key"
   }
 }
