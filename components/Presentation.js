@@ -69,6 +69,11 @@ export default function Presentation({ presentation }) {
             </>
           )}
         </Box>
+        {current.details && (
+          <Box fontSize={0}>
+            <RichText render={current.details} />
+          </Box>
+        )}
         {next && (
           <Head>
             <link
