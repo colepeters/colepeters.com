@@ -16,6 +16,10 @@ const otFeatures = [
 const GlobalStyle = createGlobalStyle`
   ${normalize}
 
+  * {
+    box-sizing: border-box;
+  }
+
   html {
     font-size: 100%;
   }
