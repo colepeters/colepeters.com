@@ -19,6 +19,16 @@ export default class MyApp extends App {
             content='width=device-width, initial-scale=1.0'
             key='viewport'
           />
+          <meta
+            name='description'
+            content='Artist working with paint and sound. Based in Canada.'
+            key='description'
+          />
+          <meta
+            name='google-site-verification'
+            content='GDtqLSMBd2NDQxNYP5Zg_4B1BNQQ93spmNyQgLTo9dE'
+            key='gsv'
+          />
         </Head>
         <GlobalStyle />
         <Component {...pageProps} />
