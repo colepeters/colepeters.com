@@ -57,7 +57,7 @@ export default function Contact() {
           Contact
         </Heading>
         <Text>
-          You’ll find regular updates on work on my{' '}
+          I post regular updates to my{' '}
           <a href='//instagram.com/tcptrs'>Instagram</a> and{' '}
           <a href='//twitter.com/tcptrs'>Twitter</a> feeds. If you’d like to get
           in touch, feel free to use the contact form below.
