@@ -24,7 +24,6 @@ export async function getStaticProps() {
 }
 
 export default function Unfolding({ releases }) {
-  console.dir(releases)
   return (
     <>
       {setTitle('Unfolding')}
