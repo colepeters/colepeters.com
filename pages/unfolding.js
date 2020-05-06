@@ -1,14 +1,21 @@
-import Prismic from 'prismic-javascript'
+// import Prismic from 'prismic-javascript'
 
 import Release from '../components/releases/Release'
 import setTitle from '../utils/setTitle'
-import { Client } from '../prismic-configuration'
 import { Container, Box, Header, Heading, Text } from '../components'
 
 export async function getStaticProps() {
-  const { results: releases } = await Client().query(
-    Prismic.Predicates.at('document.type', 'release')
-  )
+  const client = require('contentful').createClient({
+    space: process.env.CONTENTFUL_SPACE_ID,
+    accessToken: process.env.CONTENTFUL_TOKEN,
+  })
+
+  const { items } = await client.getEntries({
+    content_type: 'release',
+  })
+
+  const releases = items.map(({ fields }) => fields)
+
   return {
     props: {
       releases,
@@ -17,6 +24,7 @@ export async function getStaticProps() {
 }
 
 export default function Unfolding({ releases }) {
+  console.dir(releases)
   return (
     <>
       {setTitle('Unfolding')}
@@ -35,7 +43,7 @@ export default function Unfolding({ releases }) {
 
         <Box mt={[4, 5, 6]} as='section'>
           {releases.map(release => (
-            <Release release={release} key={release.data.title} />
+            <Release release={release} key={release.title} />
           ))}
         </Box>
       </Container>

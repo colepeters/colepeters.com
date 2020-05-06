@@ -1,18 +1,20 @@
+import ReactMarkdown from 'react-markdown'
 import { IoMdPlay } from 'react-icons/io'
 
 import Tracklist from './Tracklist'
-import { Box, Heading, RichText, Text } from '../index'
+import ctfImage from '../../utils/ctfImage'
+import { Box, Heading, Text } from '../index'
 
 export default function Release({ release, ...props }) {
   const {
-    title,
-    release_date,
-    format,
-    tracks,
-    description,
     cover,
+    description,
+    format,
     link,
-  } = release.data
+    releaseDate,
+    title,
+    tracks,
+  } = release
 
   return (
     <Box as='article' display='flex' flexWrap='wrap' {...props}>
@@ -21,7 +23,7 @@ export default function Release({ release, ...props }) {
           <Heading as='h2' mb={3}>
             {title}
           </Heading>
-          <Text color='muted'>{release_date.split('-').join('/')}</Text>
+          <Text color='muted'>{releaseDate.split('-').join('/')}</Text>
           <Text mt={0} color='muted'>
             {format}
           </Text>
@@ -39,7 +41,7 @@ export default function Release({ release, ...props }) {
               Stream and purchase on Bandcamp
             </a>
           </Text>
-          <RichText render={description} />
+          <ReactMarkdown source={description} renderers={{ paragraph: Text }} />
         </Box>
       </Box>
 
@@ -52,7 +54,7 @@ export default function Release({ release, ...props }) {
           maxWidth={['35ch', null, 'none']}
           boxShadow='0 4px 32px rgba(0,0,0,0.075), 0 2px 6px rgba(0,0,0,0.05)'
         >
-          <img src={cover.url} />
+          <img src={`${ctfImage(cover).url}?fl=progressive&w=800`} />
         </Box>
       </Box>
     </Box>
