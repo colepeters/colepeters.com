@@ -1,9 +1,9 @@
-import ReactMarkdown from 'react-markdown'
 import { IoMdPlay } from 'react-icons/io'
 
+import ReactMarkdown from './ReactMarkdown'
 import Tracklist from './Tracklist'
-import ctfImage from '../../utils/ctfImage'
-import { Box, Heading, Text } from '../index'
+import getCmsImage from '../utils/getCmsImage'
+import { Box, Heading, Text } from './index'
 
 export default function Release({ release, ...props }) {
   const {
@@ -41,7 +41,7 @@ export default function Release({ release, ...props }) {
               Stream and purchase on Bandcamp
             </a>
           </Text>
-          <ReactMarkdown source={description} renderers={{ paragraph: Text }} />
+          <ReactMarkdown source={description} />
         </Box>
       </Box>
 
@@ -54,7 +54,7 @@ export default function Release({ release, ...props }) {
           maxWidth={['35ch', null, 'none']}
           boxShadow='0 4px 32px rgba(0,0,0,0.075), 0 2px 6px rgba(0,0,0,0.05)'
         >
-          <img src={`${ctfImage(cover).url}?fl=progressive&w=800`} />
+          <img src={`${getCmsImage(cover).url}?fl=progressive&w=800`} />
         </Box>
       </Box>
     </Box>

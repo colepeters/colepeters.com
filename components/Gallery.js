@@ -1,11 +1,12 @@
 import { IoIosExpand } from 'react-icons/io'
 
-import { Heading, RichText, Box, Text } from './index'
+import ReactMarkdown from './ReactMarkdown'
+import getCmsImage from '../utils/getCmsImage'
+import { Heading, Box, Text } from './index'
 
 import GalleryImage from './GalleryImage'
 
-export default function Gallery({ gallery }) {
-  const { title, year, description, entries } = gallery
+export default function Gallery({ title, year, description, entries }) {
   return (
     <>
       <Heading
@@ -20,7 +21,7 @@ export default function Gallery({ gallery }) {
           {year}
         </Text>
       )}
-      {description && <RichText render={description} />}
+      {description && <ReactMarkdown source={description} />}
 
       <Text fontSize={0} color='muted' mt={4} fontStyle='italic'>
         <Text as='span' pr={2} verticalAlign='middle'>
@@ -30,12 +31,12 @@ export default function Gallery({ gallery }) {
       </Text>
 
       {entries.map(e => (
-        <Box as='figure' key={e.image.alt || e.name} mx={0} mt={[5, 6]}>
-          <GalleryImage src={e.image.url} alt={e.image.alt || e.name} />
+        <Box as='figure' key={getCmsImage(e).title} mx={0} mt={[5, 6]}>
+          <GalleryImage src={getCmsImage(e).url} alt={getCmsImage(e).title} />
           <Text as='figcaption'>
-            <Text>{e.name}</Text>
+            <Text>{getCmsImage(e).title}</Text>
             <Box fontSize={0} color='muted'>
-              <RichText render={e.caption} />
+              <ReactMarkdown source={getCmsImage(e).description} />
             </Box>
           </Text>
         </Box>

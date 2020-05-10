@@ -1,4 +1,4 @@
-import { List, Text, Box } from '../index'
+import { List, Text, Box } from './index'
 
 export default function Tracklist({ tracks }) {
   return (

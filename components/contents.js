@@ -13,7 +13,7 @@ const contents = [
     ],
   },
   {
-    name: 'Painting',
+    name: 'Paintings',
     pages: [
       {
         name: '∆S',
