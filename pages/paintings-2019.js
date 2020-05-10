@@ -1,10 +1,12 @@
 import Gallery from '../components/Gallery'
+import createCmsClient from '../services/createCmsClient'
 import setTitle from '../utils/setTitle'
-import { Client } from '../prismic-configuration'
 import { Container, Header } from '../components'
 
 export async function getStaticProps() {
-  const { data: gallery } = await Client().getByUID('gallery', 'paintings-2019')
+  const client = createCmsClient()
+  const gallery = await client.getEntry('2tMlrpP10ShMI5CzmtbgVq')
+
   return {
     props: {
       gallery,
@@ -18,7 +20,7 @@ export default function Paintings2019({ gallery }) {
       {setTitle('Paintings 2019')}
       <Header />
       <Container as='section'>
-        <Gallery gallery={gallery} />
+        <Gallery {...gallery.fields} />
       </Container>
     </>
   )

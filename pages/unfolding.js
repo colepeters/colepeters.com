@@ -1,14 +1,10 @@
-// import Prismic from 'prismic-javascript'
-
-import Release from '../components/releases/Release'
+import Release from '../components/Release'
+import createCmsClient from '../services/createCmsClient'
 import setTitle from '../utils/setTitle'
 import { Container, Box, Header, Heading, Text } from '../components'
 
 export async function getStaticProps() {
-  const client = require('contentful').createClient({
-    space: process.env.CONTENTFUL_SPACE_ID,
-    accessToken: process.env.CONTENTFUL_TOKEN,
-  })
+  const client = createCmsClient()
 
   const { items } = await client.getEntries({
     content_type: 'release',
