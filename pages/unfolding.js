@@ -16,6 +16,7 @@ export async function getStaticProps() {
     props: {
       releases,
     },
+    unstable_revalidate: 1,
   }
 }
 
