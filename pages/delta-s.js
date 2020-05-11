@@ -11,6 +11,7 @@ export async function getStaticProps() {
     props: {
       gallery,
     },
+    unstable_revalidate: 1,
   }
 }
 
