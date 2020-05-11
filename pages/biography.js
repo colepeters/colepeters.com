@@ -12,9 +12,9 @@ export default function Biography() {
         </Heading>
         <Text>
           My work is an attempt to feed back upon the world around me. My recent
-          output has centred on investigations of quantum and classical physics,
-          processes of entropy and decay, and a general exploration of reductive
-          aesthetics.
+          output has been motivated by investigations of quantum and classical
+          physics, processes of entropy and decay, and a general exploration of
+          reductive aesthetics.
         </Text>
         <Text>
           Paint and sound are my primary mediums. In the past, my work has
