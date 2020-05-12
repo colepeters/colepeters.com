@@ -30,9 +30,7 @@ export default function Unfolding({ releases }) {
           Unfolding
         </Heading>
         <Text>
-          Unfolding is a project exploring interpretations of the physical world
-          through the medium of sound, drawing on aspects of experimental music,
-          brutalist aesthetics and the physical sciences.
+          Unfolding is the guise of my current work in music and sound art.
         </Text>
 
         <Box mt={[4, 5, 6]} as='section'>
