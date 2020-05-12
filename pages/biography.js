@@ -11,10 +11,13 @@ export default function Biography() {
           Biography
         </Heading>
         <Text>
-          My work is an attempt to feed back upon the world around me. My recent
-          output has been motivated by investigations of quantum and classical
-          physics, processes of entropy and decay, and a general exploration of
-          reductive aesthetics.
+          I am a multidisciplinary artist obsessed with physicality, form and
+          the physical sciences. My work is driven by a fascination with the
+          study of matter, space and time, and the ways in which these elements
+          shape our universe. By drawing inspiration from specific aspects of
+          these themes, my objective is to feed back upon the nature of reality
+          through compositions that encourage the contemplation of material
+          properties and processes.
         </Text>
         <Text>
           Paint and sound are my primary mediums. In the past, my work has
