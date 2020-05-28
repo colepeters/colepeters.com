@@ -4,7 +4,7 @@ import { layout, position, space, typography } from 'styled-system'
 
 const headingStyles = {
   h1: {
-    fontSize: [5, 6, 7],
+    fontSize: [6, null, 7],
     fontWeight: [500, null, 300],
     letterSpacing: '-0.075em',
   },
