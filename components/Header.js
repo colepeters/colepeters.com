@@ -41,7 +41,7 @@ export default function Header() {
             <Heading
               as='h1'
               fontWeight='500'
-              fontSize={[1, 3]}
+              fontSize={[2, 3]}
               letterSpacing='-0.025em'
               mt={3}
               mb={2}
@@ -51,7 +51,7 @@ export default function Header() {
             <Heading
               as='h2'
               fontWeight='400'
-              fontSize={[0, 1]}
+              fontSize={1}
               letterSpacing='auto'
               mb={3}
             >
