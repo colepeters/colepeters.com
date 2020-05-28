@@ -36,36 +36,53 @@ export default function Header() {
   return (
     <>
       <Container as='header' my={[4, 5]}>
-        <hgroup>
-          <Heading
-            as='h1'
-            fontWeight='500'
-            fontSize={3}
-            letterSpacing='-0.025em'
-            my={3}
-          >
-            Cole Peters
-          </Heading>
-          <Heading
-            as='h2'
-            fontWeight='400'
-            fontSize={1}
-            letterSpacing='auto'
-            my={3}
-          >
-            Artist working with paint and sound.
-          </Heading>
-        </hgroup>
-        {routeIsIndex ? (
-          <Nav />
-        ) : (
-          <Button onClick={() => setNavOpen(true)}>
-            <Text as='span' textDecoration='none' verticalAlign='middle' pr={2}>
-              <IoMdMenu />
-            </Text>
-            Menu
-          </Button>
-        )}
+        <Box position='relative'>
+          <hgroup>
+            <Heading
+              as='h1'
+              fontWeight='500'
+              fontSize={[1, 3]}
+              letterSpacing='-0.025em'
+              mt={3}
+              mb={2}
+            >
+              Cole Peters
+            </Heading>
+            <Heading
+              as='h2'
+              fontWeight='400'
+              fontSize={[0, 1]}
+              letterSpacing='auto'
+              mb={3}
+            >
+              Visual/sound artist
+            </Heading>
+          </hgroup>
+          {routeIsIndex ? (
+            <Nav />
+          ) : (
+            <Box
+              position='absolute'
+              top={['-0.625rem', '-0.25rem']}
+              right='-1rem'
+            >
+              <Button onClick={() => setNavOpen(true)} lineHeight='heading'>
+                <Box
+                  as='span'
+                  textDecoration='none'
+                  px={[3, 2]}
+                  position='relative'
+                  top='2px'
+                >
+                  <IoMdMenu />
+                </Box>
+                <Text as='span' display={['none', 'inline']} fontWeight={400}>
+                  Menu
+                </Text>
+              </Button>
+            </Box>
+          )}
+        </Box>
       </Container>
       <AnimatePresence>
         {navIsOpen && (
@@ -84,18 +101,25 @@ export default function Header() {
             zIndex={2}
             bg='white'
           >
-            <MotionContainer variants={variants}>
-              <Box mt={[4, 5]}>
+            <MotionContainer variants={variants} position='relative'>
+              <Box
+                position='absolute'
+                top={['-0.625rem', '-0.25rem']}
+                right={0}
+              >
                 <Button onClick={() => setNavOpen(false)}>
-                  <Text
+                  <Box
                     as='span'
                     textDecoration='none'
-                    verticalAlign='middle'
-                    pr={2}
+                    px={[3, 2]}
+                    position='relative'
+                    top='2px'
                   >
                     <IoMdClose />
+                  </Box>
+                  <Text as='span' display={['none', 'inline']} fontWeight={400}>
+                    Close
                   </Text>
-                  Close menu
                 </Button>
               </Box>
               <Nav />
