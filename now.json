@@ -1,10 +1,8 @@
 {
-  "build": {
-    "env": {
-      "PRISMIC_TOKEN": "@prismic-token",
-      "SENDGRID_KEY": "@sendgrid-key",
-      "CONTENTFUL_SPACE_ID": "@contentful-space-id",
-      "CONTENTFUL_TOKEN": "@contentful-token"
-    }
+  "env": {
+    "PRISMIC_TOKEN": "@prismic-token",
+    "SENDGRID_KEY": "@sendgrid-key",
+    "CONTENTFUL_SPACE_ID": "@contentful-space-id",
+    "CONTENTFUL_TOKEN": "@contentful-token"
   }
 }
