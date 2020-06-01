@@ -30,7 +30,14 @@ export default function Unfolding({ releases }) {
           Unfolding
         </Heading>
         <Text>
-          Unfolding is the guise of my current work in music and sound art.
+          Unfolding is the guise of my current work in music and sound art. With
+          a focus on texture, space, weight and structure, I seek to create
+          sculptural works of sound that emphasise the contemplation of sensory
+          experience.
+        </Text>
+        <Text>
+          For releases from previous projects, see{' '}
+          <a href='/discography'>my&nbsp;discography</a>.
         </Text>
 
         <Box mt={[4, 5, 6]} as='section'>

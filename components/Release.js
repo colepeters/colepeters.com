@@ -50,7 +50,7 @@ export default function Release({ release, ...props }) {
           display='flex'
           p={3}
           mb={[3, null, 0]}
-          bg='lightGrey'
+          bg='white'
           maxWidth={['35ch', null, 'none']}
           boxShadow='0 4px 32px rgba(0,0,0,0.075), 0 2px 6px rgba(0,0,0,0.05)'
         >
