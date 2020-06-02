@@ -52,7 +52,7 @@ export default function Release({ release, ...props }) {
           mb={[3, null, 0]}
           bg='white'
           maxWidth={['35ch', null, 'none']}
-          boxShadow='0 4px 32px rgba(0,0,0,0.075), 0 2px 6px rgba(0,0,0,0.05)'
+          boxShadow='0 4px 32px rgba(0,0,0,0.075), 0 2px 6px -2px rgba(0,0,0,0.2)'
         >
           <img src={`${getCmsImage(cover).url}?fl=progressive&w=800`} />
         </Box>
