@@ -46,7 +46,13 @@ export default function Header() {
               mt={3}
               mb={2}
             >
-              Cole Peters
+              {routeIsIndex ? (
+                'Cole Peters'
+              ) : (
+                <a href='/' style={{ textDecoration: 'none' }}>
+                  Cole Peters
+                </a>
+              )}
             </Heading>
             <Heading
               as='h2'
