@@ -1,15 +1,15 @@
 import Head from 'next/head'
 import { useState } from 'react'
 
+import ReactMarkdown from './ReactMarkdown'
+import getCmsImage from '../utils/getCmsImage'
 import { Box, Button, Heading, RichText, Text } from './index'
 
-export default function Presentation({ presentation }) {
-  const { title, description, entries, year } = presentation
-
+export default function Presentation({ title, description, entries, year }) {
   const [index, setIndex] = useState(0)
   const inc = () => setIndex(prev => prev + 1)
   const dec = () => setIndex(prev => prev - 1)
-  const current = entries[index]
+  const current = getCmsImage(entries[index])
   const next = entries[index + 1]
   const prev = entries[index - 1]
 
@@ -24,30 +24,28 @@ export default function Presentation({ presentation }) {
       </Heading>
       {year && (
         <Text color='muted' mb={[4, 5]}>
-          {year}
+          {/* Pad en dashes with hair spaces */}
+          {year.replace('–', ' – ')}
         </Text>
       )}
 
-      {description && <RichText render={description} />}
+      {description && <ReactMarkdown source={description} />}
 
       <Box my={[4, 5]}>
-        <Box key={current.image.url} as='figure' m={0}>
-          <img src={current.image.url} style={{ maxHeight: '75vh' }} />
+        <Box key={current.url} as='figure' m={0}>
+          <img src={current.url} style={{ maxHeight: '75vh' }} />
           <figcaption>
-            <Text fontSize={0} my={3}>
-              {current.caption}
-              <Text
-                as='span'
-                display='block'
-                color='muted'
-                pr={2}
-                style={{ fontVariantNumeric: 'tabular-nums' }}
-              >
-                {index + 1} / {entries.length}
-              </Text>
+            <Text fontSize={0} my={3} fontWeight='500'>
+              {current.title}
             </Text>
+            {current.description && (
+              <Box fontSize={0} color='muted'>
+                <ReactMarkdown source={current.description} />
+              </Box>
+            )}
           </figcaption>
         </Box>
+
         <Box my={4}>
           <Button onClick={dec} disabled={!prev} fontSize={0}>
             Previous
@@ -68,19 +66,25 @@ export default function Presentation({ presentation }) {
               </Button>
             </>
           )}
+          <Text
+            as='span'
+            display='block'
+            color='muted'
+            pr={2}
+            fontSize={0}
+            style={{ fontVariantNumeric: 'tabular-nums' }}
+          >
+            {index + 1} / {entries.length}
+          </Text>
         </Box>
-        {current.details && (
-          <Box fontSize={0}>
-            <RichText render={current.details} />
-          </Box>
-        )}
+
         {next && (
           <Head>
             <link
               rel='preload'
               as='image'
-              href={next.image.url}
-              key={next.image.url}
+              href={getCmsImage(next).url}
+              key={getCmsImage(next).url}
             />
           </Head>
         )}
