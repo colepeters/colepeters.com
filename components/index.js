@@ -12,5 +12,3 @@ export { default as Textarea } from './Textarea'
 
 export { Container } from './layout'
 export { default as Header } from './Header'
-
-export { default as RichText } from './RichText'
