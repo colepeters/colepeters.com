@@ -1,17 +1,16 @@
 import Presentation from '../components/Presentation'
+import createCmsClient from '../services/createCmsClient'
 import setTitle from '../utils/setTitle'
-import { Client } from '../prismic-configuration'
 import { Container, Header } from '../components'
 
 export async function getStaticProps() {
-  const { data: presentation } = await Client().getByUID(
-    'presentation',
-    'images-pour-rien'
-  )
+  const client = createCmsClient()
+  const presentation = await client.getEntry('4mNdD52wWLYXHsskc0ZdGI')
   return {
     props: {
       presentation,
     },
+    unstable_revalidate: 1,
   }
 }
 
@@ -21,7 +20,7 @@ export default function ImagesPourRien({ presentation }) {
       {setTitle('Images Pour Rien')}
       <Header />
       <Container as='section'>
-        <Presentation presentation={presentation} />
+        <Presentation {...presentation.fields} />
       </Container>
     </>
   )

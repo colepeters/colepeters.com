@@ -1,17 +1,16 @@
 import Presentation from '../components/Presentation'
+import createCmsClient from '../services/createCmsClient'
 import setTitle from '../utils/setTitle'
-import { Client } from '../prismic-configuration'
 import { Container, Header } from '../components'
 
 export async function getStaticProps() {
-  const { data: presentation } = await Client().getByUID(
-    'presentation',
-    'protest'
-  )
+  const client = createCmsClient()
+  const presentation = await client.getEntry('DGMYZMhs7eWeJHBLeWsOZ')
   return {
     props: {
       presentation,
     },
+    unstable_revalidate: 1,
   }
 }
 
@@ -21,7 +20,7 @@ export default function Protest({ presentation }) {
       {setTitle('Protest')}
       <Header />
       <Container as='section'>
-        <Presentation presentation={presentation} />
+        <Presentation {...presentation.fields} />
       </Container>
     </>
   )
