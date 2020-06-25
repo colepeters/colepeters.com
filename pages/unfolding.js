@@ -30,9 +30,10 @@ export default function Unfolding({ releases }) {
           Unfolding
         </Heading>
         <Text>
-          Unfolding is the guise of my current work in music and sound art. With
-          a focus on texture, space, weight and structure, I seek to create
-          compositions which emphasise the contemplation of sensory experience.
+          Unfolding is the guise of my current work in music and sound art.
+          Building on the methods and motivations of musique concrète, drone,
+          noise, techno and experimental music, the project focuses on themes of
+          texture, space, weight, structure, and sensory&nbsp;experience.
         </Text>
         <Text>
           For releases from previous projects, see{' '}
