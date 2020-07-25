@@ -5,8 +5,8 @@ import { layout, position, space, typography } from 'styled-system'
 const headingStyles = {
   h1: {
     fontSize: [6, null, 7],
-    fontWeight: [500, null, 300],
-    letterSpacing: ['-0.0666em', '-0.075em'],
+    fontWeight: 400,
+    letterSpacing: ['-0.05', null, '-0.0666em'],
   },
   h2: {
     fontSize: [2, 3],
