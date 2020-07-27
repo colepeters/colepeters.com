@@ -6,7 +6,7 @@ const headingStyles = {
   h1: {
     fontSize: [6, null, 7],
     fontWeight: 400,
-    letterSpacing: ['-0.05', null, '-0.0666em'],
+    letterSpacing: ['-0.05em', null, '-0.0666em'],
   },
   h2: {
     fontSize: [2, 3],
