@@ -10,7 +10,7 @@ export async function getStaticProps() {
     props: {
       presentation,
     },
-    unstable_revalidate: 1,
+    revalidate: 1,
   }
 }
 
