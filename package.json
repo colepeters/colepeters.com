@@ -18,7 +18,7 @@
     "babel-plugin-ramda": "^2.0.0",
     "contentful": "~7.14.4",
     "framer-motion": "~1.8.4",
-    "next": "~9.5.2",
+    "next": "~9.5.4",
     "nodemailer": "~6.4.6",
     "nodemailer-sendgrid-transport": "~0.2.0",
     "ramda": "^0.27.0",
