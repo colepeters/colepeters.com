@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import Presentation from '../components/Presentation'
 import createCmsClient from '../services/createCmsClient'
 import setTitle from '../utils/setTitle'

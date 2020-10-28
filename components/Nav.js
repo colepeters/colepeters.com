@@ -1,5 +1,9 @@
 import contents from './contents'
-import { Box, List, Text, NavLink } from './index'
+
+import Box from './primitives/Box'
+import List from './primitives/List'
+import Text from './primitives/Text'
+import NavLink from './NavLink'
 
 export default function Nav() {
   return (

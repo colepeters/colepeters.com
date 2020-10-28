@@ -3,8 +3,13 @@ import { IoMdMenu, IoMdClose } from 'react-icons/io'
 import { useState } from 'react'
 import { useRouter } from 'next/router'
 
+import Box from './primitives/Box'
+import Button from './Button'
+import Heading from './primitives/Heading'
+import MotionBox from './primitives/MotionBox'
 import Nav from './Nav'
-import { Box, Button, Container, Heading, MotionBox, Text } from './index'
+import Text from './primitives/Text'
+import { Container } from './layout'
 
 const variants = {
   initial: {
