@@ -1,4 +1,3 @@
-import R from 'ramda'
 import styled from 'styled-components'
 import { layout, position, space, typography } from 'styled-system'
 

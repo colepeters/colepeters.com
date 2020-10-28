@@ -1,4 +1,6 @@
-import { List, Text, Box } from './index'
+import PropTypes from 'prop-types'
+
+import { List, Text } from './index'
 
 export default function Tracklist({ tracks }) {
   return (
@@ -22,4 +24,8 @@ export default function Tracklist({ tracks }) {
       ))}
     </List>
   )
+}
+
+Tracklist.propTypes = {
+  tracks: PropTypes.arrayOf(PropTypes.string).isRequired,
 }

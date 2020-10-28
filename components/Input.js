@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { Text } from './index'
+import Text from './primitives/Text'
 
 const StyledInput = styled.input`
   appearance: none;

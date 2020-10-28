@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import Gallery from '../components/Gallery'
 import createCmsClient from '../services/createCmsClient'
 import setTitle from '../utils/setTitle'

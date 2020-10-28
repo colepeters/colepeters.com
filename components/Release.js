@@ -1,3 +1,5 @@
+import Image from 'next/image'
+import PropTypes from 'prop-types'
 import { IoMdPlay } from 'react-icons/io'
 
 import ReactMarkdown from './ReactMarkdown'
@@ -15,6 +17,8 @@ export default function Release({ release, ...props }) {
     title,
     tracks,
   } = release
+
+  const coverImage = getCmsImage(cover)
 
   return (
     <Box as='article' display='flex' flexWrap='wrap' {...props}>
@@ -54,9 +58,21 @@ export default function Release({ release, ...props }) {
           maxWidth={['35ch', null, 'none']}
           boxShadow='0 4px 32px rgba(0,0,0,0.075), 0 2px 6px -2px rgba(0,0,0,0.2)'
         >
-          <img src={`${getCmsImage(cover).url}?fl=progressive&w=800`} />
+          <Image src={`${coverImage.url}?fl=progressive&w=800`} width='800' height='800' />
         </Box>
       </Box>
     </Box>
   )
+}
+
+Release.propTypes = {
+  release: PropTypes.shape({
+    cover: PropTypes.object.isRequired,
+    description: PropTypes.string.isRequired,
+    format: PropTypes.string.isRequired,
+    link: PropTypes.string.isRequired,
+    releaseDate: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    tracks: PropTypes.arrayOf(PropTypes.string).isRequired
+  }).isRequired
 }

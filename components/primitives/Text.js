@@ -4,6 +4,7 @@ import { color, layout, position, space, typography } from 'styled-system'
 const Text = styled.p`
   ${color}
   ${layout}
+  ${position}
   ${space}
   ${typography}
   max-width: 60ch;

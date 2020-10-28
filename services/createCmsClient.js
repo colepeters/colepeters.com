@@ -1,3 +1,4 @@
+/* eslint-disable global-require */
 const createCmsClient = () =>
   require('contentful').createClient({
     space: process.env.CONTENTFUL_SPACE_ID,

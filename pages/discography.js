@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import setTitle from '../utils/setTitle'
 import {
   unfolding,
