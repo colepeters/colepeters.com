@@ -1,9 +1,10 @@
+import PropTypes from 'prop-types'
 import { useEffect, useRef, useState } from 'react'
 
 import usePrevious from '../hooks/usePrevious'
 import { Box } from './index'
 
-export default function GalleryImage({ src, alt, height, width }) {
+export default function GalleryImage({ image }) {
   const imgRef = useRef(null)
   const [isZoomed, setIsZoomed] = useState(false)
   const toggleZoom = () => setIsZoomed(prev => !prev)
@@ -28,8 +29,8 @@ export default function GalleryImage({ src, alt, height, width }) {
       }}
     >
       <img
-        src={src}
-        alt={alt}
+        src={image.url}
+        alt={image.title}
         ref={imgRef}
         style={{
           maxHeight: isZoomed ? '225vh' : '95vh',
@@ -38,4 +39,11 @@ export default function GalleryImage({ src, alt, height, width }) {
       />
     </Box>
   )
+}
+
+GalleryImage.propTypes = {
+  image: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    url: PropTypes.string.isRequired,
+  }).isRequired
 }

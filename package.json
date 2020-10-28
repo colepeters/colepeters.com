@@ -18,9 +18,10 @@
     "babel-plugin-ramda": "^2.0.0",
     "contentful": "~7.14.4",
     "framer-motion": "~1.8.4",
-    "next": "~9.5.4",
+    "next": "^10.0.0",
     "nodemailer": "~6.4.6",
-    "nodemailer-sendgrid-transport": "~0.2.0",
+    "nodemailer-mailgun-transport": "^2.0.1",
+    "prop-types": "^15.7.2",
     "ramda": "^0.27.0",
     "react": "^16.12.0",
     "react-autosize-textarea": "~7.0.0",
@@ -34,6 +35,13 @@
   },
   "devDependencies": {
     "babel-plugin-styled-components": "^1.10.7",
+    "eslint": "^7.12.1",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0",
     "prettier": "1.19.1"
   }
 }

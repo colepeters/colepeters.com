@@ -1,7 +1,7 @@
 import TextareaAutosize from 'react-autosize-textarea'
 import styled from 'styled-components'
 
-import { Text } from './index'
+import Text from './primitives/Text'
 
 const StyledTextarea = styled(TextareaAutosize)`
   appearance: none;
