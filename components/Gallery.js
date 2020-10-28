@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import { IoIosExpand } from 'react-icons/io'
 
 import ReactMarkdown from './ReactMarkdown'
@@ -32,7 +33,7 @@ export default function Gallery({ title, year, description, entries }) {
 
       {entries.map(e => (
         <Box as='figure' key={getCmsImage(e).title} mx={0} mt={[5, 6]}>
-          <GalleryImage src={getCmsImage(e).url} alt={getCmsImage(e).title} />
+          <GalleryImage image={getCmsImage(e)} />
           <Text as='figcaption'>
             <Text>{getCmsImage(e).title}</Text>
             <Box fontSize={0} color='muted'>
@@ -43,4 +44,17 @@ export default function Gallery({ title, year, description, entries }) {
       ))}
     </>
   )
+}
+
+Gallery.propTypes = {
+  description: PropTypes.string.isRequired,
+  entries: PropTypes.arrayOf(PropTypes.shape({
+    description: PropTypes.string,
+    title: PropTypes.string,
+    file: PropTypes.shape({
+      url: PropTypes.string,
+    }),
+  })).isRequired,
+  title: PropTypes.string.isRequired,
+  year: PropTypes.string.isRequired,
 }

@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import ReactMarkdown from '../components/ReactMarkdown'
 import createCmsClient from '../services/createCmsClient'
 import setTitle from '../utils/setTitle'

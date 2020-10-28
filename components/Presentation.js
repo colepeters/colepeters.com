@@ -1,9 +1,11 @@
 import Head from 'next/head'
+import Image from 'next/image'
+import PropTypes from 'prop-types'
 import { useState } from 'react'
 
 import ReactMarkdown from './ReactMarkdown'
 import getCmsImage from '../utils/getCmsImage'
-import { Box, Button, Heading, RichText, Text } from './index'
+import { Box, Button, Heading, Text } from './index'
 
 export default function Presentation({ title, description, entries, year }) {
   const [index, setIndex] = useState(0)
@@ -33,7 +35,7 @@ export default function Presentation({ title, description, entries, year }) {
 
       <Box my={[4, 5]}>
         <Box key={current.url} as='figure' m={0}>
-          <img src={current.url} style={{ maxHeight: '75vh' }} />
+          <Image src={current.url} height={current.height} width={current.width} style={{ maxHeight: '75vh' }} />
           <figcaption>
             <Text fontSize={0} my={3} fontWeight='500'>
               {current.title}
@@ -91,4 +93,11 @@ export default function Presentation({ title, description, entries, year }) {
       </Box>
     </>
   )
+}
+
+Presentation.propTypes = {
+  description: PropTypes.string.isRequired,
+  entries: PropTypes.arrayOf(PropTypes.object).isRequired,
+  title: PropTypes.string.isRequired,
+  year: PropTypes.string.isRequired,
 }

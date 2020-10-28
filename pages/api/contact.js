@@ -31,7 +31,7 @@ const mailer = ({ recipient, name, email, message }) => {
   })
 }
 
-export default async function(req, res) {
+export default async function contact(req, res) {
   const { recipient, name, email, message } = req.body
 
   // if any fields blank, return 403
