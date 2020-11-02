@@ -2,7 +2,6 @@ import styled from 'styled-components'
 import {
   background,
   border,
-  boxShadow,
   color,
   compose,
   display,
@@ -11,6 +10,7 @@ import {
   opacity,
   overflow,
   position,
+  shadow,
   space,
   typography,
 } from 'styled-system'
@@ -19,7 +19,6 @@ const Box = styled('div')(
   compose(
     background,
     border,
-    boxShadow,
     color,
     display,
     flexbox,
@@ -27,6 +26,7 @@ const Box = styled('div')(
     opacity,
     overflow,
     position,
+    shadow,
     space,
     typography
   )

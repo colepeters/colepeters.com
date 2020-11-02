@@ -21,6 +21,11 @@ const theme = {
     heading: 1.25,
     body: 1.5,
   },
+  shadows: [
+    'none',
+    'rgba(0, 0, 0, 0.075) 0px 4px 32px, rgba(0, 0, 0, 0.2) 0px 2px 6px -2px',
+    'rgba(0, 0, 0, 0.125) 0px 8px 64px, rgba(0, 0, 0, 0.2) 0px 8px 24px -8px, rgba(0,0,0,0.5) 0px 4px 6px -4px',
+  ],
   space: [
     '0rem',
     '0.25rem',

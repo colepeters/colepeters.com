@@ -11,7 +11,7 @@ export default function Tracklist({ tracks }) {
             as='span'
             display='inline-block'
             color='muted'
-            fontSize={0}
+            fontSize={['12px', null, '13px']}
             width='2ch'
             style={{
               fontVariantNumeric: 'tabular-nums',
