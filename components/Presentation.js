@@ -34,7 +34,11 @@ export default function Presentation({ title, description, entries, year }) {
 
       <Box my={[4, 5]}>
         <Box key={current.url} as='figure' m={0}>
-          <img src={current.url} alt={current.title} style={{ maxHeight: '75vh' }} />
+          <img
+            src={current.url}
+            alt={current.title}
+            style={{ maxHeight: '75vh' }}
+          />
           <figcaption>
             <Text fontSize={0} my={3} fontWeight='500'>
               {current.title}
