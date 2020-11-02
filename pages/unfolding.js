@@ -42,8 +42,8 @@ export default function Unfolding({ releases }) {
         </Text>
 
         <Box mt={[4, 5, 6]} as='section'>
-          {releases.map(release => (
-            <Release release={release} key={release.title} />
+          {releases.map((release, index) => (
+            <Release release={release} index={index} key={release.title} />
           ))}
         </Box>
       </Container>
