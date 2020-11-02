@@ -14,7 +14,7 @@ import {
   Container,
   Header,
   Heading,
-  Input,
+  Input
   MotionBox,
   Text,
   Textarea,
@@ -58,8 +58,8 @@ export default function Contact() {
         </Heading>
         <Text>
           I post regular updates to my{' '}
-          <a href='//instagram.com/tcptrs'>Instagram</a> and{' '}
-          <a href='//twitter.com/tcptrs'>Twitter</a> feeds. If you’d like to get
+          <a href='https://instagram.com/tiltedspheres'>Instagram</a> and{' '}
+          <a href='https://twitter.com/tiltedspheres'>Twitter</a> feeds. If you’d like to get
           in touch, feel free to use the contact form below.
         </Text>
 
