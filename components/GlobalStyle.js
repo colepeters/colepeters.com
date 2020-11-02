@@ -67,7 +67,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
   }
 
-  img:not['data-nextimage'] {
+  img:not([data-nextimage]) {
     max-width: 100%;
     max-height: 95vh;
     height: auto;
