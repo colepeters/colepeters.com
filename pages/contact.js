@@ -14,7 +14,7 @@ import {
   Container,
   Header,
   Heading,
-  Input
+  Input,
   MotionBox,
   Text,
   Textarea,
@@ -59,8 +59,8 @@ export default function Contact() {
         <Text>
           I post regular updates to my{' '}
           <a href='https://instagram.com/tiltedspheres'>Instagram</a> and{' '}
-          <a href='https://twitter.com/tiltedspheres'>Twitter</a> feeds. If you’d like to get
-          in touch, feel free to use the contact form below.
+          <a href='https://twitter.com/tiltedspheres'>Twitter</a> feeds. If
+          you’d like to get in touch, feel free to use the contact form below.
         </Text>
 
         <Box mt={[4, 5]} width={['100%', 2 / 3, 1 / 2]}>
