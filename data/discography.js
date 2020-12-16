@@ -3,6 +3,11 @@ export const unfolding = {
   description: null,
   entries: [
     {
+      title: 'Boundary',
+      year: '2020',
+      label: null,
+    },
+    {
       title: 'Initial State',
       year: '2020',
       label: null,
