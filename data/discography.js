@@ -6,11 +6,13 @@ export const unfolding = {
       title: 'Boundary',
       year: '2020',
       label: null,
+      link: 'https://colepeters.bandcamp.com/album/boundary',
     },
     {
       title: 'Initial State',
       year: '2020',
       label: null,
+      link: 'https://colepeters.bandcamp.com/album/initial-state',
     },
   ],
 }
@@ -23,16 +25,20 @@ export const eponymous = {
       title: 'For Light and Time',
       year: '2016',
       label: null,
+      link: 'https://colepeters.bandcamp.com/album/for-light-and-time',
     },
     {
       title: 'Successors',
       year: '2015',
       label: null,
+      link: 'https://colepeters.bandcamp.com/album/successors',
     },
     {
       title: 'A Desiccated History of Ideas',
       year: '2013',
       label: null,
+      link:
+        'https://colepeters.bandcamp.com/album/a-desiccated-history-of-ideas',
     },
   ],
 }
@@ -46,6 +52,7 @@ export const gomeisa = {
       title: 'Death Poems',
       year: '2012',
       label: 'Prairie Fire Tapes',
+      link: 'https://colepeters.bandcamp.com/album/death-poems',
     },
     {
       title: 'Treatise',
@@ -61,11 +68,13 @@ export const gomeisa = {
       title: 'Tourniquet',
       year: '2010',
       label: 'Prairie Fire Tapes',
+      link: 'https://colepeters.bandcamp.com/album/tourniquet',
     },
     {
       title: 'Maria Goretti',
       year: '2010',
       label: 'Absence Tapes',
+      link: 'https://colepeters.bandcamp.com/album/maria-goretti',
     },
     {
       title: 'Split with XSXCXEXBX',
@@ -76,6 +85,7 @@ export const gomeisa = {
       title: 'Ego Death',
       year: '2010',
       label: 'Stasis HNW',
+      link: 'https://colepeters.bandcamp.com/album/ego-death',
     },
     {
       title: 'Fallen to Dust',
@@ -91,11 +101,13 @@ export const gomeisa = {
       title: 'The Sixth Hour',
       year: '2010',
       label: null,
+      link: 'https://colepeters.bandcamp.com/album/the-sixth-hour',
     },
     {
       title: 'Gauze of Blackened Veils',
       year: '2010',
       label: null,
+      link: 'https://colepeters.bandcamp.com/album/gauze-of-blackened-veils',
     },
     {
       title: 'Split with White Dog',
@@ -114,6 +126,7 @@ export const secretGirls = {
       title: 'In Hiding',
       year: '2011',
       label: 'Prairie Fire Tapes',
+      link: 'https://colepeters.bandcamp.com/album/in-hiding',
     },
     {
       title: 'Split with Pretty Princess',
