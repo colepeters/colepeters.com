@@ -61,6 +61,7 @@ const GlobalStyle = createGlobalStyle`
   a:focus,
   a:active {
     color: black;
+    text-decoration-color: ${props => props.theme.colors.muted};
   }
 
   h1, h2, h3, h4, h5, h6 {

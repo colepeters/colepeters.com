@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+import { IoMdOpen } from 'react-icons/io'
 import setTitle from '../utils/setTitle'
 import {
   unfolding,
@@ -25,9 +26,9 @@ const Entries = ({ collection, ...props }) => {
         {entries.map(e => (
           <Text as='li' key={e.title} mb={3}>
             <Text as='span' display='block'>
-              {e.title}
+              {e.link ? <a href={e.link}>{e.title}</a> : e.title}
             </Text>
-            <Text as='span' fontSize={0} color='muted'>
+            <Text as='span' display='block' fontSize={0} color='muted'>
               {e.year}, {e.label || 'self released'}
             </Text>
           </Text>
