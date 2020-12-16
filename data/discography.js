@@ -18,7 +18,7 @@ export const unfolding = {
 }
 
 export const eponymous = {
-  name: 'Eponymous releases',
+  name: 'Eponymous releases, 2013–2016',
   description: null,
   entries: [
     {
