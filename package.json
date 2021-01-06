@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@babel/runtime-corejs2": "^7.8.7",
-    "axios": "~0.19.2",
+    "axios": "~0.21.1",
     "babel-plugin-ramda": "^2.0.0",
     "contentful": "~7.14.4",
     "framer-motion": "~1.8.4",
