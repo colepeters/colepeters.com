@@ -1,12 +1,12 @@
 /* eslint-disable react/prop-types */
-import { IoMdOpen } from 'react-icons/io'
 import setTitle from '../utils/setTitle'
 import {
-  unfolding,
   eponymous,
   gomeisa,
-  secretGirls,
+  hibernation,
   museumsOfSleep,
+  secretGirls,
+  unfolding,
 } from '../data/discography'
 import { Container, Box, Header, Heading, List, Text } from '../components'
 
@@ -18,7 +18,7 @@ const Entries = ({ collection, ...props }) => {
         {name}
       </Heading>
       {description && (
-        <Text mb={4} pl={[3, 4]}>
+        <Text fontSize={0} mb={4} pl={[3, 4]}>
           {description}
         </Text>
       )}
@@ -54,8 +54,9 @@ export default function Discography() {
           for streaming and purchase on{' '}
           <a href='https://colepeters.bandcamp.com'>my&nbsp;Bandcamp</a>.
         </Text>
-        <Entries collection={unfolding} />
         <Entries collection={eponymous} />
+        <Entries collection={unfolding} />
+        <Entries collection={hibernation} />
         <Entries collection={gomeisa} />
         <Entries collection={secretGirls} />
         <Entries collection={museumsOfSleep} />

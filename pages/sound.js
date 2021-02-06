@@ -24,17 +24,16 @@ export async function getStaticProps() {
 export default function Unfolding({ releases }) {
   return (
     <>
-      {setTitle('Unfolding')}
+      {setTitle('Sound')}
       <Header />
       <Container as='section'>
         <Heading mb={[4, 5]} position='relative' left={[0, null, '-4px']}>
-          Unfolding
+          Sound
         </Heading>
         <Text>
-          Unfolding is the guise of my current work in music and sound art.
-          Building on the methods and motivations of musique concrète, drone,
-          noise, techno and experimental music, the project focuses on themes of
-          texture, space, weight, structure, and sensory&nbsp;experience.
+          My current work in music and sound art is a reflection on sensory
+          experience and the universe we inhabit, and is built on the processes
+          of musique concrète, field recording, and reductive electronics.
         </Text>
         <Text>
           For releases from previous projects, see{' '}

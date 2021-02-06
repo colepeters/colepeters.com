@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import PropTypes from 'prop-types'
+import dayjs from 'dayjs'
 import { IoMdPlay } from 'react-icons/io'
 
 import ReactMarkdown from './ReactMarkdown'
@@ -12,6 +13,7 @@ export default function Release({ release, index, ...props }) {
     cover,
     description,
     format,
+    label,
     link,
     releaseDate,
     title,
@@ -19,6 +21,8 @@ export default function Release({ release, index, ...props }) {
   } = release
 
   const coverImage = getCmsImage(cover)
+
+  const formattedDate = dayjs(releaseDate).format('YYYY/MM')
 
   return (
     <Box
@@ -33,11 +37,16 @@ export default function Release({ release, index, ...props }) {
           <Heading as='h2' mb={3}>
             {title}
           </Heading>
-          <Text color='muted'>{releaseDate.split('-').join('/')}</Text>
+          <Text mt={0} color='muted'>
+            {formattedDate}
+          </Text>
           <Text mt={0} color='muted'>
             {format}
           </Text>
-          <Tracklist tracks={tracks} />
+          <Text mt={0} color='muted'>
+            Label: {label || 'Self-released'}
+          </Text>
+          {tracks && <Tracklist tracks={tracks} />}
           {link && (
             <Text fontWeight={500} my={4}>
               <a href={link}>
@@ -77,18 +86,16 @@ export default function Release({ release, index, ...props }) {
   )
 }
 
-Release.defaultProps = {
-  link: null,
-}
-
 Release.propTypes = {
+  index: PropTypes.number.isRequired,
   release: PropTypes.shape({
     cover: PropTypes.object.isRequired,
     description: PropTypes.string.isRequired,
     format: PropTypes.string.isRequired,
+    label: PropTypes.string,
     link: PropTypes.string,
     releaseDate: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
-    tracks: PropTypes.arrayOf(PropTypes.string).isRequired,
+    tracks: PropTypes.arrayOf(PropTypes.string),
   }).isRequired,
 }

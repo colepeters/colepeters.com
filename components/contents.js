@@ -3,8 +3,8 @@ const contents = [
     name: 'Sound',
     pages: [
       {
-        name: 'Unfolding',
-        href: '/unfolding',
+        name: 'Current work',
+        href: '/sound',
       },
       {
         name: 'Discography',
