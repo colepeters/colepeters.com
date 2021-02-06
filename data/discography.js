@@ -1,6 +1,27 @@
+export const eponymous = {
+  name: 'Eponymous work, 2021 onward',
+  description: `
+    As of 2021, I have returned to producing work under my own name, having
+    regained (or found?) my footing with the Unfolding project in 2020.
+  `,
+  entries: [
+    {
+      title: 'A Stable Means of Degradation',
+      year: '2021',
+      label: 'to be announced',
+    },
+  ],
+}
+
 export const unfolding = {
   name: 'Unfolding',
-  description: null,
+  description: `
+    Unfolding was a project initiated following an extended hiatus from ‘serious’ music making.
+    The project acted as a blank slate, affording me the guise and freedom of starting from
+    scratch — from methodology and objectives to equipment and production techniques. The outcome
+    was two releases of deep, propulsive, abstract sound, incorporating influences from art,
+    science, and sound design.
+  `,
   entries: [
     {
       title: 'Boundary',
@@ -17,9 +38,15 @@ export const unfolding = {
   ],
 }
 
-export const eponymous = {
-  name: 'Eponymous releases, 2013–2016',
-  description: null,
+export const hibernation = {
+  name: 'Hibernation, 2013–2016',
+  description: `
+    Following the dissolution of Gomeisa in 2012, my work in music went into something of a hibernation.
+    I self released three full length digital albums under my own name between 2013 and 2016, each exploring
+    their own approaches to music and sound: ‘A Desiccated History of Ideas’, a collection of three experiments
+    with no-input mixers, tape loops, and live signal processing; ‘Successors’, a soundtrack for an imagined
+    dystopian fiction; and ‘For Light and Time’, a secular interpretation of sacred European music.
+  `,
   entries: [
     {
       title: 'For Light and Time',
@@ -45,8 +72,10 @@ export const eponymous = {
 
 export const gomeisa = {
   name: 'Gomeisa',
-  description:
-    'Gomeisa began with an interest in exploring drone music, but evolved into a vehicle for more abrasive compositions — particularly in the harsh noise wall subgenre.',
+  description: `
+    Gomeisa began with an interest in exploring drone music, but evolved into a vehicle for more
+    abrasive compositions — particularly in the harsh noise wall subgenre.
+  `,
   entries: [
     {
       title: 'Death Poems',

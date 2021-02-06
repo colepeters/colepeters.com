@@ -17,6 +17,7 @@
     "axios": "~0.21.1",
     "babel-plugin-ramda": "^2.0.0",
     "contentful": "~7.14.4",
+    "dayjs": "^1.10.4",
     "framer-motion": "~1.8.4",
     "next": "^10.0.0",
     "nodemailer": "~6.4.6",
