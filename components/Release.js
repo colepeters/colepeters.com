@@ -12,6 +12,7 @@ export default function Release({ release, index, ...props }) {
   const {
     cover,
     description,
+    embed,
     format,
     label,
     link,
@@ -21,7 +22,6 @@ export default function Release({ release, index, ...props }) {
   } = release
 
   const coverImage = getCmsImage(cover)
-
   const formattedDate = dayjs(releaseDate).format('YYYY/MM')
 
   return (
@@ -73,7 +73,7 @@ export default function Release({ release, index, ...props }) {
         position={['relative', null, 'absolute']}
         right={[null, null, 0]}
       >
-        <Box boxShadow={2}>
+        <Box boxShadow={2} mb={3}>
           <Image
             src={`${coverImage.url}`}
             height={800}
@@ -81,6 +81,7 @@ export default function Release({ release, index, ...props }) {
             data-nextimage
           />
         </Box>
+        {embed && <Box my={3} dangerouslySetInnerHTML={{ __html: embed }} />}
       </Box>
     </Box>
   )
@@ -91,6 +92,7 @@ Release.propTypes = {
   release: PropTypes.shape({
     cover: PropTypes.object.isRequired,
     description: PropTypes.string.isRequired,
+    embed: PropTypes.string,
     format: PropTypes.string.isRequired,
     label: PropTypes.string,
     link: PropTypes.string,
