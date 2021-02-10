@@ -31,11 +31,17 @@ export default function Unfolding({ releases }) {
           Sound
         </Heading>
         <Text>
-          My current work in music and sound art is a reflection on sensory
-          experience and the universe we inhabit, and is built on the processes
+          My current work in music and sound art is built on the processes
           of musique concrète, field recording, and reductive electronics.
         </Text>
         <Text>
+          As with my visual art, my interests lie heavily in exploring
+          the fundamental properties of the medium — in this case, texture,
+          pressure, and time — while also investigating the capacity for
+          sound to modulate our sensory experience of the physical&nbsp;world.
+        </Text>
+        <Text>
+          My current and upcoming work is highlighted below.
           For releases from previous projects, see{' '}
           <a href='/discography'>my&nbsp;discography</a>.
         </Text>
