@@ -1,8 +1,7 @@
 export const eponymous = {
   name: 'Eponymous work, 2021 onward',
   description: `
-    As of 2021, I have returned to producing work under my own name, having
-    regained (or found?) my footing with the Unfolding project in 2020.
+    As of 2021, I have returned to producing work under my own name.
   `,
   entries: [
     {
