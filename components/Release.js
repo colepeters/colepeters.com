@@ -25,63 +25,58 @@ export default function Release({ release, index, ...props }) {
   const formattedDate = dayjs(releaseDate).format('YYYY/MM')
 
   return (
-    <Box
-      as='article'
-      display='flex'
-      flexWrap='wrap'
-      mt={index > 0 ? [4, 5, 6] : 0}
-      {...props}
-    >
-      <Box width={['100%', null, '60%']} order={[2, null, 1]}>
-        <Box pr={[0, null, 5]}>
-          <Heading as='h2' mb={3}>
-            {title}
-          </Heading>
-          <Text mt={0} color='muted'>
-            {formattedDate}
-          </Text>
-          <Text mt={0} color='muted'>
-            {format}
-          </Text>
-          <Text mt={0} color='muted'>
-            Label: {label || 'Self-released'}
-          </Text>
-          {tracks && <Tracklist tracks={tracks} />}
-          {link && (
-            <Text fontWeight={500} my={4}>
-              <a href={link}>
-                <Text
-                  as='span'
-                  pr={2}
-                  textDecoration='none'
-                  verticalAlign='middle'
-                >
-                  <IoMdPlay />
-                </Text>
-                Stream and purchase on Bandcamp
-              </a>
-            </Text>
-          )}
-          <ReactMarkdown source={description} />
-        </Box>
+    <Box as='article' {...props}>
+      <Box mb={[4, 5]}>
+        <Heading as='h1' mb={[4, 5]}>
+          {title}
+        </Heading>
+        <Text mt={0} color='muted'>
+          {formattedDate}, {label || 'self-released'}
+        </Text>
+        <Text mt={0} color='muted'>
+          {format}
+        </Text>
       </Box>
-
-      <Box
-        width={['100%', '60%', '40%']}
-        order={[1, null, 2]}
-        mb={[4, null, 0]}
-        position={['relative', null, 'absolute']}
-        right={[null, null, 0]}
-      >
-        <Box boxShadow={2} mb={3}>
-          <Image
-            src={`${coverImage.url}`}
-            height={800}
-            width={800}
-            data-nextimage
-          />
+      <Box display='flex' flexWrap='wrap'>
+        <Box width={['100%', null, '60%']} order={[2, null, 1]}>
+          <Box pr={[0, null, 5]}>
+            {tracks && <Tracklist tracks={tracks} />}
+            {link && (
+              <Text fontWeight={500} mt={[4, null, 0]} mb={[5, null, 4]}>
+                <a href={link}>
+                  <Text
+                    as='span'
+                    pr={2}
+                    textDecoration='none'
+                    verticalAlign='middle'
+                  >
+                    <IoMdPlay />
+                  </Text>
+                  Stream and purchase on Bandcamp
+                </a>
+              </Text>
+            )}
+            <ReactMarkdown source={description} />
+          </Box>
         </Box>
-        {embed && <Box my={3} dangerouslySetInnerHTML={{ __html: embed }} />}
+
+        <Box
+          width={['100%', '60%', '40%']}
+          order={[1, null, 2]}
+          mb={[4, null, 0]}
+          position={['relative', null, 'absolute']}
+          right={[null, null, 0]}
+        >
+          <Box boxShadow={2} mb={3}>
+            <Image
+              src={`${coverImage.url}`}
+              height={800}
+              width={800}
+              data-nextimage
+            />
+          </Box>
+          {embed && <Box my={3} dangerouslySetInnerHTML={{ __html: embed }} />}
+        </Box>
       </Box>
     </Box>
   )
