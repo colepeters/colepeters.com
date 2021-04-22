@@ -3,8 +3,12 @@ const contents = [
     name: 'Sound',
     pages: [
       {
-        name: 'Current work',
-        href: '/sound',
+        name: 'A Stable Means of Degradation',
+        href: '/a-stable-means-of-degradation',
+      },
+      {
+        name: 'London (UK​)​, 07​/​06​/​2014, evening',
+        href: '/presque-tout',
       },
       {
         name: 'Discography',

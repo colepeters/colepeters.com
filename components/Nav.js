@@ -10,7 +10,7 @@ export default function Nav() {
     <Box as='nav' my={[4, 5]}>
       <List reset pl={0} m={0} fontSize={0}>
         {contents.map(section => (
-          <Text as='li' display='flex' mb={4} key={section.name}>
+          <Text as='li' display={['block', 'flex']} mb={4} key={section.name}>
             <Box width={['13ch', null, '16ch']} pr={2}>
               <Text
                 as='span'
