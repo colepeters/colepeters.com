@@ -50,7 +50,7 @@ export default class MyApp extends App {
           <link
             rel='mask-icon'
             href='/static/safari-pinned-tab.svg'
-            color='#222222'
+            color='#000000'
           />
           <link rel='shortcut icon' href='/static/favicon.ico' />
           <meta name='msapplication-TileColor' content='#ffffff' />
