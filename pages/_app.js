@@ -29,6 +29,7 @@ export default class MyApp extends App {
             content='GDtqLSMBd2NDQxNYP5Zg_4B1BNQQ93spmNyQgLTo9dE'
             key='gsv'
           />
+          <link rel='shortcut icon' href='/static/favicon.png' />
         </Head>
         <GlobalStyle />
         <Component {...pageProps} />
