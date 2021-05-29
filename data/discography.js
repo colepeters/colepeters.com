@@ -100,18 +100,6 @@ export const gomeisa = {
       label: 'Sweet Solitude',
     },
     {
-      title: 'Tourniquet',
-      year: '2010',
-      label: 'Prairie Fire Tapes',
-      link: 'https://colepeters.bandcamp.com/album/tourniquet',
-    },
-    {
-      title: 'Maria Goretti',
-      year: '2010',
-      label: 'Absence Tapes',
-      link: 'https://colepeters.bandcamp.com/album/maria-goretti',
-    },
-    {
       title: 'Split with XSXCXEXBX',
       year: '2010',
       label: 'Absence Tapes',
@@ -156,7 +144,6 @@ export const secretGirls = {
       title: 'In Hiding',
       year: '2011',
       label: 'Prairie Fire Tapes',
-      link: 'https://colepeters.bandcamp.com/album/in-hiding',
     },
     {
       title: 'Split with Pretty Princess',
