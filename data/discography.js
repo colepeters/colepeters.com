@@ -128,11 +128,6 @@ export const gomeisa = {
       label: 'Zvukovina',
     },
     {
-      title: 'Blossoming Flesh',
-      year: '2010',
-      label: 'Prairie Fire Tapes',
-    },
-    {
       title: 'The Sixth Hour',
       year: '2010',
       label: null,
