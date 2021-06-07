@@ -10,10 +10,6 @@ const contents = [
         name: 'London (UK​)​, 07​/​06​/​2014, evening',
         href: '/presque-tout',
       },
-      {
-        name: 'Discography',
-        href: '/discography',
-      },
     ],
   },
   {
