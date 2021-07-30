@@ -3,6 +3,10 @@ const contents = [
     name: 'Sound',
     pages: [
       {
+        name: 'A Pattern of Extraction',
+        href: '/a-pattern-of-extraction',
+      },
+      {
         name: 'A Stable Means of Degradation',
         href: '/a-stable-means-of-degradation',
       },
