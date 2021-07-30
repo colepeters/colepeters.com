@@ -74,6 +74,14 @@ const GlobalStyle = createGlobalStyle`
     height: auto;
     align-self: center;
   }
+
+  hr {
+    margin: 2rem 0;
+    border-top: 2px solid ${props => props.theme.colors.lightGrey};
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+  }
 `
 
 export default GlobalStyle
