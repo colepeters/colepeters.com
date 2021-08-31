@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 import Text from './primitives/Text'
@@ -43,4 +44,15 @@ export default function Input({
       <StyledInput type={type} {...props} />
     </Text>
   )
+}
+
+Input.defaultProps = {
+  required: true,
+  type: 'text',
+}
+
+Input.propTypes = {
+  label: PropTypes.string.isRequired,
+  required: PropTypes.bool,
+  type: PropTypes.string,
 }
