@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { useRouter } from 'next/router'
 
@@ -21,4 +22,9 @@ export default function NavLink({ children, href }) {
       <CustomLink pathname={pathname}>{children}</CustomLink>
     </Link>
   )
+}
+
+NavLink.propTypes = {
+  children: PropTypes.node.isRequired,
+  href: PropTypes.string.isRequired,
 }

@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import TextareaAutosize from 'react-autosize-textarea'
 import styled from 'styled-components'
 
@@ -26,7 +27,7 @@ const StyledTextarea = styled(TextareaAutosize)`
 
 StyledTextarea.displayName = 'Input'
 
-export default function Textarea({ label, required = true, ...props }) {
+export default function Textarea({ label, required, ...props }) {
   return (
     <Text as='label'>
       <Text as='span' fontWeight='500'>
@@ -40,4 +41,13 @@ export default function Textarea({ label, required = true, ...props }) {
       <StyledTextarea async rows={4} {...props} />
     </Text>
   )
+}
+
+Textarea.defaultProps = {
+  required: true,
+}
+
+Textarea.propTypes = {
+  label: PropTypes.string.isRequired,
+  required: PropTypes.bool,
 }
