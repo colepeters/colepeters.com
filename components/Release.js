@@ -8,7 +8,7 @@ import Tracklist from './Tracklist'
 import getCmsImage from '../utils/getCmsImage'
 import { Box, Heading, Text } from './index'
 
-export default function Release({ release, index, ...props }) {
+export default function Release({ release, ...props }) {
   const {
     cover,
     description,
@@ -70,6 +70,7 @@ export default function Release({ release, index, ...props }) {
           <Box boxShadow={2} mb={3}>
             <Image
               src={`${coverImage.url}`}
+              layout='responsive'
               height={800}
               width={800}
               data-nextimage
@@ -83,7 +84,6 @@ export default function Release({ release, index, ...props }) {
 }
 
 Release.propTypes = {
-  index: PropTypes.number.isRequired,
   release: PropTypes.shape({
     cover: PropTypes.object.isRequired,
     description: PropTypes.string.isRequired,
