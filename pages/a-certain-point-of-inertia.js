@@ -243,6 +243,7 @@ export default function ACertainPointOfInertia() {
               themselves and as scaffolds in an evolving thematic framework
               drawing on the natural sciences and sensory&nbsp;experience.
             </Text>
+            <Text>He is currently based in Treaty 1 territory, Canada.</Text>
           </Box>
           <Heading as='h3' mb={[3, 4]}>
             Recent works
