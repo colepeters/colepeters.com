@@ -72,11 +72,7 @@ export default function Header() {
           {routeIsIndex ? (
             <Nav />
           ) : (
-            <Box
-              position='absolute'
-              top={['-0.625rem', '-0.25rem']}
-              right='-1rem'
-            >
+            <Box position='absolute' top={['-0.625rem', '-0.25rem']} right='0'>
               <Button onClick={() => setNavOpen(true)} lineHeight='heading'>
                 <Box
                   as='span'
