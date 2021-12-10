@@ -6,7 +6,7 @@ import { Container, Header } from '../components'
 
 export async function getStaticProps() {
   const client = createCmsClient()
-  const release = await client.getEntry('2f9CYXpotu42N1LRPF5FU1')
+  const release = await client.getEntry('77hjRfi0icTbuAPzxToAcH')
 
   return {
     props: {
@@ -16,10 +16,10 @@ export async function getStaticProps() {
   }
 }
 
-export default function APatternOfExtraction({ release }) {
+export default function Enfold({ release }) {
   return (
     <>
-      {setTitle('A Pattern of Extraction')}
+      {setTitle('Enfold: Rehearsal for Send + Receive, 2021')}
       <Header />
       <Container as='section'>
         <Release release={release.fields} />
