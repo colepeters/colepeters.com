@@ -15,7 +15,7 @@
   "dependencies": {
     "@babel/runtime-corejs2": "^7.8.7",
     "@madzadev/audio-player": "^1.1.9",
-    "axios": "^0.21.1",
+    "axios": "^0.21.2",
     "babel-plugin-ramda": "^2.0.0",
     "contentful": "^8.1.7",
     "dayjs": "^1.10.4",
