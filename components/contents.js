@@ -3,6 +3,10 @@ const contents = [
     name: 'Sound',
     pages: [
       {
+        name: 'Enfold: Rehearsal for Send + Receive, 2021',
+        href: '/enfold',
+      },
+      {
         name: 'A Pattern of Extraction',
         href: '/a-pattern-of-extraction',
       },
