@@ -82,6 +82,14 @@ const GlobalStyle = createGlobalStyle`
     border-left: none;
     border-right: none;
   }
+
+  figure {
+    margin: 0;
+  }
+
+  blockquote {
+    margin: 0;
+  }
 `
 
 export default GlobalStyle
