@@ -5,7 +5,6 @@ import setTitle from '../utils/setTitle'
 import { Box, Heading, Text, Container, Header } from '../components'
 
 import eastHenderson from '../public/static/acpi/eastHenderson.jpg'
-import floodway from '../public/static/2021-floodway.jpg'
 import gullHarbour from '../public/static/acpi/gullHarbour.jpg'
 import gullHarbourPath from '../public/static/acpi/gullHarbourPath.jpg'
 import lakeWpg from '../public/static/acpi/lakeWpg.jpg'
