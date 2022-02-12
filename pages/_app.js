@@ -1,4 +1,6 @@
-import 'typeface-inter'
+import '@fontsource/inter'
+import '@fontsource/cardo/400-italic.css'
+
 import App from 'next/app'
 import Head from 'next/head'
 import React from 'react'

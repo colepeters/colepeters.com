@@ -1,33 +1,16 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import Image from 'next/image'
-import Link from 'next/link'
 
 import setTitle from '../utils/setTitle'
 import { Box, Heading, Text, Container, Header } from '../components'
 
 import eastHenderson from '../public/static/acpi/eastHenderson.jpg'
 import floodway from '../public/static/2021-floodway.jpg'
-import freightTrain from '../public/static/acpi/freightTrain.jpg'
 import gullHarbour from '../public/static/acpi/gullHarbour.jpg'
-import gullHarbourBeach from '../public/static/acpi/gullHarbourBeach.jpg'
 import gullHarbourPath from '../public/static/acpi/gullHarbourPath.jpg'
 import lakeWpg from '../public/static/acpi/lakeWpg.jpg'
 import namao from '../public/static/acpi/namao.jpg'
 import oakHammock from '../public/static/acpi/oakHammock.jpg'
-import parkade from '../public/static/acpi/parkade.jpg'
-import ridgewayTerminal from '../public/static/acpi/ridgewayTerminal.jpg'
-
-import httpAuthCheck from '../utils/httpAuthCheck'
-
-export async function getServerSideProps(ctx) {
-  const { req, res } = ctx
-
-  await httpAuthCheck(req, res)
-
-  return {
-    props: {},
-  }
-}
 
 export default function ACertainPointOfInertia() {
   return (
@@ -35,9 +18,69 @@ export default function ACertainPointOfInertia() {
       {setTitle('A Certain Point of Inertia')}
       <Header />
       <Container>
-        <Heading mb={[4, 5]}>A Certain Point of Inertia</Heading>
+        <Heading mb={[3, 4]}>A Certain Point of&nbsp;Inertia</Heading>
+        <Box mb={[4, 5]}>
+          <Text mt={0} color='muted'>
+            2022/03, Room40
+          </Text>
+          <Text mt={0} color='muted'>
+            Digital dowload
+          </Text>
+        </Box>
         <Box mx={[-3, -5]} mb={[4, 5]}>
-          <Image src={floodway} layout='responsive' placeholder='blur' />
+          <div style={{ padding: '42.29% 0 0 0', position: 'relative' }}>
+            <iframe
+              src='https://player.vimeo.com/video/676618093?h=2bcdb06cba&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479'
+              frameBorder='0'
+              allow='autoplay; fullscreen; picture-in-picture'
+              allowFullScreen
+              style={{
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                width: '100%',
+                height: '100%',
+              }}
+              title='A Certain Point Of Inertia'
+            />
+          </div>
+          <script src='https://player.vimeo.com/api/player.js' />
+        </Box>
+        <Box
+          as='figure'
+          mb={[4, 5]}
+          fontSize={[2, 3, 4]}
+          fontStyle='italic'
+          style={{ fontFamily: 'Cardo' }}
+        >
+          <blockquote>
+            <Text color='muted' style={{ maxWidth: 'none' }}>
+              Canadian artist Cole Peters leans into the echoes of seasonality,
+              drifting through the richness of season in his home territories
+              around Manitoba. Amongst verdant woods, frosted plains, denuded
+              trees and dusty wind beaten fields he uncovers microcosms of life
+              — both organic and industrial.
+            </Text>
+            <Text color='muted' style={{ maxWidth: 'none' }}>
+              Capturing spaces that exist at the nexus between these fields of
+              existence, A Certain Point Of Inertia is a deep acoustic
+              observation, one in which we are privileged a certain perspective
+              that is shaped through Peters’ focus and also his patience. What
+              results from these recordings is a profound reading of the
+              dynamism of the everyday. It’s a reading that celebrates the known
+              unknowns, the aspects of our environments that breathe at the very
+              fringes of our zones of habitation. His recordings are
+              spellbinding audio beacons, signalling from the periphery
+              of&nbsp;sense.
+            </Text>
+          </blockquote>
+          <figcaption>
+            <cite>
+              <Text mt={4} fontSize={[0, 1, 2]} color='muted'>
+                Lawrence English, Room40
+              </Text>
+            </cite>
+          </figcaption>
         </Box>
         <Box
           display='grid'
@@ -54,10 +97,9 @@ export default function ACertainPointOfInertia() {
               practice of listening as a means of reflection on the relationship
               between one’s own identity and that of an inhabited&nbsp;space.
             </Text>
-            <hr />
             <Text>
-              My impression of time and space has changed post-2020. Against a
-              background of continued lockdowns and isolation, the passage of
+              My sense of time and space has changed since the year 2020.
+              Against a background of lockdowns and isolation, the passage of
               hours, days, weeks and months increasingly blur together, and the
               spaces I move through — few though they are — have seemed to meld
               into a single, undifferentiated&nbsp;volume.
@@ -72,9 +114,9 @@ export default function ACertainPointOfInertia() {
               plains locked in a kind of&nbsp;stasis.
             </Text>
             <Text>
-              As the months of 2021 wore on, I began to feel this same stasis
-              seeping into my own sense of identity. The boundary between myself
-              and my environment was becoming increasingly porous. I had the
+              Early in 2021, I began to feel this same stasis seeping into my
+              own sense of identity. The boundary between myself and my
+              environment seemed to have become increasingly porous. I had the
               strange sensation that I was being subsumed by my surroundings — a
               figure reluctantly fading to&nbsp;ground.
             </Text>
@@ -84,14 +126,15 @@ export default function ACertainPointOfInertia() {
               Listen
             </Heading>
             <iframe
-              title='listen'
-              width='100%'
-              height='400'
-              scrolling='no'
-              frameBorder='no'
-              allow='autoplay'
-              src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1331843719%3Fsecret_token%3Ds-BmXsoMauqmu&color=%23847c7c&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&sharing=false'
-            />
+              title='A Certain Point of Inertia, Room40'
+              style={{ border: 0, width: 350, height: 470 }}
+              src='https://bandcamp.com/EmbeddedPlayer/album=315756963/size=large/bgcol=ffffff/linkcol=333333/tracklist=false/transparent=true/'
+              seamless
+            >
+              <a href='https://room40.bandcamp.com/album/a-certain-point-of-inertia'>
+                A Certain Point Of Inertia by Cole Peters
+              </a>
+            </iframe>
           </Box>
         </Box>
         <Box
@@ -106,24 +149,22 @@ export default function ACertainPointOfInertia() {
         </Box>
         <Box mb={[4, 5]}>
           <Text ml={[null, null, 'auto']}>
-            Since the beginning of 2021, I’d been diving deeper into my
-            longstanding interest in field recording; but up to this point, my
-            recording had been largely guided by a want of capturing a specific
-            body of predetermined sounds. It occurred to me that, in order to
-            better understand the place and time in which I was living — and as
-            a means of interrogating the boundaries between it and myself —
-            field recording presented a unique opportunity for the exploration
-            of my environment and my relationship with&nbsp;it.
+            In contemplating this experience, I began to question whether my
+            ongoing practice of field recording might help me to better
+            understand the place and time in which I was living. Where my
+            recordings had previously been premised on capturing specific,
+            predetermined sounds, it occurred to me that it could also function
+            as a means of interrogating the boundaries and relationships between
+            myself and my&nbsp;environment.
           </Text>
           <Text ml={[null, null, 'auto']}>
-            In considering this proposition, my process began to shift. Instead
-            of seeking out particular sounds, my recording became more
-            exploratory and intuitive. I would often walk out the door without a
-            particular destination or objective in mind, hoping only to
-            encounter a place which might contain a sonic body that resonated
-            with me on some indeterminate emotional level. There was something
-            of the beginner’s mind in this approach, and on many days I would
-            return without having made a single recording.
+            My recording became more exploratory and intuitive. I would often
+            walk out the door without a particular destination or objective in
+            mind, hoping only to encounter a place which might contain a sonic
+            body that resonated with me on some indeterminate emotional level.
+            There was something of the beginner’s mind in this approach, and on
+            many days I would return without having made a
+            single&nbsp;recording.
           </Text>
           <Text ml={[null, null, 'auto']}>
             There were some days, however, where the experience of simply
@@ -146,24 +187,13 @@ export default function ACertainPointOfInertia() {
           <Image src={eastHenderson} layout='responsive' placeholder='blur' />
         </Box>
         <Box mb={[4, 5]}>
-          <Text mx={[null, null, 'auto']}>
-            The five compositions that make up A Certain Point of Inertia
-            attempt to capture and convey this sensation of dissolving into
-            one’s surroundings, while also reflecting on the identity of an
+          <Text>
+            The resultant five compositions that comprise A Certain Point of
+            Inertia attempt to capture and convey this sensation of dissolving
+            into one’s surroundings, while also reflecting on the identity of an
             environment as subjectively experienced through&nbsp;sound.
           </Text>
-          <Text mx={[null, null, 'auto']}>
-            For the two longer compositions on this album (Immersion as a Means
-            of Erosion, Plains Music), I incorporated geographically distinct
-            but thematically related recordings into a collage format — another
-            instance of collapsing boundaries. In contrast, the two shortest
-            tracks (Within a Periphery, Sounding a Lonesome Throat) each
-            document unique sonic characteristics of their individual locations.
-            The final track (Reassertion) brings together acoustic and EMF
-            recordings with analog synthesis as an amalgamated reflection
-            in&nbsp;closing.
-          </Text>
-          <Text mx={[null, null, 'auto']}>
+          <Text>
             There is a certain sense of aesthetic austerity in these recordings,
             deriving from both the sparse nature of the places they were made in
             and my state of mind when making them. But there is also, I believe,
@@ -171,180 +201,44 @@ export default function ACertainPointOfInertia() {
             reflection of this work being some of my most personal in
             recent&nbsp;years.
           </Text>
-        </Box>
-        <Box
-          display='grid'
-          gridGap={['2rem', '4rem']}
-          gridTemplateColumns='1fr 1fr 1fr'
-          mb={[4, 5]}
-        >
-          <Image src={freightTrain} layout='responsive' placeholder='blur' />
-          <Image src={parkade} layout='responsive' placeholder='blur' />
-          <Image
-            src={gullHarbourBeach}
-            layout='responsive'
-            placeholder='blur'
-          />
-        </Box>
-        <Box mb={[4, 5]}>
           <Text>
             While this album materially draws almost exclusively from the
             acoustic and phenomenological sphere of a single region, I do not
             identify it as documentary in nature. Instead, I interpret this
             album as a narrative work, voiced by my surroundings and my evolving
-            interpretations of them.
+            interpretations of&nbsp;them.
           </Text>
           <Text>
-            While I believe that I may once again call somewhere else home, I
-            have deeply appreciated the experience of coming, at long last, to a
-            better understanding of this place through the practice
-            of&nbsp;listening.
+            Although I hope for the opportunity to once again find a home for
+            myself beyond the borders of Manitoba in the coming years, I have
+            deeply appreciated this experience of coming, at long last, to a
+            better understanding of this place and my relationship with&nbsp;it.
           </Text>
+        </Box>
+        <Box mb={[4, 5]}>
           <Box my={[4, 5]}>
             <hr />
           </Box>
-          <Text ml='auto'>
-            A Certain Point of Inertia was assembled from field recordings made
-            on Treaty 1 and Treaty 2 territories in the country currently known
-            as Canada. These territories are the ancestral lands of the
-            Anishinaabeg, Cree, Oji-Cree, Dakota and Dene peoples, and the home
-            of the Métis Nation. As a settler on these lands, in which the
-            Canadian government continues to erode Indigenous peoples’ right to
-            self determination through its ongoing legacy of genocide, I hope
+          <Text mx={[null, null, 'auto']}>
+            A Certain Point of Inertia was assembled primarily from field
+            recordings made on Treaty 1 and Treaty 2 territories in the country
+            currently known as Canada. These territories are the ancestral lands
+            of the Anishinaabeg, Cree, Oji-Cree, Dakota and Dene peoples, and
+            the home of the Métis Nation. As a settler on these lands, I hope
             that this work might exist in part as a humble but determined call
             for reconciliation, the abolishment of the colonial state, and the
             pursuit of equitable&nbsp;coexistence.
           </Text>
-          <Box my={[4, 5]}>
-            <hr />
-          </Box>
-          <Text>
-            Recorded, assembled, processed and mixed January – October 2021.
-            Location sounds recorded via Tascam DR-100 MKIII, utilizing EM272
-            omni microphones, JrF C-series contact microphone, LOM Geofón, and
-            SOMA Ether electromagnetic&nbsp;receiver.
+          <Text mx={[null, null, 'auto']}>
+            Field recordings, assemblage and analogue synthesis recorded
+            January&thinsp;–&thinsp;October, 2021; video, December&nbsp;2021.
           </Text>
-        </Box>
-        <Box as='section' mb={[4, 5]}>
-          <Heading as='h2' mb={[3, 4]}>
-            Artist CV
-          </Heading>
-          <Box mb={[3, 4]}>
-            <Text>
-              Cole Peters (born 1985, Canada) is a multidisciplinary artist
-              fascinated by matter, energy, space and time, and the ways in
-              which these elements shape our universe, our environment, and
-              our&nbsp;perception.
-            </Text>
-            <Text>
-              Cole’s work in sound builds on the techniques of musique concrète,
-              field recording, and reductive synthesis. His recent and upcoming
-              recordings examine texture, pressure and time as subjects unto
-              themselves and as scaffolds in an evolving thematic framework
-              drawing on the natural sciences and sensory&nbsp;experience.
-            </Text>
-            <Text>He is currently based in Treaty 1 territory, Canada.</Text>
-          </Box>
-          <Heading as='h3' mb={[3, 4]}>
-            Recent works
-          </Heading>
-          <Box mb={[3, 4]}>
-            <Heading as='h4' mb={1}>
-              <Link href='/a-pattern-of-extraction'>
-                <a>A Pattern of Extraction</a>
-              </Link>
-            </Heading>
-            <Text fontSize={0}>
-              Released 2021/09 (Makade Star)
-              <br />
-              Limited edition cassette (sold out), digital download
-            </Text>
-          </Box>
-          <Box mb={[3, 4]}>
-            <Heading as='h4' mb={1}>
-              <Link href='/a-stable-means-of-degradation'>
-                <a>A Stable Means of Degradation</a>
-              </Link>
-            </Heading>
-            <Text fontSize={0}>
-              Released 2021/07 (Grisaille)
-              <br />
-              Limited edition cassette (sold out), digital download
-            </Text>
-          </Box>
-          <Box mb={[3, 4]}>
-            <Heading as='h4' mb={1}>
-              <Link href='/presque-tout'>
-                <a>London (UK), 07/06/2014</a>
-              </Link>
-            </Heading>
-            <Text fontSize={0}>
-              Released 2021/04 (Presque Tout)
-              <br />
-              Digital download
-            </Text>
-          </Box>
-          <Box mb={[3, 4]}>
-            <Heading as='h4' mb={1}>
-              <a href='https://colepeters.bandcamp.com/album/boundary'>
-                Boundary (as Unfolding)
-              </a>
-            </Heading>
-            <Text fontSize={0}>
-              Released 2020/11 (self released)
-              <br />
-              Digital download
-            </Text>
-          </Box>
-          <Box mb={[3, 4]}>
-            <Heading as='h4' mb={1}>
-              <a href='https://colepeters.bandcamp.com/album/initial-state'>
-                Initial State (as Unfolding)
-              </a>
-            </Heading>
-            <Text fontSize={0}>
-              Released 2020/03 (self released)
-              <br />
-              Limited edition cassette, digital download
-            </Text>
-          </Box>
-          <Box mb={[3, 4]}>
-            <Text fontStyle='italic' fontSize={0}>
-              Additional works released 2010–2016 under various monikers on
-              Phage Tapes, Prairie Fire Tapes, Absence Tapes, Zvukovina.
-            </Text>
-          </Box>
-          <Box mb={[3, 4]}>
-            <Heading as='h3' mb={[3, 4]}>
-              Recent performances
-            </Heading>
-            <Heading as='h4' mb={1}>
-              <a href='https://sendandreceive.org'>
-                Send + Receive: An International Festival of Sound
-              </a>
-            </Heading>
-            <Text fontSize={0}>2021/09/09</Text>
-          </Box>
-          <Box mb={[3, 4]}>
-            <Heading as='h3' mb={[3, 4]}>
-              Press
-            </Heading>
-            <Heading as='h4' mb={1}>
-              <a href='https://witchpolice.com/episodes/wr632-cole-peters'>
-                Interview on Witchpolice Radio
-              </a>
-            </Heading>
-            <Text fontSize={0}>2021/10/22</Text>
-          </Box>
-        </Box>
-        <Box maxWidth='75ch' mx='auto'>
-          <Image
-            src={ridgewayTerminal}
-            layout='responsive'
-            placeholder='blur'
-          />
-          <Text py={[4, 5]} mx='auto' textAlign='center'>
-            Thank you for listening.
+          <Text mx={[null, null, 'auto']}>
+            Mastered by Lawrence English at Negative Space, January&nbsp;2022.
+          </Text>
+          <Text mx={[null, null, 'auto']}>
+            My deepest thanks go out to Lawrence English, Curran Faris, and
+            Patricia Wolf for their support of this&nbsp;work.
           </Text>
         </Box>
       </Container>

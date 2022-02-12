@@ -3,6 +3,10 @@ const contents = [
     name: 'Sound',
     pages: [
       {
+        name: 'A Certain Point of Inertia',
+        href: '/a-certain-point-of-inertia',
+      },
+      {
         name: 'Enfold: Rehearsal for Send + Receive, 2021',
         href: '/enfold',
       },
