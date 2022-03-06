@@ -20,7 +20,7 @@ export default function ACertainPointOfInertia() {
         <Heading mb={[3, 4]}>A Certain Point of&nbsp;Inertia</Heading>
         <Box mb={[4, 5]}>
           <Text mt={0} color='muted'>
-            2022/03, Room40
+            2022/04, Room40
           </Text>
           <Text mt={0} color='muted'>
             Digital dowload
