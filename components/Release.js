@@ -31,10 +31,10 @@ export default function Release({ release, ...props }) {
           {title}
         </Heading>
         <Text mt={0} color='muted'>
-          {formattedDate}, {label || 'self-released'}
+          {format}
         </Text>
         <Text mt={0} color='muted'>
-          {format}
+          {formattedDate}, {label || 'self-released'}
         </Text>
       </Box>
       <Box display='flex' flexWrap='wrap'>
