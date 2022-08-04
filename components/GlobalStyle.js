@@ -1,4 +1,4 @@
-import R from 'ramda'
+import { equals, last } from 'ramda'
 import { createGlobalStyle } from 'styled-components'
 import { normalize } from 'styled-normalize'
 
@@ -34,7 +34,7 @@ const GlobalStyle = createGlobalStyle`
 
   p, ul, ol {
     font-feature-settings: ${otFeatures.map(
-      (ft, _, arr) => `'${ft}' 1${R.equals(ft, R.last(arr)) ? '' : ','}`
+      (ft, _, arr) => `'${ft}' 1${equals(ft, last(arr)) ? '' : ','}`
     )};
   }
 

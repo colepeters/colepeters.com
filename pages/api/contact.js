@@ -1,4 +1,3 @@
-import R from 'ramda'
 import mg from 'nodemailer-mailgun-transport'
 import nodemailer from 'nodemailer'
 
@@ -6,7 +5,7 @@ const auth = {
   auth: {
     api_key: process.env.MAILGUN_KEY,
     domain: 'mg.colepeters.com',
-  }
+  },
 }
 
 const transporter = nodemailer.createTransport(mg(auth))
@@ -35,7 +34,7 @@ export default async function contact(req, res) {
   const { recipient, name, email, message } = req.body
 
   // if any fields blank, return 403
-  if (R.includes('', [recipient, name, email, message])) {
+  if ([recipient, name, email, message].includes('')) {
     res.status(403).send('')
     return
   }
