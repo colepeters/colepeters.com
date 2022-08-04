@@ -1,12 +1,10 @@
+import { useState } from 'react'
 import {
   IoIosArrowForward,
   IoIosCheckmarkCircleOutline,
   IoIosSync,
 } from 'react-icons/io'
-import { useState } from 'react'
 
-import sendEmail from '../services/sendEmail'
-import setTitle from '../utils/setTitle'
 import {
   Box,
   Button,
@@ -18,6 +16,8 @@ import {
   Text,
   Textarea,
 } from '../components'
+import sendEmail from '../services/sendEmail'
+import setTitle from '../utils/setTitle'
 
 export default function Contact() {
   const [name, setName] = useState('')

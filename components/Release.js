@@ -1,12 +1,12 @@
+import dayjs from 'dayjs'
 import Image from 'next/image'
 import PropTypes from 'prop-types'
-import dayjs from 'dayjs'
 import { IoMdPlay } from 'react-icons/io'
 
-import ReactMarkdown from './ReactMarkdown'
-import Tracklist from './Tracklist'
 import getCmsImage from '../utils/getCmsImage'
 import { Box, Heading, Text } from './index'
+import ReactMarkdown from './ReactMarkdown'
+import Tracklist from './Tracklist'
 
 export default function Release({ release, ...props }) {
   const {
@@ -69,6 +69,7 @@ export default function Release({ release, ...props }) {
         >
           <Box boxShadow={2} mb={3}>
             <Image
+              alt=''
               src={`${coverImage.url}`}
               layout='responsive'
               height={800}

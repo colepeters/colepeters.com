@@ -1,9 +1,9 @@
-import mg from 'nodemailer-mailgun-transport'
 import nodemailer from 'nodemailer'
+import mg from 'nodemailer-mailgun-transport'
 
 const auth = {
   auth: {
-    api_key: process.env.MAILGUN_KEY,
+    api_key: process.env.MAILGUN_KEY, // eslint-disable-line camelcase
     domain: 'mg.colepeters.com',
   },
 }

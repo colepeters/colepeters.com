@@ -2,9 +2,9 @@ import Head from 'next/head'
 import PropTypes from 'prop-types'
 import { useRef, useState } from 'react'
 
-import ReactMarkdown from './ReactMarkdown'
 import getCmsImage from '../utils/getCmsImage'
 import { Box, Button, Heading, Text } from './index'
+import ReactMarkdown from './ReactMarkdown'
 
 export default function Presentation({ title, description, entries, year }) {
   const imageAreaRef = useRef(null)
@@ -14,13 +14,13 @@ export default function Presentation({ title, description, entries, year }) {
     imageAreaRef.current.scrollIntoView({
       behaviour: 'smooth',
     })
-    setIndex(prev => prev + 1)
+    setIndex((prev) => prev + 1)
   }
   const dec = () => {
     imageAreaRef.current.scrollIntoView({
       behaviour: 'smooth',
     })
-    setIndex(prev => prev - 1)
+    setIndex((prev) => prev - 1)
   }
 
   const current = getCmsImage(entries[index])

@@ -1,11 +1,10 @@
 import PropTypes from 'prop-types'
 import { IoIosExpand } from 'react-icons/io'
 
-import ReactMarkdown from './ReactMarkdown'
 import getCmsImage from '../utils/getCmsImage'
-import { Heading, Box, Text } from './index'
-
 import GalleryImage from './GalleryImage'
+import { Box, Heading, Text } from './index'
+import ReactMarkdown from './ReactMarkdown'
 
 export default function Gallery({ title, year, description, entries }) {
   return (
@@ -31,7 +30,7 @@ export default function Gallery({ title, year, description, entries }) {
         Tap images to zoom in; tap again to zoom out.
       </Text>
 
-      {entries.map(e => (
+      {entries.map((e) => (
         <Box as='figure' key={getCmsImage(e).title} mx={0} mt={[5, 6]}>
           <GalleryImage image={getCmsImage(e)} />
           <Text as='figcaption'>
@@ -48,13 +47,15 @@ export default function Gallery({ title, year, description, entries }) {
 
 Gallery.propTypes = {
   description: PropTypes.string.isRequired,
-  entries: PropTypes.arrayOf(PropTypes.shape({
-    description: PropTypes.string,
-    title: PropTypes.string,
-    file: PropTypes.shape({
-      url: PropTypes.string,
-    }),
-  })).isRequired,
+  entries: PropTypes.arrayOf(
+    PropTypes.shape({
+      description: PropTypes.string,
+      title: PropTypes.string,
+      file: PropTypes.shape({
+        url: PropTypes.string,
+      }),
+    })
+  ).isRequired,
   title: PropTypes.string.isRequired,
   year: PropTypes.string.isRequired,
 }

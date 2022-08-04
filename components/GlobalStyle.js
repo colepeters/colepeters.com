@@ -61,7 +61,7 @@ const GlobalStyle = createGlobalStyle`
   a:focus,
   a:active {
     color: black;
-    text-decoration-color: ${props => props.theme.colors.muted};
+    text-decoration-color: ${(props) => props.theme.colors.muted};
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -77,7 +77,7 @@ const GlobalStyle = createGlobalStyle`
 
   hr {
     margin: 2rem 0;
-    border-top: 2px solid ${props => props.theme.colors.lightGrey};
+    border-top: 2px solid ${(props) => props.theme.colors.lightGrey};
     border-bottom: none;
     border-left: none;
     border-right: none;
