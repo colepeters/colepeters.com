@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
+import { Container, Header } from '../components'
 import Gallery from '../components/Gallery'
 import createCmsClient from '../services/createCmsClient'
 import setTitle from '../utils/setTitle'
-import { Container, Header } from '../components'
 
 export async function getStaticProps() {
   const client = createCmsClient()

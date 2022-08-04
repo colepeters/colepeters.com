@@ -1,15 +1,15 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import Image from 'next/image'
+import Script from 'next/script'
 
-import setTitle from '../utils/setTitle'
-import { Box, Heading, Text, Container, Header } from '../components'
-
+import { Box, Container, Header, Heading, Text } from '../components'
 import eastHenderson from '../public/static/acpi/eastHenderson.jpg'
 import gullHarbour from '../public/static/acpi/gullHarbour.jpg'
 import gullHarbourPath from '../public/static/acpi/gullHarbourPath.jpg'
 import lakeWpg from '../public/static/acpi/lakeWpg.jpg'
 import namao from '../public/static/acpi/namao.jpg'
 import oakHammock from '../public/static/acpi/oakHammock.jpg'
+import setTitle from '../utils/setTitle'
 
 export default function ACertainPointOfInertia() {
   return (
@@ -43,7 +43,7 @@ export default function ACertainPointOfInertia() {
               title='A Certain Point Of Inertia'
             />
           </div>
-          <script src='https://player.vimeo.com/api/player.js' />
+          <Script src='https://player.vimeo.com/api/player.js' />
         </Box>
         <Box
           as='figure'
@@ -142,9 +142,19 @@ export default function ACertainPointOfInertia() {
           gridTemplateColumns='1fr 1fr 1fr'
           mb={[4, 5]}
         >
-          <Image src={lakeWpg} layout='responsive' placeholder='blur' />
-          <Image src={gullHarbourPath} layout='responsive' placeholder='blur' />
-          <Image src={gullHarbour} layout='responsive' placeholder='blur' />
+          <Image alt='' src={lakeWpg} layout='responsive' placeholder='blur' />
+          <Image
+            alt=''
+            src={gullHarbourPath}
+            layout='responsive'
+            placeholder='blur'
+          />
+          <Image
+            alt=''
+            src={gullHarbour}
+            layout='responsive'
+            placeholder='blur'
+          />
         </Box>
         <Box mb={[4, 5]}>
           <Text ml={[null, null, 'auto']}>
@@ -181,9 +191,19 @@ export default function ACertainPointOfInertia() {
           gridTemplateColumns='1fr 1fr 1fr'
           mb={[4, 5]}
         >
-          <Image src={namao} layout='responsive' placeholder='blur' />
-          <Image src={oakHammock} layout='responsive' placeholder='blur' />
-          <Image src={eastHenderson} layout='responsive' placeholder='blur' />
+          <Image alt='' src={namao} layout='responsive' placeholder='blur' />
+          <Image
+            alt=''
+            src={oakHammock}
+            layout='responsive'
+            placeholder='blur'
+          />
+          <Image
+            alt=''
+            src={eastHenderson}
+            layout='responsive'
+            placeholder='blur'
+          />
         </Box>
         <Box mb={[4, 5]}>
           <Text>

@@ -1,15 +1,16 @@
 import { AnimatePresence, motion } from 'framer-motion'
-import { IoMdMenu, IoMdClose } from 'react-icons/io'
-import { useState } from 'react'
+import Link from 'next/link'
 import { useRouter } from 'next/router'
+import { useState } from 'react'
+import { IoMdClose, IoMdMenu } from 'react-icons/io'
 
-import Box from './primitives/Box'
 import Button from './Button'
+import { Container } from './layout'
+import Nav from './Nav'
+import Box from './primitives/Box'
 import Heading from './primitives/Heading'
 import MotionBox from './primitives/MotionBox'
-import Nav from './Nav'
 import Text from './primitives/Text'
-import { Container } from './layout'
 
 const variants = {
   initial: {
@@ -54,9 +55,9 @@ export default function Header() {
               {routeIsIndex ? (
                 'Cole Peters'
               ) : (
-                <a href='/' style={{ textDecoration: 'none' }}>
-                  Cole Peters
-                </a>
+                <Link href='/'>
+                  <a style={{ textDecoration: 'none' }}>Cole Peters</a>
+                </Link>
               )}
             </Heading>
             <Heading

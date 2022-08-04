@@ -18,7 +18,7 @@ const Button = styled.button`
   cursor: pointer;
   display: inline-block;
   font-weight: 500;
-  padding: ${props => props.theme.space[2]} 0;
+  padding: ${(props) => props.theme.space[2]} 0;
   text-decoration: underline;
 
   &:focus {
@@ -27,7 +27,7 @@ const Button = styled.button`
 
   transition: opacity 0.5s ease;
 
-  ${props => props.disabled && 'opacity: 0.5; pointer-events: none;'}
+  ${(props) => props.disabled && 'opacity: 0.5; pointer-events: none;'}
 `
 Button.displayName = 'Button'
 

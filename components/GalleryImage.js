@@ -7,7 +7,7 @@ import { Box } from './index'
 export default function GalleryImage({ image }) {
   const imgRef = useRef(null)
   const [isZoomed, setIsZoomed] = useState(false)
-  const toggleZoom = () => setIsZoomed(prev => !prev)
+  const toggleZoom = () => setIsZoomed((prev) => !prev)
 
   const prevZoom = usePrevious(isZoomed)
 
@@ -18,7 +18,7 @@ export default function GalleryImage({ image }) {
         left: 0,
       })
     }
-  }, [isZoomed])
+  }, [isZoomed, prevZoom])
 
   return (
     <Box
@@ -45,5 +45,5 @@ GalleryImage.propTypes = {
   image: PropTypes.shape({
     title: PropTypes.string.isRequired,
     url: PropTypes.string.isRequired,
-  }).isRequired
+  }).isRequired,
 }

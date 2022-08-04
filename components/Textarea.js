@@ -10,10 +10,11 @@ const StyledTextarea = styled.textarea`
   border-bottom: 1px solid black;
   border-radius: 0;
   display: block;
-  line-height: ${props => props.theme.lineHeights.body};
-  padding: ${props => props.theme.space[2]};
+  line-height: ${(props) => props.theme.lineHeights.body};
+  padding: ${(props) => props.theme.space[2]};
   position: relative;
-  margin: ${props => props.theme.space[1]} 0 ${props => props.theme.space[3]} 0;
+  margin: ${(props) => props.theme.space[1]} 0
+    ${(props) => props.theme.space[3]} 0;
   resize: vertical;
   transition: background 0.3s ease;
   width: 100%;

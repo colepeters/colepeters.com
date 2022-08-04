@@ -1,15 +1,14 @@
 import contents from './contents'
-
+import NavLink from './NavLink'
 import Box from './primitives/Box'
 import List from './primitives/List'
 import Text from './primitives/Text'
-import NavLink from './NavLink'
 
 export default function Nav() {
   return (
     <Box as='nav' my={[4, 5]}>
       <List reset pl={0} m={0} fontSize={0}>
-        {contents.map(section => (
+        {contents.map((section) => (
           <Text as='li' display={['block', 'flex']} mb={4} key={section.name}>
             <Box width={['13ch', null, '16ch']} pr={2}>
               <Text
@@ -25,7 +24,7 @@ export default function Nav() {
             </Box>
             <Box flex='1'>
               <List reset pl={0} m={0}>
-                {section.pages.map(pg => (
+                {section.pages.map((pg) => (
                   <Text as='li' mb={1} key={pg.name}>
                     <NavLink href={pg.href}>{pg.name}</NavLink>
                   </Text>
