@@ -1,6 +1,3 @@
-import '@fontsource/inter'
-import '@fontsource/cardo/400-italic.css'
-
 import App from 'next/app'
 import Head from 'next/head'
 import React from 'react'
@@ -30,6 +27,16 @@ export default class MyApp extends App {
             name='google-site-verification'
             content='GDtqLSMBd2NDQxNYP5Zg_4B1BNQQ93spmNyQgLTo9dE'
             key='gsv'
+          />
+          <link rel='preconnect' href='https://fonts.googleapis.com' />
+          <link
+            rel='preconnect'
+            href='https://fonts.gstatic.com'
+            crossOrigin='true'
+          />
+          <link
+            href='https://fonts.googleapis.com/css2?family=Barlow:wght@400;500&family=Cardo:ital@1&family=Inter:wght@400;500&display=swap'
+            rel='stylesheet'
           />
           <link
             rel='apple-touch-icon'
