@@ -1,10 +1,9 @@
 import PropTypes from 'prop-types'
-import TextareaAutosize from 'react-autosize-textarea'
 import styled from 'styled-components'
 
 import Text from './primitives/Text'
 
-const StyledTextarea = styled(TextareaAutosize)`
+const StyledTextarea = styled.textarea`
   appearance: none;
   background: rgba(0, 0, 0, 0.05);
   border: none;
