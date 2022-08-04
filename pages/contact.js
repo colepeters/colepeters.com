@@ -1,4 +1,3 @@
-import R from 'ramda'
 import {
   IoIosArrowForward,
   IoIosCheckmarkCircleOutline,
@@ -25,7 +24,7 @@ export default function Contact() {
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
 
-  const anyEmpty = R.includes('', [name, email, message])
+  const anyEmpty = [name, email, message].includes('')
 
   const [isPending, setIsPending] = useState(false)
   const [isSent, setIsSent] = useState(false)
