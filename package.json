@@ -6,27 +6,15 @@
     "lint": "eslint ./app/**/*.mjs --fix"
   },
   "devDependencies": {
+    "@architect/architect": "^10.8.2",
+    "@colepeters/eslint-config": "^1.0.1",
     "@enhance/types": "^0.4.0",
-    "eslint": "^8.29.0"
-  },
-  "eslintConfig": {
-    "env": {
-      "node": true
-    },
-    "extends": "eslint:recommended",
-    "rules": {
-      "indent": [
-        "error",
-        2
-      ]
-    },
-    "ignorePatterns": [],
-    "parserOptions": {
-      "sourceType": "module",
-      "ecmaVersion": 2022
-    }
+    "eslint": "^8.29.0",
+    "eslint-config-prettier": "^8.5.0"
   },
   "dependencies": {
-    "@enhance/arc-plugin-enhance": "^4.2.1"
+    "@enhance/arc-plugin-enhance": "^4.2.1",
+    "@enhance/image": "^0.0.0-alpha.2",
+    "@ryanbethel/arc-image-plugin": "github:beginner-corp/begin-image-plugin#new-begin-refactor"
   }
 }

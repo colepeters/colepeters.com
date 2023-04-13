@@ -1,6 +1,7 @@
 {
   "env": {
+    "node": true,
     "es6": true
   },
-  "extends": ["@colepeters/eslint-config", "prettier", "next/core-web-vitals"]
+  "extends": ["@colepeters/eslint-config", "prettier"]
 }
