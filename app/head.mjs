@@ -19,7 +19,6 @@ export default function Head(state) {
           font-family: Inter;
           src: url("/_public/fonts/Inter.var.woff2") format("woff2-variations");
           font-weight: 100 900;
-          font-display: swap;
         }
       </style>
       <link rel="stylesheet" href="/_public/global.css" />
