@@ -3,6 +3,10 @@ const contents = [
     name: 'Sound',
     pages: [
       {
+        name: 'Traces Blurs Signs',
+        href: '/traces-blurs-signs',
+      },
+      {
         name: 'A Certain Point of Inertia',
         href: '/a-certain-point-of-inertia',
       },
