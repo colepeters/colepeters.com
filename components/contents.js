@@ -3,6 +3,10 @@ const contents = [
     name: 'Sound',
     pages: [
       {
+        name: 'Four Unbindings',
+        href: '/four-unbindings',
+      },
+      {
         name: 'Traces Blurs Signs',
         href: '/traces-blurs-signs',
       },
