@@ -1,0 +1,51 @@
+body {
+  background: white;
+  color: var(--blue-black);
+  font-family: HK Grotesk, sans-serif;
+  line-height: 1.625;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: var(--blue-black);
+    color: var(--smoke);
+  }
+}
+
+a {
+  text-decoration: underline;
+  text-decoration-color: var(--light-muted);
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 2px;
+}
+
+@media (prefers-color-scheme: dark) {
+  a {
+    text-decoration-color: var(--dark-muted);
+  }
+}
+
+p + p {
+  margin-top: 1.625em;
+}
+
+blockquote {
+  border-left: 4px solid var(--alpha-grey);
+}
+
+.measure {
+  max-width: 72ch;
+}
+
+.muted {
+  color: var(--light-muted);
+}
+
+@media (prefers-color-scheme: dark) {
+  .muted {
+    color: var(--dark-muted);
+  }
+}
+
