@@ -4,12 +4,12 @@
     "viewportMin": 320,
     "viewportMax": 1500,
     "baseMin": 16,
-    "baseMax": 20,
+    "baseMax": 18,
     "scaleMin": "major-third",
     "scaleMax": "major-third"
   },
   "spaceScale": {
-    "steps": 6,
+    "steps": 9,
     "viewportMin": 320,
     "viewportMax": 1500,
     "baseMin": 16,
@@ -18,7 +18,7 @@
     "scaleMax": "perfect-fourth"
   },
   "fonts": {
-    "sans": "HK Grotesk, sans-serif"
+    "sans": "Inter, sans-serif"
   },
   "queries": {
     "md": "48em",

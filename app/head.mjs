@@ -16,24 +16,22 @@ export default function Head(state) {
       ${getStyleTag()}
       <style>
         @font-face {
-          font-family: HK Grotesk;
-          src: url("/_public/fonts/HKGrotesk-Regular.woff2") format("woff2");
-          font-weight: 400;
+          font-family: Inter;
+          src: url("/_public/fonts/InterVariable-subset.woff2") format("woff2-variations");
+          src: url("/_public/fonts/InterVariable-subset.woff2") format("woff2") tech("variations");
+          font-weight: 100 900;
         }
         @font-face {
-          font-family: HK Grotesk;
-          src: url("/_public/fonts/HKGrotesk-Italic.woff2") format("woff2");
-          font-weight: 400;
+          font-family: Inter;
+          src: url("/_public/fonts/InterVariable-Italic-subset.woff2") format("woff2-variations");
+          src: url("/_public/fonts/InterVariable-Italic-subset.woff2") format("woff2") tech("variations");
+          font-weight: 100 900;
           font-style: italic;
-        }
-        @font-face {
-          font-family: HK Grotesk;
-          src: url("/_public/fonts/HKGrotesk-Medium.woff2") format("woff2");
-          font-weight: 500;
         }
       </style>
       <link rel="stylesheet" href="/_public/global.css" />
       <link rel="icon" href="/_public/favicon.svg">
     </head>
+    <body class="font-sans leading3">
   `
 }

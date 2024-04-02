@@ -1,8 +1,6 @@
 body {
   background: white;
   color: var(--blue-black);
-  font-family: HK Grotesk, sans-serif;
-  line-height: 1.625;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

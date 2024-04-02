@@ -3,7 +3,7 @@ export default async function Preflight() {
     plugins: {
       '@enhance/image': {
         transform: {
-          quality: 33,
+          quality: 60,
         }
       }
     }

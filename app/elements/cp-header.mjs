@@ -4,7 +4,7 @@ export default function Header({ html }) {
     <h1 class='uppercase'>
       <a class="no-underline" href="/">
         <span class='text1 font-medium tracking1'>Cole Peters</span><br />
-        <span class='tracking1 muted'>Sound & visual artist</span>
+        <span class='text-1 font-medium tracking1 muted'>Sound & visual artist</span>
       </a>
     </h1>
    </header>
