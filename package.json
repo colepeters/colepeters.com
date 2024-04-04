@@ -12,6 +12,8 @@
         "@enhance/arc-plugin-enhance": "latest",
         "@enhance/arc-plugin-styles": "latest",
         "@enhance/image": "^1.0.0",
-        "@enhance/styles-cribsheet": "latest"
+        "@enhance/styles-cribsheet": "latest",
+        "nodemailer": "^6.9.13",
+        "nodemailer-mailgun-transport": "^2.1.5"
     }
 }
