@@ -7,6 +7,10 @@ export default function Artwork({ html, state }) {
         max-block-size: 95vh;
       }
 
+      [slot="title"] {
+        font-weight: 450;
+      }
+
       [slot="caption"]:not(empty) {
         margin-block-start: var(--space--4);
       }
