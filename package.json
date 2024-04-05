@@ -1,44 +1,19 @@
 {
-  "name": "colepeters",
-  "version": "1.0.0",
-  "description": "My website",
-  "main": "index.js",
-  "repository": "https://github.com/colepeters/colepeters",
-  "author": "Cole Peters",
-  "license": "MIT",
-  "private": true,
-  "scripts": {
-    "dev": "next",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "axios": "^0.21.2",
-    "contentful": "^8.1.7",
-    "dayjs": "^1.10.4",
-    "framer-motion": "^3.3.0",
-    "next": "^12.1.0",
-    "next-images": "^1.8.2",
-    "next-transpile-modules": "^9.0.0",
-    "nextjs-basic-auth": "^0.1.3",
-    "nodemailer": "^6.6.1",
-    "nodemailer-mailgun-transport": "^2.1.3",
-    "prop-types": "^15.7.2",
-    "ramda": "^0.27.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-icons": "^3.9.0",
-    "react-markdown": "^5.0.3",
-    "styled-components": "^5.0.1",
-    "styled-normalize": "^8.0.7",
-    "styled-system": "^5.1.4"
-  },
-  "devDependencies": {
-    "@colepeters/eslint-config": "^1.0.1",
-    "eslint": "^8.21.0",
-    "eslint-config-next": "^12.2.3",
-    "eslint-config-prettier": "^6.15.0",
-    "prettier": "^2.7.1"
-  }
+    "name": "enhance-app",
+    "version": "0.0.1",
+    "scripts": {
+        "start": "npx enhance dev"
+    },
+    "devDependencies": {
+        "@enhance/cli": "latest",
+        "@enhance/types": "latest"
+    },
+    "dependencies": {
+        "@enhance/arc-plugin-enhance": "latest",
+        "@enhance/arc-plugin-styles": "latest",
+        "@enhance/image": "^1.0.0",
+        "@enhance/styles-cribsheet": "latest",
+        "nodemailer": "^6.9.13",
+        "nodemailer-mailgun-transport": "^2.1.5"
+    }
 }

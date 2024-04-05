@@ -1,0 +1,73 @@
+<style scope="global">
+  input,
+  textarea {
+    background: transparent;
+    min-inline-size: min(80vw, 48ch);
+  }
+
+  input {
+    border-block-end: 1px solid currentColor;
+  }
+
+  textarea {
+    border: 1px solid currentColor;
+  }
+
+  textarea {
+    resize: vertical;
+  }
+
+  button {
+    border: 1.5px solid currentColor;
+    border-radius: 0.25em;
+  }
+</style>
+
+<cp-layout>
+  <cp-title>Contact</cp-title>
+
+  <p class="measure mb4">
+    Feel free to get in touch via email using the form below. You’ll also find me on <a href="https://instagram.com/tiltedspheres">Instagram</a> and&nbsp;<a href="https://mastodon.online/@colepeters">Mastodon</a>.
+  </p>
+
+  <form action="/email" method="POST">
+    <label class="block mbe2">
+      <span class="block font-medium text-1 mbe-4">Name:</span>
+      <input
+        type="text"
+        name="name"
+        placeholder="Your Name"
+        required
+        class="pb-4"
+    />
+    </label>
+
+    <label class="block mbe2">
+      <span class="block font-medium text-1 mbe-4">Email address:</span>
+      <input
+        type="email"
+        name="email"
+        placeholder="you@yours.com"
+        required
+        class="pb-4"
+      />
+    </label>
+
+    <label class="block mbe2">
+      <span class="block font-medium text-1 mbe-4">Message:</span>
+      <textarea
+        name="message"
+        rows="5"
+        placeholder="Write your message here"
+        class="p-2"
+      ></textarea>
+    </label>
+
+    <button
+      type="submit"
+      class="font-semibold uppercase tracking1 mb0 pi0 pb-4"
+    >
+      Send
+    </button>
+  </form>
+</cp-layout>

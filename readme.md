@@ -1,4 +1,3 @@
-# Cole Peters
+# colepeters.com
 
-Hey, it’s a website.
-[colepeters.com](https://colepeters.com)
+All images and other artwork held in this repository are © Cole Peters, and may not be reproduced without express written permission.
