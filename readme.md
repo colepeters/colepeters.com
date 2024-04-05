@@ -1,4 +1,4 @@
 # Cole Peters
 
-Hey, it’s a website.
+My work in sound and visual art.
 [colepeters.com](https://colepeters.com)
