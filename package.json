@@ -1,0 +1,17 @@
+{
+    "name": "enhance-app",
+    "version": "0.0.1",
+    "scripts": {
+        "start": "npx enhance dev"
+    },
+    "devDependencies": {
+        "@enhance/cli": "latest",
+        "@enhance/types": "latest"
+    },
+    "dependencies": {
+        "@enhance/arc-plugin-enhance": "latest",
+        "@enhance/arc-plugin-styles": "latest",
+        "@enhance/image": "^1.0.0",
+        "@enhance/styles-cribsheet": "latest"
+    }
+}
