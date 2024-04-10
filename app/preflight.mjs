@@ -3,6 +3,8 @@ export default async function Preflight() {
     plugins: {
       '@enhance/image': {
         transform: {
+          widths: [2000, 1500, 1000, 750, 600],
+          format: 'webp',
           quality: 60,
         }
       }
