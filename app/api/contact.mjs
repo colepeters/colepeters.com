@@ -8,3 +8,4 @@ export async function get(req) {
     session: {},
   }
 }
+
