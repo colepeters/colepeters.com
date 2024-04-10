@@ -44,8 +44,8 @@ export async function post(req) {
 
   return {
     location: '/contact',
-    json: {
-      mailStatus: mailerRes.status
-    }
+    session: {
+      mailstatus: mailerRes.status,
+    },
   }
 }
