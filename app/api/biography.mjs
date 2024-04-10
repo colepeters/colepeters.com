@@ -1,4 +1,4 @@
-import cacheControl from '../../lib/cache-control.mjs'
+import cacheControl from '../lib/cache-control.mjs'
 
 export async function get() {
   return {
