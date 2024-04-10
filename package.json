@@ -1,19 +1,19 @@
 {
-    "name": "enhance-app",
+    "name": "colepeters-dot-com",
     "version": "1.2.0",
     "scripts": {
-        "start": "npx enhance dev"
+      "start": "npx enhance dev"
     },
     "devDependencies": {
-        "@enhance/cli": "latest",
-        "@enhance/types": "latest"
+      "@enhance/cli": "latest",
+      "@enhance/types": "latest"
     },
     "dependencies": {
-        "@enhance/arc-plugin-enhance": "latest",
-        "@enhance/arc-plugin-styles": "latest",
-        "@enhance/image": "^1.0.0",
-        "@enhance/styles-cribsheet": "latest",
-        "nodemailer": "^6.9.13",
-        "nodemailer-mailgun-transport": "^2.1.5"
+      "@enhance/arc-plugin-enhance": "latest",
+      "@enhance/arc-plugin-styles": "latest",
+      "@enhance/image": "^1.0.0",
+      "@enhance/styles-cribsheet": "latest",
+      "nodemailer": "^6.9.13",
+      "nodemailer-mailgun-transport": "^2.1.5"
     }
 }
