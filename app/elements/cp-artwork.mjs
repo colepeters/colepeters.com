@@ -1,6 +1,6 @@
 export default function Artwork({ html, state }) {
   const { attrs } = state
-  const { href } = attrs
+  const { href, loading = "lazy" } = attrs
   return html`
     <style>
       img {
@@ -20,7 +20,7 @@ export default function Artwork({ html, state }) {
       <enhance-image
         src="${href}"
         alt=""
-        loading="lazy"
+        loading="${loading}"
       ></enhance-image>
       <figcaption class="mbs0">
         <slot name="title"></slot>

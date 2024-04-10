@@ -2,9 +2,9 @@ export default function ArtworkSet({ html, state }) {
   const { store = {} } = state
   const { artworks = [] } = store
 
-  const artworkSet = artworks.map(a => `
+  const artworkSet = artworks.map((a, i) => `
   <li>
-    <cp-artwork href="${a.href}">
+    <cp-artwork href="${a.href}" ${i === 0 ? 'loading="eager"' : ''}>
       <p slot="title">${a.title}</p>
       ${a.caption ? `<p slot="caption">
         ${a.caption}
