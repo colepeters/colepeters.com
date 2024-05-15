@@ -40,7 +40,7 @@ export default function Head(state) {
 
       <style>
         @font-face {
-          font-family: Inter;
+          font-family: PP Mori;
           src: url("https://tcp-webfonts.s3.us-east-2.amazonaws.com/PPMori-Regular.woff2") format("woff2-variations");
           src: url("https://tcp-webfonts.s3.us-east-2.amazonaws.com/PPMori-Regular.woff2") format("woff2") tech("variations");
           font-weight: 400;
