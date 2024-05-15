@@ -81,7 +81,7 @@ export default function Head(state) {
         }
 
         .measure {
-          max-width: 72ch;
+          max-width: 68ch;
         }
 
         .muted {
@@ -95,6 +95,6 @@ export default function Head(state) {
         }
       </style>
     </head>
-    <body class="font-sans leading3">
+    <body class="font-sans leading4">
   `
 }

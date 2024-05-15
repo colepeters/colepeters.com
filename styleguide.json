@@ -27,7 +27,7 @@
   "color": {
     "blue-black": "#222024",
     "smoke": "#eee",
-    "light-muted": "#777",
+    "light-muted": "#666",
     "dark-muted": "#999",
     "alpha-grey": "rgba(120, 120, 120, 0.5)"
   }
