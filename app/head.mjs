@@ -41,18 +41,10 @@ export default function Head(state) {
       <style>
         @font-face {
           font-family: Inter;
-          src: url("/_public/fonts/InterVariable-subset.woff2") format("woff2-variations");
-          src: url("/_public/fonts/InterVariable-subset.woff2") format("woff2") tech("variations");
-          font-weight: 100 900;
+          src: url("https://tcp-webfonts.s3.us-east-2.amazonaws.com/PPMori-Regular.woff2") format("woff2-variations");
+          src: url("https://tcp-webfonts.s3.us-east-2.amazonaws.com/PPMori-Regular.woff2") format("woff2") tech("variations");
+          font-weight: 400;
         }
-        @font-face {
-          font-family: Inter;
-          src: url("/_public/fonts/InterVariable-Italic-subset.woff2") format("woff2-variations");
-          src: url("/_public/fonts/InterVariable-Italic-subset.woff2") format("woff2") tech("variations");
-          font-weight: 100 900;
-          font-style: italic;
-        }
-
         body {
           background: white;
           color: var(--blue-black);

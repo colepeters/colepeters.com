@@ -5,7 +5,7 @@ export default function Title({ html }) {
         left: -0.0625em;
       }
     </style>
-    <h2 class='text4 text5-lg tracking-2 leading1 font-medium relative mbe0 mbe2-lg'>
+    <h2 class='text4 text5-lg tracking-2 leading1 relative mbe0 mbe2-lg'>
       <slot></slot>
     </h2>
   `

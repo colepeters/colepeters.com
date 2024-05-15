@@ -4,11 +4,11 @@ export default function ContactForm({ html, state }) {
 
   return mailstatus === 200
     ? html`
-      <p class="font-semibold">Thanks for your message! It's been delivered, and I'll be in touch soon.</p>
+      <p>Thanks for your message! It's been delivered, and I'll be in touch soon.</p>
     ` : html`
     <form action="/email" method="POST">
       <label class="block mbe2">
-        <span class="block font-medium text-1 mbe-4">Name:</span>
+        <span class="block text-1 mbe-4">Name:</span>
         <input
           type="text"
           name="name"
@@ -19,7 +19,7 @@ export default function ContactForm({ html, state }) {
       </label>
 
       <label class="block mbe2">
-        <span class="block font-medium text-1 mbe-4">Email address:</span>
+        <span class="block text-1 mbe-4">Email address:</span>
         <input
           type="email"
           name="email"
@@ -30,7 +30,7 @@ export default function ContactForm({ html, state }) {
       </label>
 
       <label class="block mbe2">
-        <span class="block font-medium text-1 mbe-4">Message:</span>
+        <span class="block text-1 mbe-4">Message:</span>
         <textarea
           name="message"
           rows="5"
@@ -41,7 +41,7 @@ export default function ContactForm({ html, state }) {
 
       <button
         type="submit"
-        class="font-semibold uppercase tracking1 mb0 pi0 pb-4"
+        class="uppercase tracking1 mb0 pi0 pb-4"
       >
         Send
       </button>
