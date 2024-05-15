@@ -1,6 +1,6 @@
 {
     "name": "colepeters-dot-com",
-    "version": "1.4.1",
+    "version": "1.4.2",
     "scripts": {
         "start": "npx enhance dev"
     },
