@@ -6,6 +6,12 @@ export default function ContactForm({ html, state }) {
     ? html`
       <p>Thanks for your message! It's been delivered, and I'll be in touch soon.</p>
     ` : html`
+    <style>
+      [name="e"] {
+        inset-inline-start: -200vw;
+        opacity: 0;
+      }
+    </style>
     <form action="/email" method="POST">
       <label class="block mbe2">
         <span class="block text-1 mbe-4">Name:</span>
@@ -38,6 +44,14 @@ export default function ContactForm({ html, state }) {
           class="p-2"
         ></textarea>
       </label>
+
+      <input
+        type="email"
+        name="e"
+        class="absolute"
+        autocomplete="off"
+        tabindex="-1"
+      />
 
       <button
         type="submit"

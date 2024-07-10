@@ -31,12 +31,21 @@ const mailer = async ({ name, email, message }) => {
 }
 
 export async function post(req) {
-  const { name, email, message } = req.body
+  const { name, email, message, e } = req.body
 
   // if any fields blank, return 403
   if ([name, email, message].includes('')) {
     return {
       statusCode: 400,
+    }
+  }
+
+  console.log({ e })
+
+  // Honeypot; just redirect to the contact page without sending the email
+  if (e) {
+    return {
+      location: '/contact',
     }
   }
 
