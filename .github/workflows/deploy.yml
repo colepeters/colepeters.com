@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: arc build
-        uses: architect/action-build@latest
+        uses: architect/action-build@v3
         with:
           use_lock_file: false
           node-version: 20
@@ -27,7 +27,7 @@ jobs:
 
     steps:
       - name: arc deploy
-        uses: architect/action-deploy@latest
+        uses: architect/action-deploy@v1
         with: 
           use_lock_file: false
           node-version: 20
@@ -46,7 +46,7 @@ jobs:
 
     steps:
       - name: arc deploy
-        uses: architect/action-deploy@latest
+        uses: architect/action-deploy@v1
         with: 
           use_lock_file: false
           node-version: 20
