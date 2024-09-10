@@ -26,12 +26,12 @@ jobs:
 
     steps:
       - name: arc deploy
-        needs: architect/action-deploy@latest
-          with: 
-            use_lock_file: false
-            node-version: 20
-            aws_access_key_id: ${{secrets.AWS_ACCESS_KEY_ID}}
-            aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
+        uses: architect/action-deploy@latest
+        with: 
+          use_lock_file: false
+          node-version: 20
+          aws_access_key_id: ${{secrets.AWS_ACCESS_KEY_ID}}
+          aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
 
       - name: Image Cache Warming
         run: npx @enhance/image warm --directory /public/images --domain https://f4j12xutj7.execute-api.us-east-1.amazonaws.com
@@ -45,12 +45,12 @@ jobs:
 
     steps:
       - name: arc deploy
-        needs: architect/action-deploy@latest
-          with: 
-            use_lock_file: false
-            node-version: 20
-            aws_access_key_id: ${{secrets.AWS_ACCESS_KEY_ID}}
-            aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
+        uses: architect/action-deploy@latest
+        with: 
+          use_lock_file: false
+          node-version: 20
+          aws_access_key_id: ${{secrets.AWS_ACCESS_KEY_ID}}
+          aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
 
       - name: Image Cache Warming
         run: npx @enhance/image warm --directory /public/images --domain https://colepeters.com
