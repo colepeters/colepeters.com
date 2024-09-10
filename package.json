@@ -2,17 +2,19 @@
     "name": "colepeters-dot-com",
     "version": "1.5.0",
     "scripts": {
-        "start": "npx enhance dev"
+        "start": "npx enhance dev",
+        "test": "echo 'No tests defined, good luck friend!' && exit 0"
     },
     "devDependencies": {
+        "@architect/architect": "^11.1.0",
         "@enhance/cli": "latest",
         "@enhance/types": "latest"
     },
     "dependencies": {
-        "@enhance/arc-plugin-enhance": "latest",
-        "@enhance/arc-plugin-styles": "latest",
+        "@enhance/arc-plugin-enhance": "^11.0.4",
+        "@enhance/arc-plugin-styles": "^5.0.6",
         "@enhance/image": "^1.0.0",
-        "@enhance/styles-cribsheet": "latest",
+        "@enhance/styles-cribsheet": "^0.0.11",
         "nodemailer": "^6.9.13",
         "nodemailer-mailgun-transport": "^2.1.5"
     }
