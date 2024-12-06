@@ -4,7 +4,7 @@
     "viewportMin": 320,
     "viewportMax": 1500,
     "baseMin": 16,
-    "baseMax": 18,
+    "baseMax": 19,
     "scaleMin": "major-third",
     "scaleMax": "major-third"
   },
@@ -13,7 +13,7 @@
     "viewportMin": 320,
     "viewportMax": 1500,
     "baseMin": 16,
-    "baseMax": 18,
+    "baseMax": 19,
     "scaleMin": "major-third",
     "scaleMax": "perfect-fourth"
   },
@@ -25,8 +25,8 @@
     "lg": "67em"
   },
   "color": {
-    "blue-black": "#222024",
-    "smoke": "#eee",
+    "blue-black": "#1d1d20",
+    "smoke": "#ccc",
     "light-muted": "#666",
     "dark-muted": "#999",
     "alpha-grey": "rgba(120, 120, 120, 0.5)"

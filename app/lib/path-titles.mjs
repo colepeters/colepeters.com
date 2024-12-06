@@ -11,6 +11,7 @@ export default {
   '/photographs/protest': 'Protest',
   '/sound/a-certain-point-of-inertia': 'A Certain Point of Intertia',
   '/sound/a-pattern-of-extraction': 'A Pattern of Extraction',
+  '/sound/a-recasting-of-indices': 'A Recasting of Indices',
   '/sound/a-stable-means-of-degradation': 'A Stable Means of Degradation',
   '/sound/enfold': 'Enfold: Rehearsal for Send + Receive, 2021',
   '/sound/four-unbindings': 'Four Unbindings',
