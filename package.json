@@ -16,6 +16,6 @@
         "@enhance/image": "^1.0.0",
         "@enhance/styles-cribsheet": "^0.0.11",
         "nodemailer": "^6.9.13",
-        "nodemailer-mailgun-transport": "^2.1.5"
+        "mailgun-nodemailer-transport": "^3.0.2"
     }
 }

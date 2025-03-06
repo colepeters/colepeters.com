@@ -1,14 +1,12 @@
 import nodemailer from 'nodemailer'
-import mg from 'nodemailer-mailgun-transport'
+import MailgunTransport from 'mailgun-nodemailer-transport'
 
 const auth = {
-  auth: {
-    api_key: process.env.MAILGUN_KEY,
-    domain: 'mg.colepeters.com',
-  },
+  apiKey: process.env.MAILGUN_KEY,
+  domain: 'mg.colepeters.com',
 }
 
-const transporter = nodemailer.createTransport(mg(auth))
+const transporter = nodemailer.createTransport(new MailgunTransport({ auth }))
 
 const mailer = async ({ name, email, message }) => {
   const from = `${name} <${email}>`
