@@ -18,5 +18,4 @@ export default {
   '/sound/presque-tout': 'London (UK), 07/06/2014, Evening',
   '/sound/traces-blurs-signs': 'Traces Blurs Signs',
   '/biography': 'Biography',
-  '/contact': 'Contact',
 }
